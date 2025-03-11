@@ -18,7 +18,7 @@
 #
 # Quartus II 64-Bit
 # Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-# Date created = 15:11:45  March 09, 2025
+# Date created = 20:55:58  March 11, 2025
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,39 +36,18 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name DEVICE EP2C8Q208C8
-set_global_assignment -name TOP_LEVEL_ENTITY sel4g
+
+# Project-Wide Assignments
+# ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:11:45  MARCH 09, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name BDF_FILE hadd.bdf
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_location_assignment PIN_77 -to A
-set_location_assignment PIN_80 -to B
-set_location_assignment PIN_33 -to Co
-set_location_assignment PIN_31 -to S
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/hadd.vwf
 set_global_assignment -name BDF_FILE fadd.bdf
-set_location_assignment PIN_81 -to Ci
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/fadd.vwf
 set_global_assignment -name BDF_FILE adder.bdf
-set_location_assignment PIN_82 -to A[1]
-set_location_assignment PIN_84 -to A[2]
-set_location_assignment PIN_86 -to A[3]
-set_location_assignment PIN_87 -to B[3]
-set_location_assignment PIN_88 -to B[2]
-set_location_assignment PIN_67 -to B[1]
-set_location_assignment PIN_14 -to S[1]
-set_location_assignment PIN_13 -to S[0]
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/adder.vwf
 set_global_assignment -name BDF_FILE selector.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/selector.vwf
@@ -76,17 +55,67 @@ set_global_assignment -name BDF_FILE dec2_4.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/dec2_4.vwf
 set_global_assignment -name BDF_FILE sel2g.bdf
 set_global_assignment -name BDF_FILE sel4g.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/sel4g.vwf
+
+# Pin & Location Assignments
+# ==========================
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name TOP_LEVEL_ENTITY dec3_8
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+
+# Simulator Assignments
+# =====================
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+
+# start EDA_TOOL_SETTINGS(eda_simulation)
+# ---------------------------------------
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# -------------------
+# start ENTITY(sel4g)
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(sel4g)
+# -----------------
+set_global_assignment -name SEARCH_PATH "d:\\code\\quartus\\computer_arch\\design\\bsf"
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name BDF_FILE dec3_8.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_68 -to A[4]
-set_location_assignment PIN_69 -to A[5]
-set_location_assignment PIN_70 -to A[7]
-set_location_assignment PIN_72 -to A[6]
-set_location_assignment PIN_74 -to B[7]
-set_location_assignment PIN_75 -to B[6]
-set_location_assignment PIN_76 -to B[5]
-set_location_assignment PIN_23 -to B[4]
-set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/sel4g.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/sel4g.vwf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/dec3_8.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/Code/Quartus/computer_arch/design/VWF/dec3_8.vwf"

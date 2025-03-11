@@ -116,7 +116,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1464 288 1640 304)
+	(rect 1464 256 1640 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q[W-1..0]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
@@ -317,11 +317,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1216 264)
-	(pt 1464 296)
-	(bus)
-)
-(connector
 	(pt 232 288)
 	(pt 552 288)
 	(bus)
@@ -361,6 +356,11 @@ applicable agreement for further details.
 	(text "S[1]" (rect 1008 325 1020 345)(font "Arial" )(vertical))
 	(pt 1024 296)
 	(pt 1024 600)
+)
+(connector
+	(pt 1216 264)
+	(pt 1464 264)
+	(bus)
 )
 (junction (pt 528 576))
 (junction (pt 528 600))

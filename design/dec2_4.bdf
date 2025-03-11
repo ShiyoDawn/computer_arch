@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 48 144 216 160)
+	(rect 72 112 240 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "D[1..0]" (rect 5 0 40 12)(font "Arial" ))
+	(text "D[1..0]" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 376 304 392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "en" (rect 5 0 17 12)(font "Arial" ))
+	(text "en" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 88 960 104)
+	(rect 688 56 864 72)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q[0]" (rect 90 0 111 12)(font "Arial" ))
 	(pt 0 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 792 128 968 144)
+	(rect 688 80 864 96)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q[1]" (rect 90 0 111 12)(font "Arial" ))
 	(pt 0 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 792 168 968 184)
+	(rect 688 104 864 120)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q[2]" (rect 90 0 111 12)(font "Arial" ))
 	(pt 0 8)
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 800 224 976 240)
+	(rect 688 128 864 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q[3]" (rect 90 0 111 12)(font "Arial" ))
 	(pt 0 8)
@@ -326,11 +326,6 @@ applicable agreement for further details.
 	(rotate90)
 )
 (connector
-	(pt 216 152)
-	(pt 248 152)
-	(bus)
-)
-(connector
 	(pt 360 152)
 	(pt 360 384)
 )
@@ -471,6 +466,11 @@ applicable agreement for further details.
 	(text "Q[3]" (rect 592 60 604 81)(font "Arial" )(vertical))
 	(pt 608 88)
 	(pt 608 56)
+)
+(connector
+	(pt 240 120)
+	(pt 272 120)
+	(bus)
 )
 (junction (pt 360 384))
 (junction (pt 448 384))
