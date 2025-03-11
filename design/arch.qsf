@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C8Q208C8
-set_global_assignment -name TOP_LEVEL_ENTITY adder
+set_global_assignment -name TOP_LEVEL_ENTITY dec2_4
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:11:45  MARCH 09, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -61,9 +61,6 @@ set_global_assignment -name BDF_FILE fadd.bdf
 set_location_assignment PIN_81 -to Ci
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/fadd.vwf
 set_global_assignment -name BDF_FILE adder.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_82 -to A[1]
 set_location_assignment PIN_84 -to A[2]
 set_location_assignment PIN_86 -to A[3]
@@ -73,6 +70,15 @@ set_location_assignment PIN_67 -to B[1]
 set_location_assignment PIN_15 -to S[2]
 set_location_assignment PIN_14 -to S[1]
 set_location_assignment PIN_13 -to S[0]
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/adder.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/adder.vwf"
+set_global_assignment -name BDF_FILE selector.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/selector.vwf
+set_global_assignment -name BDF_FILE dec2_4.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/dec2_4.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/dec2_4.vwf"
+set_global_assignment -name BDF_FILE sel2g.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE sel4g.bdf
