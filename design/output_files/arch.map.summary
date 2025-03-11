@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Mar 11 17:50:33 2025
+Analysis & Synthesis Status : Successful - Tue Mar 11 19:44:24 2025
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : arch
-Top-level Entity Name : dec2_4
+Top-level Entity Name : sel4g
 Family : Cyclone II
-Total logic elements : 4
-    Total combinational functions : 4
+Total logic elements : 16
+    Total combinational functions : 16
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 7
+Total pins : 42
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
