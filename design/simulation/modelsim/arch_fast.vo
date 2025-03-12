@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "03/12/2025 12:54:27"
+// DATE "03/12/2025 12:36:41"
 
 // 
 // Device: Altera EP2C8Q208C8 Package PQFP208
@@ -73,6 +73,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("arch_v_fast.sdo");
+// synopsys translate_on
+
 wire \CLK~combout ;
 wire \CLK~clkctrl_outclk ;
 wire \PRN~combout ;
