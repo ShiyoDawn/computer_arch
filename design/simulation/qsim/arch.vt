@@ -18,26 +18,28 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/11/2025 23:11:18"
+// Generated on "03/12/2025 11:44:17"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    dec3_8
+// Verilog Self-Checking Test Bench (with test vectors) for design :    shifter
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module dec3_8_vlg_sample_tst(
+module shifter_vlg_sample_tst(
 	D,
-	en,
+	LM,
+	RM,
 	sampler_tx
 );
-input [2:0] D;
-input  en;
+input [7:0] D;
+input  LM;
+input  RM;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(D or en)
+always @(D or LM or RM)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -56,7 +58,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module dec3_8_vlg_check_tst (
+module shifter_vlg_check_tst (
 	Q,
 	sampler_rx
 );
@@ -276,198 +278,86 @@ $finish;
 end 
 endmodule
 
-module dec3_8_vlg_vec_tst();
+module shifter_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [2:0] D;
-reg en;
+reg [7:0] D;
+reg LM;
+reg RM;
 // wires                                               
 wire [7:0] Q;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-dec3_8 i1 (
+shifter i1 (
 // port map - connection between master ports and signals/registers   
 	.D(D),
-	.en(en),
-	.Q(Q)
+	.LM(LM),
+	.Q(Q),
+	.RM(RM)
 );
+// D[ 7 ]
+initial
+begin
+	D[7] = 1'b1;
+end 
+// D[ 6 ]
+initial
+begin
+	D[6] = 1'b1;
+end 
+// D[ 5 ]
+initial
+begin
+	D[5] = 1'b1;
+end 
+// D[ 4 ]
+initial
+begin
+	D[4] = 1'b1;
+end 
+// D[ 3 ]
+initial
+begin
+	D[3] = 1'b1;
+end 
 // D[ 2 ]
 initial
 begin
 	D[2] = 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #20000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #30000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #40000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #30000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #50000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #50000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #30000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #20000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #20000 1'b1;
-	D[2] = #30000 1'b0;
-	D[2] = #30000 1'b1;
-	D[2] = #70000 1'b0;
-	D[2] = #30000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #20000 1'b1;
-	D[2] = #30000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #20000 1'b1;
-	D[2] = #20000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #10000 1'b0;
-	D[2] = #10000 1'b1;
-	D[2] = #40000 1'b0;
 end 
 // D[ 1 ]
 initial
 begin
 	D[1] = 1'b1;
-	D[1] = #30000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #20000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #30000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #30000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #80000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #20000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #60000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #40000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #20000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #20000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #30000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #30000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #40000 1'b0;
-	D[1] = #30000 1'b1;
-	D[1] = #20000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #30000 1'b1;
-	D[1] = #30000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #20000 1'b1;
-	D[1] = #10000 1'b0;
-	D[1] = #10000 1'b1;
-	D[1] = #30000 1'b0;
 end 
 // D[ 0 ]
 initial
 begin
-	D[0] = 1'b1;
-	D[0] = #20000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #30000 1'b1;
-	D[0] = #40000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #20000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #100000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #20000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #30000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #50000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #30000 1'b1;
-	D[0] = #60000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #30000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #20000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #10000 1'b1;
-	D[0] = #50000 1'b0;
-	D[0] = #20000 1'b1;
-	D[0] = #10000 1'b0;
-	D[0] = #40000 1'b1;
-	D[0] = #40000 1'b0;
-	D[0] = #30000 1'b1;
+	D[0] = 1'b0;
 end 
 
-// en
+// LM
 initial
 begin
-	en = 1'b1;
+	LM = 1'b0;
 end 
 
-dec3_8_vlg_sample_tst tb_sample (
+// RM
+initial
+begin
+	RM = 1'b1;
+end 
+
+shifter_vlg_sample_tst tb_sample (
 	.D(D),
-	.en(en),
+	.LM(LM),
+	.RM(RM),
 	.sampler_tx(sampler)
 );
 
-dec3_8_vlg_check_tst tb_out(
+shifter_vlg_check_tst tb_out(
 	.Q(Q),
 	.sampler_rx(sampler)
 );
