@@ -1,4 +1,28 @@
-|hadd8
+|cnt8
+OVF <= hadd8:inst2.OVF
+CNT => hadd8:inst2.B0
+CLK => reg:inst1.CLK
+CLRN => reg:inst1.CLRN
+LD => sel2g:inst.sel
+D[0] => sel2g:inst.B[0]
+D[1] => sel2g:inst.B[1]
+D[2] => sel2g:inst.B[2]
+D[3] => sel2g:inst.B[3]
+D[4] => sel2g:inst.B[4]
+D[5] => sel2g:inst.B[5]
+D[6] => sel2g:inst.B[6]
+D[7] => sel2g:inst.B[7]
+Q[0] <= reg:inst1.Q[0]
+Q[1] <= reg:inst1.Q[1]
+Q[2] <= reg:inst1.Q[2]
+Q[3] <= reg:inst1.Q[3]
+Q[4] <= reg:inst1.Q[4]
+Q[5] <= reg:inst1.Q[5]
+Q[6] <= reg:inst1.Q[6]
+Q[7] <= reg:inst1.Q[7]
+
+
+|cnt8|hadd8:inst2
 OVF <= hadd:inst7.Co
 A[0] => hadd:inst.A
 A[1] => hadd:inst1.A
@@ -19,7 +43,7 @@ S[6] <= hadd:inst6.S
 S[7] <= hadd:inst7.S
 
 
-|hadd8|hadd:inst7
+|cnt8|hadd8:inst2|hadd:inst7
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -28,7 +52,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst6
+|cnt8|hadd8:inst2|hadd:inst6
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -37,7 +61,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst5
+|cnt8|hadd8:inst2|hadd:inst5
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -46,7 +70,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst4
+|cnt8|hadd8:inst2|hadd:inst4
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -55,7 +79,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst3
+|cnt8|hadd8:inst2|hadd:inst3
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -64,7 +88,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst2
+|cnt8|hadd8:inst2|hadd:inst2
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -73,7 +97,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst1
+|cnt8|hadd8:inst2|hadd:inst1
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -82,12 +106,111 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|hadd8|hadd:inst
+|cnt8|hadd8:inst2|hadd:inst
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
 B => inst.IN1
 B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnt8|reg:inst1
+Q[0] <= LPM_FF:inst.q[0]
+Q[1] <= LPM_FF:inst.q[1]
+Q[2] <= LPM_FF:inst.q[2]
+Q[3] <= LPM_FF:inst.q[3]
+Q[4] <= LPM_FF:inst.q[4]
+Q[5] <= LPM_FF:inst.q[5]
+Q[6] <= LPM_FF:inst.q[6]
+Q[7] <= LPM_FF:inst.q[7]
+CLK => LPM_FF:inst.clock
+PRN => inst1.IN0
+CLRN => inst2.IN0
+D[0] => LPM_FF:inst.data[0]
+D[1] => LPM_FF:inst.data[1]
+D[2] => LPM_FF:inst.data[2]
+D[3] => LPM_FF:inst.data[3]
+D[4] => LPM_FF:inst.data[4]
+D[5] => LPM_FF:inst.data[5]
+D[6] => LPM_FF:inst.data[6]
+D[7] => LPM_FF:inst.data[7]
+
+
+|cnt8|reg:inst1|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => dffs[7].IN0
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cnt8|sel2g:inst
+Q[0] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst2[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst2[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst2[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst2[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst2[7].DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst1[0].IN0
+B[1] => inst1[1].IN0
+B[2] => inst1[2].IN0
+B[3] => inst1[3].IN0
+B[4] => inst1[4].IN0
+B[5] => inst1[5].IN0
+B[6] => inst1[6].IN0
+B[7] => inst1[7].IN0
+sel => inst1[7].IN1
+sel => inst1[6].IN1
+sel => inst1[5].IN1
+sel => inst1[4].IN1
+sel => inst1[3].IN1
+sel => inst1[2].IN1
+sel => inst1[1].IN1
+sel => inst1[0].IN1
+sel => inst3.IN0
+A[0] => inst[0].IN0
+A[1] => inst[1].IN0
+A[2] => inst[2].IN0
+A[3] => inst[3].IN0
+A[4] => inst[4].IN0
+A[5] => inst[5].IN0
+A[6] => inst[6].IN0
+A[7] => inst[7].IN0
 
 
