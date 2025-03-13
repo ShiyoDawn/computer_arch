@@ -1,5 +1,5 @@
 Simulator report for arch
-Wed Mar 12 13:07:32 2025
+Wed Mar 12 16:48:45 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -173,7 +173,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Mar 12 13:07:31 2025
+    Info: Processing started: Wed Mar 12 16:48:45 2025
 Info: Command: quartus_sim --simulation_results_format=VWF arch -c arch
 Info (324025): Using vector source file "D:/Code/Quartus/computer_arch/design/VWF/reg.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
@@ -184,8 +184,8 @@ Info (328052): Number of transitions in simulation is 1441
 Info (324045): Vector file arch.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4448 megabytes
-    Info: Processing ended: Wed Mar 12 13:07:32 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed Mar 12 16:48:45 2025
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
