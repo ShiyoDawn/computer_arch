@@ -1,5 +1,5 @@
 Assembler report for arch
-Thu Mar 13 18:48:20 2025
+Mon Mar 17 20:06:20 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 13 18:48:20 2025 ;
+; Assembler Status      ; Successful - Mon Mar 17 20:06:20 2025 ;
 ; Revision Name         ; arch                                  ;
-; Top-level Entity Name ; cnt8                                  ;
+; Top-level Entity Name ; ALU8_181                              ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C8Q208C8                           ;
 +-----------------------+---------------------------------------+
@@ -94,8 +94,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                             ;
 +----------------+---------------------------------------------------------------------+
 ; Device         ; EP2C8Q208C8                                                         ;
-; JTAG usercode  ; 0x000C7E51                                                          ;
-; Checksum       ; 0x000C7E51                                                          ;
+; JTAG usercode  ; 0x000CB343                                                          ;
+; Checksum       ; 0x000CB343                                                          ;
 +----------------+---------------------------------------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +--------------------+-----------------------------------------------------------------+
 ; Device             ; EPCS4                                                           ;
 ; JTAG usercode      ; 0x00000000                                                      ;
-; Checksum           ; 0x06F0B65A                                                      ;
+; Checksum           ; 0x06F04579                                                      ;
 ; Compression Ratio  ; 3                                                               ;
 +--------------------+-----------------------------------------------------------------+
 
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 13 18:48:20 2025
+    Info: Processing started: Mon Mar 17 20:06:19 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off arch -c arch
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4564 megabytes
-    Info: Processing ended: Thu Mar 13 18:48:20 2025
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Mon Mar 17 20:06:20 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
