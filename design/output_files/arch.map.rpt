@@ -1,5 +1,5 @@
 Analysis & Synthesis report for arch
-Mon Mar 17 20:06:16 2025
+Tue Mar 18 03:07:56 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -15,8 +15,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   7. Analysis & Synthesis Resource Usage Summary
   8. Analysis & Synthesis Resource Utilization by Entity
   9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: sel4g:inst
+ 12. Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst4
+ 13. Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst
+ 14. Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst3
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +47,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 17 20:06:16 2025           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 18 03:07:56 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; arch                                            ;
-; Top-level Entity Name              ; ALU8_181                                        ;
+; Top-level Entity Name              ; sh1c                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 36                                              ;
-;     Total combinational functions  ; 36                                              ;
+; Total logic elements               ; 17                                              ;
+;     Total combinational functions  ; 17                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 31                                              ;
+; Total pins                         ; 20                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +70,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C8Q208C8        ;                    ;
-; Top-level entity name                                                      ; ALU8_181           ; arch               ;
+; Top-level entity name                                                      ; sh1c               ; arch               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,14 +169,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
-; ALU8_181.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Code/Quartus/computer_arch/design/ALU8_181.bdf      ;         ;
-; 74181.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74181.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
+; sel2g.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Code/Quartus/computer_arch/design/sel2g.bdf ;         ;
+; sel4g.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Code/Quartus/computer_arch/design/sel4g.bdf ;         ;
+; sh1c.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/Code/Quartus/computer_arch/design/sh1c.bdf  ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -179,40 +185,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 36    ;
+; Estimated Total logic elements              ; 17    ;
 ;                                             ;       ;
-; Total combinational functions               ; 36    ;
+; Total combinational functions               ; 17    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 28    ;
+;     -- 4 input functions                    ; 10    ;
 ;     -- 3 input functions                    ; 7     ;
-;     -- <=2 input functions                  ; 1     ;
+;     -- <=2 input functions                  ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 36    ;
+;     -- normal mode                          ; 17    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 31    ;
+; I/O pins                                    ; 20    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; S[3]  ;
-; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 144   ;
-; Average fan-out                             ; 2.15  ;
+; Maximum fan-out node                        ; F[1]  ;
+; Maximum fan-out                             ; 17    ;
+; Total fan-out                               ; 70    ;
+; Average fan-out                             ; 1.89  ;
 +---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
-; |ALU8_181                  ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |ALU8_181             ; work         ;
-;    |74181:inst1|           ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU8_181|74181:inst1 ; work         ;
-;    |74181:inst|            ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU8_181|74181:inst  ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                  ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
+; |sh1c                      ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |sh1c                        ; work         ;
+;    |sel4g:inst|            ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sh1c|sel4g:inst             ; work         ;
+;       |sel2g:inst4|        ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sh1c|sel4g:inst|sel2g:inst4 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -231,6 +237,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |sh1c|sel4g:inst|sel2g:inst4|inst2[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; W              ; 9     ; Untyped                        ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst4 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; W              ; 9     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; W              ; 9     ; Untyped                                   ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst3 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; W              ; 9     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -246,7 +301,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Mar 17 20:06:16 2025
+    Info: Processing started: Tue Mar 18 03:07:56 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arch -c arch
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file hadd.bdf
@@ -275,20 +330,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file cnt8.bd
     Info (12023): Found entity 1: cnt8
 Info (12021): Found 1 design units, including 1 entities, in source file alu8_181.bdf
     Info (12023): Found entity 1: ALU8_181
-Info (12127): Elaborating entity "ALU8_181" for the top level hierarchy
-Info (12128): Elaborating entity "74181" for hierarchy "74181:inst1"
-Info (12130): Elaborated megafunction instantiation "74181:inst1"
-Info (13014): Ignored 30 buffer(s)
-    Info (13019): Ignored 30 SOFT buffer(s)
+Info (12021): Found 1 design units, including 1 entities, in source file sh1c.bdf
+    Info (12023): Found entity 1: sh1c
+Info (12127): Elaborating entity "sh1c" for the top level hierarchy
+Info (12128): Elaborating entity "sel4g" for hierarchy "sel4g:inst"
+Info (12128): Elaborating entity "sel2g" for hierarchy "sel4g:inst|sel2g:inst4"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 22 input pins
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 36 logic cells
+    Info (21061): Implemented 17 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4602 megabytes
-    Info: Processing ended: Mon Mar 17 20:06:16 2025
+    Info: Peak virtual memory: 4607 megabytes
+    Info: Processing ended: Tue Mar 18 03:07:56 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
