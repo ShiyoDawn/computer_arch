@@ -183,7 +183,7 @@ applicable agreement for further details.
 	(output)
 	(rect 976 448 1152 464)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "R0[7..0]" (rect 90 0 130 12)(font "Arial" ))
+	(text "Q0[7..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -199,7 +199,7 @@ applicable agreement for further details.
 	(output)
 	(rect 976 464 1152 480)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "R1[7..0]" (rect 90 0 130 12)(font "Arial" ))
+	(text "Q1[7..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -215,7 +215,7 @@ applicable agreement for further details.
 	(output)
 	(rect 976 480 1152 496)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "R2[7..0]" (rect 90 0 130 12)(font "Arial" ))
+	(text "Q2[7..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -231,7 +231,7 @@ applicable agreement for further details.
 	(output)
 	(rect 976 496 1152 512)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "R3[7..0]" (rect 90 0 130 12)(font "Arial" ))
+	(text "Q3[7..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
