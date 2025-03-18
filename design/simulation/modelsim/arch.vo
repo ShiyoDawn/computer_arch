@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "03/18/2025 18:55:25"
+// DATE "03/18/2025 20:19:11"
 
 // 
 // Device: Altera EP2C8Q208C8 Package PQFP208
@@ -250,20 +250,20 @@ wire \ALUCOMB|inst|inst4|inst2[7]~6_combout ;
 wire \ALUCOMB|inst|inst4|inst2[7]~7_combout ;
 wire \ALUCOMB|inst|inst4|inst2[7]~8_combout ;
 wire \ALUCOMB|inst|inst4|inst2[7]~9_combout ;
-wire [1:0] \Op~combout ;
-wire [7:0] \ALUCOMB|add/sub|inst ;
-wire [1:0] \Wn~combout ;
-wire [7:0] \inst|inst|dffs ;
 wire [7:0] \inst5|inst|dffs ;
 wire [1:0] \Bn~combout ;
-wire [7:0] \ALUCOMB|inst7 ;
-wire [7:0] \SEL2_B|inst1 ;
-wire [7:0] \SEL2_B|inst ;
-wire [7:0] \inst7|inst|dffs ;
-wire [7:0] \inst6|inst|dffs ;
-wire [1:0] \An~combout ;
 wire [7:0] \IMM~combout ;
 wire [1:0] \Fn~combout ;
+wire [7:0] \SEL2_B|inst ;
+wire [1:0] \An~combout ;
+wire [7:0] \ALUCOMB|inst7 ;
+wire [1:0] \Op~combout ;
+wire [1:0] \Wn~combout ;
+wire [7:0] \SEL2_B|inst1 ;
+wire [7:0] \ALUCOMB|add/sub|inst ;
+wire [7:0] \inst6|inst|dffs ;
+wire [7:0] \inst7|inst|dffs ;
+wire [7:0] \inst|inst|dffs ;
 
 
 // Location: LCCOMB_X14_Y15_N24
