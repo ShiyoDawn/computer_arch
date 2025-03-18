@@ -1,5 +1,5 @@
 Simulator report for arch
-Thu Mar 13 18:00:06 2025
+Tue Mar 18 18:09:03 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 69 nodes     ;
-; Simulation Coverage         ;      47.83 % ;
-; Total Number of Transitions ; 1720         ;
+; Simulation Netlist Size     ; 54 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 230          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                             ;
-+--------------------------------------------------------------------------------------------+---------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                           ; Default Value ;
-+--------------------------------------------------------------------------------------------+---------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                        ; Timing        ;
-; Start time                                                                                 ; 0 ns                                              ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                               ;               ;
-; Vector input source                                                                        ; D:/Code/Quartus/computer_arch/design/VWF/cnt8.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                ; On            ;
-; Check outputs                                                                              ; Off                                               ; Off           ;
-; Report simulation coverage                                                                 ; On                                                ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                               ; Off           ;
-; Detect glitches                                                                            ; Off                                               ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                               ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                               ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                               ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                               ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                        ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                               ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                               ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                              ; Auto          ;
-+--------------------------------------------------------------------------------------------+---------------------------------------------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                         ;               ;
+; Vector input source                                                                        ; D:/Code/Quartus/computer_arch/design/VWF/alusys_example.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                          ; On            ;
+; Check outputs                                                                              ; Off                                                         ; Off           ;
+; Report simulation coverage                                                                 ; On                                                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                         ; Off           ;
+; Detect glitches                                                                            ; Off                                                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -94,131 +94,104 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      47.83 % ;
-; Total nodes checked                                 ; 69           ;
-; Total output ports checked                          ; 69           ;
-; Total output ports with complete 1/0-value coverage ; 33           ;
-; Total output ports with no 1/0-value coverage       ; 21           ;
-; Total output ports with no 1-value coverage         ; 22           ;
-; Total output ports with no 0-value coverage         ; 35           ;
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 54           ;
+; Total output ports checked                          ; 32           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 32           ;
+; Total output ports with no 1-value coverage         ; 32           ;
+; Total output ports with no 0-value coverage         ; 32           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                  ;
-+-------------------------------------+-------------------------------------+------------------+
-; Node Name                           ; Output Port Name                    ; Output Port Type ;
-+-------------------------------------+-------------------------------------+------------------+
-; |cnt8|CLK                           ; |cnt8|CLK                           ; out              ;
-; |cnt8|LD                            ; |cnt8|LD                            ; out              ;
-; |cnt8|D[7]                          ; |cnt8|D[7]                          ; out              ;
-; |cnt8|D[6]                          ; |cnt8|D[6]                          ; out              ;
-; |cnt8|D[5]                          ; |cnt8|D[5]                          ; out              ;
-; |cnt8|D[4]                          ; |cnt8|D[4]                          ; out              ;
-; |cnt8|Q[7]                          ; |cnt8|Q[7]                          ; pin_out          ;
-; |cnt8|Q[6]                          ; |cnt8|Q[6]                          ; pin_out          ;
-; |cnt8|Q[5]                          ; |cnt8|Q[5]                          ; pin_out          ;
-; |cnt8|Q[4]                          ; |cnt8|Q[4]                          ; pin_out          ;
-; |cnt8|sel2g:inst|inst2[7]           ; |cnt8|sel2g:inst|inst2[7]           ; out0             ;
-; |cnt8|sel2g:inst|inst2[6]           ; |cnt8|sel2g:inst|inst2[6]           ; out0             ;
-; |cnt8|sel2g:inst|inst2[5]           ; |cnt8|sel2g:inst|inst2[5]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[7]           ; |cnt8|sel2g:inst|inst1[7]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[6]           ; |cnt8|sel2g:inst|inst1[6]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[5]           ; |cnt8|sel2g:inst|inst1[5]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[4]           ; |cnt8|sel2g:inst|inst1[4]           ; out0             ;
-; |cnt8|sel2g:inst|inst[7]            ; |cnt8|sel2g:inst|inst[7]            ; out0             ;
-; |cnt8|sel2g:inst|inst[6]            ; |cnt8|sel2g:inst|inst[6]            ; out0             ;
-; |cnt8|sel2g:inst|inst[5]            ; |cnt8|sel2g:inst|inst[5]            ; out0             ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[7] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[7] ; regout           ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[6] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[6] ; regout           ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[5] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[5] ; regout           ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[4] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[4] ; regout           ;
-; |cnt8|hadd8:inst2|hadd:inst1|inst2  ; |cnt8|hadd8:inst2|hadd:inst1|inst2  ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst2|inst2  ; |cnt8|hadd8:inst2|hadd:inst2|inst2  ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst3|inst2  ; |cnt8|hadd8:inst2|hadd:inst3|inst2  ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst4|inst   ; |cnt8|hadd8:inst2|hadd:inst4|inst   ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst4|inst2  ; |cnt8|hadd8:inst2|hadd:inst4|inst2  ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst5|inst   ; |cnt8|hadd8:inst2|hadd:inst5|inst   ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst5|inst2  ; |cnt8|hadd8:inst2|hadd:inst5|inst2  ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst6|inst2  ; |cnt8|hadd8:inst2|hadd:inst6|inst2  ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst7|inst2  ; |cnt8|hadd8:inst2|hadd:inst7|inst2  ; out0             ;
-+-------------------------------------+-------------------------------------+------------------+
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                 ;
-+-----------------------------------+-----------------------------------+------------------+
-; Node Name                         ; Output Port Name                  ; Output Port Type ;
-+-----------------------------------+-----------------------------------+------------------+
-; |cnt8|OVF                         ; |cnt8|OVF                         ; pin_out          ;
-; |cnt8|CNT                         ; |cnt8|CNT                         ; out              ;
-; |cnt8|CLRN                        ; |cnt8|CLRN                        ; out              ;
-; |cnt8|D[3]                        ; |cnt8|D[3]                        ; out              ;
-; |cnt8|D[2]                        ; |cnt8|D[2]                        ; out              ;
-; |cnt8|D[1]                        ; |cnt8|D[1]                        ; out              ;
-; |cnt8|D[0]                        ; |cnt8|D[0]                        ; out              ;
-; |cnt8|sel2g:inst|inst2[3]         ; |cnt8|sel2g:inst|inst2[3]         ; out0             ;
-; |cnt8|sel2g:inst|inst2[2]         ; |cnt8|sel2g:inst|inst2[2]         ; out0             ;
-; |cnt8|sel2g:inst|inst2[1]         ; |cnt8|sel2g:inst|inst2[1]         ; out0             ;
-; |cnt8|sel2g:inst|inst2[0]         ; |cnt8|sel2g:inst|inst2[0]         ; out0             ;
-; |cnt8|sel2g:inst|inst1[3]         ; |cnt8|sel2g:inst|inst1[3]         ; out0             ;
-; |cnt8|sel2g:inst|inst1[2]         ; |cnt8|sel2g:inst|inst1[2]         ; out0             ;
-; |cnt8|sel2g:inst|inst1[1]         ; |cnt8|sel2g:inst|inst1[1]         ; out0             ;
-; |cnt8|sel2g:inst|inst1[0]         ; |cnt8|sel2g:inst|inst1[0]         ; out0             ;
-; |cnt8|sel2g:inst|inst[3]          ; |cnt8|sel2g:inst|inst[3]          ; out0             ;
-; |cnt8|sel2g:inst|inst[2]          ; |cnt8|sel2g:inst|inst[2]          ; out0             ;
-; |cnt8|sel2g:inst|inst[1]          ; |cnt8|sel2g:inst|inst[1]          ; out0             ;
-; |cnt8|sel2g:inst|inst[0]          ; |cnt8|sel2g:inst|inst[0]          ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst|inst2 ; |cnt8|hadd8:inst2|hadd:inst|inst2 ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst6|inst ; |cnt8|hadd8:inst2|hadd:inst6|inst ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst7|inst ; |cnt8|hadd8:inst2|hadd:inst7|inst ; out0             ;
-+-----------------------------------+-----------------------------------+------------------+
++-----------------------------------------------------+
+; Missing 1-Value Coverage                            ;
++---------------+------------------+------------------+
+; Node Name     ; Output Port Name ; Output Port Type ;
++---------------+------------------+------------------+
+; |alusys|R0[7] ; |alusys|R0[7]    ; pin_out          ;
+; |alusys|R0[6] ; |alusys|R0[6]    ; pin_out          ;
+; |alusys|R0[5] ; |alusys|R0[5]    ; pin_out          ;
+; |alusys|R0[4] ; |alusys|R0[4]    ; pin_out          ;
+; |alusys|R0[3] ; |alusys|R0[3]    ; pin_out          ;
+; |alusys|R0[2] ; |alusys|R0[2]    ; pin_out          ;
+; |alusys|R0[1] ; |alusys|R0[1]    ; pin_out          ;
+; |alusys|R0[0] ; |alusys|R0[0]    ; pin_out          ;
+; |alusys|R1[7] ; |alusys|R1[7]    ; pin_out          ;
+; |alusys|R1[6] ; |alusys|R1[6]    ; pin_out          ;
+; |alusys|R1[5] ; |alusys|R1[5]    ; pin_out          ;
+; |alusys|R1[4] ; |alusys|R1[4]    ; pin_out          ;
+; |alusys|R1[3] ; |alusys|R1[3]    ; pin_out          ;
+; |alusys|R1[2] ; |alusys|R1[2]    ; pin_out          ;
+; |alusys|R1[1] ; |alusys|R1[1]    ; pin_out          ;
+; |alusys|R1[0] ; |alusys|R1[0]    ; pin_out          ;
+; |alusys|R2[7] ; |alusys|R2[7]    ; pin_out          ;
+; |alusys|R2[6] ; |alusys|R2[6]    ; pin_out          ;
+; |alusys|R2[5] ; |alusys|R2[5]    ; pin_out          ;
+; |alusys|R2[4] ; |alusys|R2[4]    ; pin_out          ;
+; |alusys|R2[3] ; |alusys|R2[3]    ; pin_out          ;
+; |alusys|R2[2] ; |alusys|R2[2]    ; pin_out          ;
+; |alusys|R2[1] ; |alusys|R2[1]    ; pin_out          ;
+; |alusys|R2[0] ; |alusys|R2[0]    ; pin_out          ;
+; |alusys|R3[7] ; |alusys|R3[7]    ; pin_out          ;
+; |alusys|R3[6] ; |alusys|R3[6]    ; pin_out          ;
+; |alusys|R3[5] ; |alusys|R3[5]    ; pin_out          ;
+; |alusys|R3[4] ; |alusys|R3[4]    ; pin_out          ;
+; |alusys|R3[3] ; |alusys|R3[3]    ; pin_out          ;
+; |alusys|R3[2] ; |alusys|R3[2]    ; pin_out          ;
+; |alusys|R3[1] ; |alusys|R3[1]    ; pin_out          ;
+; |alusys|R3[0] ; |alusys|R3[0]    ; pin_out          ;
++---------------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                     ;
-+-------------------------------------+-------------------------------------+------------------+
-; Node Name                           ; Output Port Name                    ; Output Port Type ;
-+-------------------------------------+-------------------------------------+------------------+
-; |cnt8|OVF                           ; |cnt8|OVF                           ; pin_out          ;
-; |cnt8|CNT                           ; |cnt8|CNT                           ; out              ;
-; |cnt8|CLRN                          ; |cnt8|CLRN                          ; out              ;
-; |cnt8|D[3]                          ; |cnt8|D[3]                          ; out              ;
-; |cnt8|D[2]                          ; |cnt8|D[2]                          ; out              ;
-; |cnt8|D[1]                          ; |cnt8|D[1]                          ; out              ;
-; |cnt8|D[0]                          ; |cnt8|D[0]                          ; out              ;
-; |cnt8|Q[3]                          ; |cnt8|Q[3]                          ; pin_out          ;
-; |cnt8|Q[2]                          ; |cnt8|Q[2]                          ; pin_out          ;
-; |cnt8|Q[1]                          ; |cnt8|Q[1]                          ; pin_out          ;
-; |cnt8|Q[0]                          ; |cnt8|Q[0]                          ; pin_out          ;
-; |cnt8|sel2g:inst|inst2[4]           ; |cnt8|sel2g:inst|inst2[4]           ; out0             ;
-; |cnt8|sel2g:inst|inst2[3]           ; |cnt8|sel2g:inst|inst2[3]           ; out0             ;
-; |cnt8|sel2g:inst|inst2[2]           ; |cnt8|sel2g:inst|inst2[2]           ; out0             ;
-; |cnt8|sel2g:inst|inst2[1]           ; |cnt8|sel2g:inst|inst2[1]           ; out0             ;
-; |cnt8|sel2g:inst|inst2[0]           ; |cnt8|sel2g:inst|inst2[0]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[3]           ; |cnt8|sel2g:inst|inst1[3]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[2]           ; |cnt8|sel2g:inst|inst1[2]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[1]           ; |cnt8|sel2g:inst|inst1[1]           ; out0             ;
-; |cnt8|sel2g:inst|inst1[0]           ; |cnt8|sel2g:inst|inst1[0]           ; out0             ;
-; |cnt8|sel2g:inst|inst[4]            ; |cnt8|sel2g:inst|inst[4]            ; out0             ;
-; |cnt8|sel2g:inst|inst[3]            ; |cnt8|sel2g:inst|inst[3]            ; out0             ;
-; |cnt8|sel2g:inst|inst[2]            ; |cnt8|sel2g:inst|inst[2]            ; out0             ;
-; |cnt8|sel2g:inst|inst[1]            ; |cnt8|sel2g:inst|inst[1]            ; out0             ;
-; |cnt8|sel2g:inst|inst[0]            ; |cnt8|sel2g:inst|inst[0]            ; out0             ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[3] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[3] ; regout           ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[2] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[2] ; regout           ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[1] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[1] ; regout           ;
-; |cnt8|reg:inst1|lpm_ff:inst|dffs[0] ; |cnt8|reg:inst1|lpm_ff:inst|dffs[0] ; regout           ;
-; |cnt8|hadd8:inst2|hadd:inst|inst    ; |cnt8|hadd8:inst2|hadd:inst|inst    ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst1|inst   ; |cnt8|hadd8:inst2|hadd:inst1|inst   ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst2|inst   ; |cnt8|hadd8:inst2|hadd:inst2|inst   ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst3|inst   ; |cnt8|hadd8:inst2|hadd:inst3|inst   ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst6|inst   ; |cnt8|hadd8:inst2|hadd:inst6|inst   ; out0             ;
-; |cnt8|hadd8:inst2|hadd:inst7|inst   ; |cnt8|hadd8:inst2|hadd:inst7|inst   ; out0             ;
-+-------------------------------------+-------------------------------------+------------------+
++-----------------------------------------------------+
+; Missing 0-Value Coverage                            ;
++---------------+------------------+------------------+
+; Node Name     ; Output Port Name ; Output Port Type ;
++---------------+------------------+------------------+
+; |alusys|R0[7] ; |alusys|R0[7]    ; pin_out          ;
+; |alusys|R0[6] ; |alusys|R0[6]    ; pin_out          ;
+; |alusys|R0[5] ; |alusys|R0[5]    ; pin_out          ;
+; |alusys|R0[4] ; |alusys|R0[4]    ; pin_out          ;
+; |alusys|R0[3] ; |alusys|R0[3]    ; pin_out          ;
+; |alusys|R0[2] ; |alusys|R0[2]    ; pin_out          ;
+; |alusys|R0[1] ; |alusys|R0[1]    ; pin_out          ;
+; |alusys|R0[0] ; |alusys|R0[0]    ; pin_out          ;
+; |alusys|R1[7] ; |alusys|R1[7]    ; pin_out          ;
+; |alusys|R1[6] ; |alusys|R1[6]    ; pin_out          ;
+; |alusys|R1[5] ; |alusys|R1[5]    ; pin_out          ;
+; |alusys|R1[4] ; |alusys|R1[4]    ; pin_out          ;
+; |alusys|R1[3] ; |alusys|R1[3]    ; pin_out          ;
+; |alusys|R1[2] ; |alusys|R1[2]    ; pin_out          ;
+; |alusys|R1[1] ; |alusys|R1[1]    ; pin_out          ;
+; |alusys|R1[0] ; |alusys|R1[0]    ; pin_out          ;
+; |alusys|R2[7] ; |alusys|R2[7]    ; pin_out          ;
+; |alusys|R2[6] ; |alusys|R2[6]    ; pin_out          ;
+; |alusys|R2[5] ; |alusys|R2[5]    ; pin_out          ;
+; |alusys|R2[4] ; |alusys|R2[4]    ; pin_out          ;
+; |alusys|R2[3] ; |alusys|R2[3]    ; pin_out          ;
+; |alusys|R2[2] ; |alusys|R2[2]    ; pin_out          ;
+; |alusys|R2[1] ; |alusys|R2[1]    ; pin_out          ;
+; |alusys|R2[0] ; |alusys|R2[0]    ; pin_out          ;
+; |alusys|R3[7] ; |alusys|R3[7]    ; pin_out          ;
+; |alusys|R3[6] ; |alusys|R3[6]    ; pin_out          ;
+; |alusys|R3[5] ; |alusys|R3[5]    ; pin_out          ;
+; |alusys|R3[4] ; |alusys|R3[4]    ; pin_out          ;
+; |alusys|R3[3] ; |alusys|R3[3]    ; pin_out          ;
+; |alusys|R3[2] ; |alusys|R3[2]    ; pin_out          ;
+; |alusys|R3[1] ; |alusys|R3[1]    ; pin_out          ;
+; |alusys|R3[0] ; |alusys|R3[0]    ; pin_out          ;
++---------------+------------------+------------------+
 
 
 +---------------------+
@@ -234,18 +207,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 13 18:00:06 2025
+    Info: Processing started: Tue Mar 18 18:09:03 2025
 Info: Command: quartus_sim --simulation_results_format=VWF arch -c arch
-Info (324025): Using vector source file "D:/Code/Quartus/computer_arch/design/VWF/cnt8.vwf"
+Info (324025): Using vector source file "D:/Code/Quartus/computer_arch/design/VWF/alusys_example.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      47.83 %
-Info (328052): Number of transitions in simulation is 1720
+Info (328053): Simulation coverage is       0.00 %
+Info (328052): Number of transitions in simulation is 230
 Info (324045): Vector file arch.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4449 megabytes
-    Info: Processing ended: Thu Mar 13 18:00:06 2025
+    Info: Processing ended: Tue Mar 18 18:09:03 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
