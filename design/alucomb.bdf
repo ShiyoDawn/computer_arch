@@ -742,7 +742,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Co,Q[7..0]" (rect 967 96 1018 108)(font "Arial" ))
+	(text "Co,F[7..0]" (rect 967 88 1017 100)(font "Arial" ))
 	(pt 952 112)
 	(pt 1024 112)
 	(bus)

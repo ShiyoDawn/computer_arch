@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 88 128 256 144)
+	(rect 360 568 528 584)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 88 144 256 160)
+	(rect 368 632 536 648)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLRN" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
@@ -856,16 +856,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 288 56)
-	(pt 336 56)
-	(bus)
-)
-(connector
-	(pt 272 72)
-	(pt 336 72)
-	(bus)
-)
-(connector
 	(pt 256 104)
 	(pt 336 104)
 	(bus)
@@ -985,26 +975,6 @@ applicable agreement for further details.
 	(pt 560 120)
 )
 (connector
-	(text "CLK" (rect 536 72 557 84)(font "Arial" ))
-	(pt 544 88)
-	(pt 560 88)
-)
-(connector
-	(text "CLK" (rect 536 368 557 380)(font "Arial" ))
-	(pt 544 384)
-	(pt 560 384)
-)
-(connector
-	(text "CLK" (rect 536 200 557 212)(font "Arial" ))
-	(pt 544 216)
-	(pt 560 216)
-)
-(connector
-	(text "CLK" (rect 536 504 557 516)(font "Arial" ))
-	(pt 544 520)
-	(pt 560 520)
-)
-(connector
 	(text "CLRN" (rect 528 248 558 260)(font "Arial" ))
 	(pt 544 248)
 	(pt 560 248)
@@ -1094,6 +1064,74 @@ applicable agreement for further details.
 	(pt 488 368)
 	(bus)
 )
+(connector
+	(text "CLK" (rect 536 504 557 516)(font "Arial" ))
+	(pt 528 520)
+	(pt 560 520)
+)
+(connector
+	(text "CLK" (rect 536 368 557 380)(font "Arial" ))
+	(pt 528 384)
+	(pt 560 384)
+)
+(connector
+	(text "CLK" (rect 536 200 557 212)(font "Arial" ))
+	(pt 528 216)
+	(pt 560 216)
+)
+(connector
+	(text "CLK" (rect 536 72 557 84)(font "Arial" ))
+	(pt 528 88)
+	(pt 560 88)
+)
+(connector
+	(pt 528 88)
+	(pt 528 216)
+)
+(connector
+	(pt 528 216)
+	(pt 528 384)
+)
+(connector
+	(pt 528 384)
+	(pt 528 520)
+)
+(connector
+	(pt 528 520)
+	(pt 528 576)
+)
+(connector
+	(pt 536 640)
+	(pt 544 640)
+)
+(connector
+	(pt 544 552)
+	(pt 544 640)
+)
+(connector
+	(pt 544 416)
+	(pt 544 552)
+)
+(connector
+	(pt 544 120)
+	(pt 544 248)
+)
+(connector
+	(pt 544 248)
+	(pt 544 416)
+)
+(connector
+	(text "<<__$DEF_ALIAS296>>" (rect 328 40 446 52)(font "Arial" )(invisible))
+	(pt 288 56)
+	(pt 336 56)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS298>>" (rect 322 56 440 68)(font "Arial" )(invisible))
+	(pt 272 72)
+	(pt 336 72)
+	(bus)
+)
 (junction (pt 736 72))
 (junction (pt 736 200))
 (junction (pt 752 216))
@@ -1104,3 +1142,9 @@ applicable agreement for further details.
 (junction (pt 488 368))
 (junction (pt 784 504))
 (junction (pt 488 200))
+(junction (pt 528 216))
+(junction (pt 528 384))
+(junction (pt 528 520))
+(junction (pt 544 552))
+(junction (pt 544 416))
+(junction (pt 544 248))
