@@ -1,5 +1,5 @@
 EDA Netlist Writer report for arch
-Tue Mar 18 22:50:34 2025
+Mon Mar 24 22:49:54 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Mar 18 22:50:34 2025 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar 24 22:49:54 2025 ;
 ; Revision Name             ; arch                                  ;
 ; Top-level Entity Name     ; alu_ROM                               ;
 ; Family                    ; Cyclone II                            ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 18 22:50:34 2025
+    Info: Processing started: Mon Mar 24 22:49:53 2025
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog arch -c arch
 Info (204019): Generated file arch.vo in folder "D:/Code/Quartus/computer_arch/design/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4523 megabytes
-    Info: Processing ended: Tue Mar 18 22:50:34 2025
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4528 megabytes
+    Info: Processing ended: Mon Mar 24 22:49:54 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

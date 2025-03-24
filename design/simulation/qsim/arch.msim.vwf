@@ -682,7 +682,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -692,7 +692,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -702,7 +702,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[2]~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -712,77 +712,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~21_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~34_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~24_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~25_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst1|inst2~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~27_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -812,27 +742,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("alu_ROM_vlg_vec_tst|i1|CLK~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -852,37 +762,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[7]~9_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|CLRN~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|CLRN~clkctrl_outclk")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~6_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -912,7 +792,37 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[6]~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~6_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|CLRN~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[7]~9_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -972,16 +882,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[2]~3_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -993,36 +893,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~2_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[0]~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|24|inst8~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1052,7 +922,77 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[6]~0_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[7]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|24|inst8~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|24|inst6~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|24|inst7~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[6]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1092,7 +1032,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[6]~15_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[6]~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1102,7 +1042,17 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|24|inst6~combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1132,27 +1082,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~22_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[5]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[5]~1_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[5]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1182,7 +1112,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~3_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1192,17 +1122,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[3]~3_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|24|inst7~combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[2]~4_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1232,16 +1152,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[2]~7_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[2]~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~20_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1253,86 +1163,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~20_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~26_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~26_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~27_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~28_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~29_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[2]~4_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[2]~4_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1362,6 +1192,26 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[1]~9_combout")
 	PARENT = "";
 }
 
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~34_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|shift|inst|inst4|inst2[0]~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1373,6 +1223,16 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|shift|inst|inst4|inst2[0]~0_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~35_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1402,7 +1262,37 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[0]~4_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]~feeder_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~5_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~21_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~27_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1433,26 +1323,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[0]~3_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst|inst2~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~4_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~5_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1532,7 +1402,127 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst1|inst2~0_comb
 	PARENT = "";
 }
 
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst1|inst2~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~26_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~27_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~28_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~29_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[2]~4_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[3]~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst2~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~9_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1553,6 +1543,26 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst3|inst1|inst2~
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~22_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~25_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1612,7 +1622,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[3]~7_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~10_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1622,7 +1632,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~11_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1632,7 +1642,27 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~9_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[4]~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~24_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1672,6 +1702,16 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~18_combout")
 	PARENT = "";
 }
 
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~19_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1702,7 +1742,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~21_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[4]~2_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1753,26 +1793,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~17_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~23_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~10_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~11_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1842,7 +1862,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~17_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[5]~1_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[5]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1912,7 +1932,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~13_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]~feeder_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1973,36 +1993,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~14_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~15_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2082,7 +2072,7 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[7]~feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[5]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2092,7 +2082,37 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]~feeder_combout")
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[3]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[4]~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2103,16 +2123,6 @@ SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]~feeder_combout")
 }
 
 SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]~feeder_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -3997,31 +4007,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~0_combout")
 {
 	NODE
 	{
@@ -4030,7 +4016,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~1_combout")
 {
 	NODE
 	{
@@ -4043,86 +4029,27 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~21_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[2]~2_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 44.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~34_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 4.999;
-		LEVEL 0 FOR 5.001;
+		LEVEL 0 FOR 15.001;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 74.999;
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~24_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~25_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst1|inst2~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~27_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 44.999;
+		LEVEL 0 FOR 44.999;
 	}
 }
 
@@ -4151,47 +4078,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~0_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|CLK~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 {
 	NODE
 	{
@@ -4228,41 +4115,12 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~6_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[7]~9_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|CLRN~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|CLRN~clkctrl_outclk")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -4284,7 +4142,35 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[6]~8_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~6_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|CLRN~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 90.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[7]~9_combout")
 {
 	NODE
 	{
@@ -4343,19 +4229,6 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[2]~3_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 44.999;
-	}
-}
-
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~2_combout")
 {
 	NODE
@@ -4384,6 +4257,37 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[0]~0_combout")
 	}
 }
 
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[7]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
+	}
+}
+
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|24|inst8~combout")
 {
 	NODE
@@ -4392,6 +4296,41 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|24|inst8~combout")
 		LEVEL 0 FOR 45.001;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|24|inst6~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|24|inst7~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 64.999;
 	}
 }
 
@@ -4413,32 +4352,15 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~2_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~0_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[6]~feeder_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[6]~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 15.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 74.999;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
 	}
 }
 
@@ -4471,7 +4393,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[6]~15_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[6]~0_combout")
 {
 	NODE
 	{
@@ -4482,7 +4404,16 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|24|inst6~combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout")
 {
 	NODE
 	{
@@ -4511,36 +4442,12 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~22_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~2_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[5]~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[5]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 44.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[5]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -4563,36 +4470,24 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~3_combou
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 15.001;
-		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 44.999;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[3]~3_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[2]~4_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|24|inst7~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 25.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 64.999;
 	}
 }
 
@@ -4611,17 +4506,6 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[2]~7_combout")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[2]~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 15.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 74.999;
 	}
 }
 
@@ -4645,98 +4529,6 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~26_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~26_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~27_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~28_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~29_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[2]~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[2]~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 44.999;
-	}
-}
-
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[1]~5_combout")
 {
 	NODE
@@ -4757,6 +4549,31 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[1]~9_combout")
 	}
 }
 
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~34_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 4.999;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 74.999;
+	}
+}
+
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|shift|inst|inst4|inst2[0]~0_combout")
 {
 	NODE
@@ -4768,6 +4585,19 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|shift|inst|inst4|inst2[0]~0_
 }
 
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~35_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 4.999;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]~feeder_combout")
 {
 	NODE
 	{
@@ -4800,16 +4630,59 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[0]~4_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]~feeder_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~5_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~21_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 4.999;
-		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 74.999;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~27_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 44.999;
 	}
 }
 
@@ -4842,34 +4715,6 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst|inst
 		LEVEL 1 FOR 5.001;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 44.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~5_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 44.999;
 	}
 }
 
@@ -4962,6 +4807,118 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst1|ins
 	}
 }
 
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst1|inst2~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~26_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~27_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~28_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~29_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[2]~4_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[3]~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
 TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst2~0_combout")
 {
 	NODE
@@ -4970,6 +4927,28 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|ins
 		LEVEL 0 FOR 15.001;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~9_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
 	}
 }
 
@@ -4996,6 +4975,28 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~22_combo
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~25_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
 	}
 }
 
@@ -5056,34 +5057,57 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[3]~7_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~10_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~11_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~9_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.001;
+		LEVEL 0 FOR 5.001;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 44.999;
+		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[4]~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 90.0;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~24_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.001;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
 	}
 }
 
@@ -5119,6 +5143,18 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~18_combo
 		LEVEL 0 FOR 5.001;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 74.999;
 	}
 }
 
@@ -5161,13 +5197,12 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~21_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[4]~2_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
+		LEVEL 0 FOR 100.0;
 	}
 }
 
@@ -5234,26 +5269,6 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~23_combo
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 44.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~11_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -5339,12 +5354,13 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~17_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[5]~1_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[5]~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -5418,7 +5434,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~13_combo
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]~feeder_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout")
 {
 	NODE
 	{
@@ -5493,41 +5509,6 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~15_combo
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 15.001;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 44.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 25.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 44.999;
 	}
 }
 
@@ -5620,19 +5601,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[7]~feeder_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 74.999;
-	}
-}
-
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]~feeder_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[5]~feeder_combout")
 {
 	NODE
 	{
@@ -5646,7 +5615,34 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]~feeder_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]~feeder_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[3]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 44.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[4]~feeder_combout")
 {
 	NODE
 	{
@@ -5659,7 +5655,7 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]~feeder_combout")
 	}
 }
 
-TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout")
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]~feeder_combout")
 {
 	NODE
 	{
@@ -5668,6 +5664,19 @@ TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout")
 		LEVEL 1 FOR 5.001;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 74.999;
+	}
+}
+
+TRANSITION_LIST("alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 4.999;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 74.999;
 	}
 }
 
@@ -7472,7 +7481,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -7481,7 +7490,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -7490,7 +7499,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[2]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -7499,7 +7508,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -7508,7 +7517,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~21_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst|inst|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -7517,7 +7526,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~34_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -7526,7 +7535,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|CLK~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -7535,7 +7544,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~24_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -7544,7 +7553,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~25_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -7553,7 +7562,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst1|inst2~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst5|inst~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -7562,7 +7571,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~27_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[6]~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -7571,7 +7580,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst|inst|inst2~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|CLRN~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -7580,7 +7589,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -7589,7 +7598,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -7598,7 +7607,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|CLK~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[7]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -7607,7 +7616,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|CLK~clkctrl_outclk";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -7616,7 +7625,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[4]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -7625,7 +7634,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[3]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -7634,7 +7643,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[7]~9_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -7643,7 +7652,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|CLRN~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[2]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -7652,7 +7661,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|CLRN~clkctrl_outclk";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -7661,7 +7670,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst5|inst~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[0]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -7670,7 +7679,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[6]~8_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
@@ -7679,7 +7688,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~6_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
@@ -7688,7 +7697,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[5]~7_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[7]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
@@ -7697,7 +7706,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[4]~5_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst8~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
@@ -7706,7 +7715,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[3]~4_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
@@ -7715,7 +7724,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst6~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
@@ -7724,7 +7733,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[2]~3_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst7~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 93;
@@ -7733,7 +7742,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 94;
@@ -7742,7 +7751,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[1]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 95;
@@ -7751,7 +7760,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst|inst2[0]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[6]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 96;
@@ -7760,7 +7769,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst8~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 97;
@@ -7769,7 +7778,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[6]~14_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 98;
@@ -7778,7 +7787,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[7]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[6]~15_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 99;
@@ -7787,7 +7796,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[6]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 100;
@@ -7796,7 +7805,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 101;
@@ -7805,7 +7814,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[6]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -7814,7 +7823,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[6]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 103;
@@ -7823,7 +7832,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[6]~14_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~22_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 104;
@@ -7832,7 +7841,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[6]~15_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[5]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 105;
@@ -7841,7 +7850,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~16_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[5]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 106;
@@ -7850,7 +7859,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst6~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 107;
@@ -7859,7 +7868,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[6]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 108;
@@ -7868,7 +7877,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[6]~22_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[2]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 109;
@@ -7877,7 +7886,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[2]~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 110;
@@ -7886,7 +7895,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[5]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[2]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 111;
@@ -7895,7 +7904,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[5]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~20_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 112;
@@ -7904,7 +7913,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[5]~5_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~26_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 113;
@@ -7913,7 +7922,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~3_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[1]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 114;
@@ -7922,7 +7931,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[1]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 115;
@@ -7931,7 +7940,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[3]~3_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst4|inst2[0]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 116;
@@ -7940,7 +7949,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|24|inst7~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~34_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 117;
@@ -7949,7 +7958,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[2]~6_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|shift|inst|inst4|inst2[0]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 118;
@@ -7958,7 +7967,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[2]~7_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~35_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 119;
@@ -7967,7 +7976,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[2]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 120;
@@ -7976,7 +7985,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~20_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[0]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 121;
@@ -7985,7 +7994,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[2]~26_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[0]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 122;
@@ -7994,7 +8003,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~26_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 123;
@@ -8003,7 +8012,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~27_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 124;
@@ -8012,7 +8021,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~28_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~21_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 125;
@@ -8021,7 +8030,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~29_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[1]~27_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 126;
@@ -8030,7 +8039,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[0]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 127;
@@ -8039,7 +8048,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[2]~4_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[0]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 128;
@@ -8048,7 +8057,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[2]~4_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 129;
@@ -8057,7 +8066,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst1|inst1|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 130;
@@ -8066,7 +8075,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[1]~5_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~30_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 131;
@@ -8075,7 +8084,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[1]~9_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~31_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 132;
@@ -8084,7 +8093,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|shift|inst|inst4|inst2[0]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~32_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 133;
@@ -8093,7 +8102,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[0]~35_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~33_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 134;
@@ -8102,7 +8111,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[0]~3_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[1]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 135;
@@ -8111,7 +8120,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[0]~4_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst1|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 136;
@@ -8120,7 +8129,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst1|inst2~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 137;
@@ -8129,7 +8138,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[0]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~26_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 138;
@@ -8138,7 +8147,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[0]~3_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~27_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 139;
@@ -8147,7 +8156,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst|inst2~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~28_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 140;
@@ -8156,7 +8165,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~4_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[2]~29_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 141;
@@ -8165,7 +8174,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[1]~5_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 142;
@@ -8174,7 +8183,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst1|inst1|inst2~combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[2]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 143;
@@ -8183,7 +8192,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~30_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[2]~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 144;
@@ -8192,7 +8201,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~31_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 145;
@@ -8201,7 +8210,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~32_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[3]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 146;
@@ -8210,7 +8219,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[1]~33_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 147;
@@ -8219,7 +8228,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[1]~5_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 148;
@@ -8228,7 +8237,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst1|inst2~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 149;
@@ -8237,7 +8246,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst2|inst2~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst3|inst1|inst2~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 150;
@@ -8246,7 +8255,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst3|inst1|inst2~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~22_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 151;
@@ -8255,7 +8264,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~22_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~19_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 152;
@@ -8264,7 +8273,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~23_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[3]~25_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 153;
@@ -8273,7 +8282,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~24_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~23_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 154;
@@ -8282,7 +8291,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~25_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~24_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 155;
@@ -8291,7 +8300,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[3]~3_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[3]~25_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 156;
@@ -8300,7 +8309,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[3]~7_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[3]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 157;
@@ -8309,7 +8318,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[3]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 158;
@@ -8318,7 +8327,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~8_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~10_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 159;
@@ -8327,7 +8336,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[3]~9_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~11_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 160;
@@ -8336,7 +8345,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst3|inst2~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~18_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 161;
@@ -8345,7 +8354,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst|inst1|inst2~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[4]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 162;
@@ -8354,7 +8363,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~18_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[4]~24_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 163;
@@ -8363,7 +8372,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~19_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst|inst3|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 164;
@@ -8372,7 +8381,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~20_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst|inst1|inst2~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 165;
@@ -8381,7 +8390,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~21_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~18_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 166;
@@ -8390,7 +8399,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[4]~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst2[4]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 167;
@@ -8399,7 +8408,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[4]~6_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~19_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 168;
@@ -8408,7 +8417,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[5]~12_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~20_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 169;
@@ -8417,7 +8426,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[5]~13_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[4]~21_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 170;
@@ -8426,7 +8435,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~17_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[4]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 171;
@@ -8435,7 +8444,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~23_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[4]~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 172;
@@ -8444,7 +8453,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~10_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[5]~12_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 173;
@@ -8453,7 +8462,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[4]~11_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[5]~13_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 174;
@@ -8462,7 +8471,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst|inst2~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~17_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 175;
@@ -8471,7 +8480,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst1|inst1|inst2~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[5]~23_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 176;
@@ -8480,7 +8489,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~14_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 177;
@@ -8489,7 +8498,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~15_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst1|inst1|inst2~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 178;
@@ -8498,7 +8507,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~16_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~14_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 179;
@@ -8507,7 +8516,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~17_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~15_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 180;
@@ -8516,7 +8525,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[5]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~16_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 181;
@@ -8525,7 +8534,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst1|inst2~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[5]~17_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 182;
@@ -8534,7 +8543,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst2|inst1|inst2~2_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst[5]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 183;
@@ -8543,7 +8552,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~10_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst1|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 184;
@@ -8552,7 +8561,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~11_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst2|inst1|inst2|inst1|inst2~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 185;
@@ -8561,7 +8570,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~12_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~10_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 186;
@@ -8570,7 +8579,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~13_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~11_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 187;
@@ -8579,7 +8588,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~12_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 188;
@@ -8588,7 +8597,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[6]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[6]~13_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 189;
@@ -8597,7 +8606,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[6]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 190;
@@ -8606,7 +8615,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~12_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst1[6]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 191;
@@ -8615,7 +8624,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~13_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_A|inst4|inst2[6]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 192;
@@ -8624,7 +8633,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~14_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~12_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 193;
@@ -8633,7 +8642,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~15_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~13_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 194;
@@ -8642,7 +8651,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~14_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 195;
@@ -8651,7 +8660,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~0_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|logic|inst|inst2[7]~15_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 196;
@@ -8660,7 +8669,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL4_B|inst4|inst2[7]~1_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 197;
@@ -8669,7 +8678,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~4_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 198;
@@ -8678,7 +8687,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~5_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 199;
@@ -8687,7 +8696,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~6_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 200;
@@ -8696,7 +8705,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~7_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 201;
@@ -8705,7 +8714,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~8_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~9_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 202;
@@ -8714,7 +8723,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst|inst4|inst2[7]~9_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[7]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 203;
@@ -8723,7 +8732,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[7]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[5]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 204;
@@ -8732,7 +8741,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[3]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 205;
@@ -8741,7 +8750,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 206;
@@ -8750,7 +8759,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[4]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 207;
@@ -8759,7 +8768,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]~feeder_combout";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 208;
@@ -8768,7 +8777,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]~feeder_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 209;
@@ -8777,7 +8786,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 210;
@@ -8786,7 +8795,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 211;
@@ -8795,7 +8804,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 212;
@@ -8804,7 +8813,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 213;
@@ -8813,7 +8822,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 214;
@@ -8822,7 +8831,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 215;
@@ -8831,7 +8840,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 216;
@@ -8840,7 +8849,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst6|inst|dffs[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 217;
@@ -8849,7 +8858,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 218;
@@ -8858,7 +8867,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 219;
@@ -8867,7 +8876,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 220;
@@ -8876,7 +8885,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 221;
@@ -8885,7 +8894,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 222;
@@ -8894,7 +8903,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 223;
@@ -8903,7 +8912,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 224;
@@ -8912,7 +8921,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 225;
@@ -8921,7 +8930,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 226;
@@ -8930,7 +8939,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 227;
@@ -8939,7 +8948,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 228;
@@ -8948,7 +8957,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 229;
@@ -8957,7 +8966,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 230;
@@ -8966,7 +8975,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 231;
@@ -8975,7 +8984,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 232;
@@ -8984,7 +8993,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst5|inst|dffs[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 233;
@@ -8993,7 +9002,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 234;
@@ -9002,7 +9011,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 235;
@@ -9011,7 +9020,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 236;
@@ -9020,7 +9029,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 237;
@@ -9029,7 +9038,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 238;
@@ -9038,7 +9047,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 239;
@@ -9047,7 +9056,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 240;
@@ -9056,7 +9065,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 241;
@@ -9065,7 +9074,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 242;
@@ -9074,7 +9083,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 243;
@@ -9083,7 +9092,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 244;
@@ -9092,7 +9101,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 245;
@@ -9101,7 +9110,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 246;
@@ -9110,7 +9119,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 247;
@@ -9119,7 +9128,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 248;
@@ -9128,7 +9137,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[23]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|add/sub|inst[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 249;
@@ -9137,7 +9146,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[22]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 250;
@@ -9146,7 +9155,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[21]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 251;
@@ -9155,7 +9164,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[20]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 252;
@@ -9164,7 +9173,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[19]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 253;
@@ -9173,7 +9182,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[18]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 254;
@@ -9182,7 +9191,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[17]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 255;
@@ -9191,7 +9200,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[16]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 256;
@@ -9200,7 +9209,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[15]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 257;
@@ -9209,7 +9218,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[14]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 258;
@@ -9218,7 +9227,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[13]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 259;
@@ -9227,7 +9236,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[12]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 260;
@@ -9236,7 +9245,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[11]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 261;
@@ -9245,7 +9254,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[10]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 262;
@@ -9254,7 +9263,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[9]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 263;
@@ -9263,7 +9272,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[8]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 264;
@@ -9272,7 +9281,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 265;
@@ -9281,7 +9290,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 266;
@@ -9290,7 +9299,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 267;
@@ -9299,7 +9308,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 268;
@@ -9308,7 +9317,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 269;
@@ -9317,7 +9326,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 270;
@@ -9326,7 +9335,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 271;
@@ -9335,7 +9344,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 272;
@@ -9344,7 +9353,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 273;
@@ -9353,7 +9362,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 274;
@@ -9362,7 +9371,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 275;
@@ -9371,7 +9380,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 276;
@@ -9380,7 +9389,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 277;
@@ -9389,7 +9398,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 278;
@@ -9398,7 +9407,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 279;
@@ -9407,7 +9416,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 280;
@@ -9416,7 +9425,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst|inst|dffs[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 281;
@@ -9425,7 +9434,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 282;
@@ -9434,7 +9443,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 283;
@@ -9443,7 +9452,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 284;
@@ -9452,7 +9461,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 285;
@@ -9461,7 +9470,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 286;
@@ -9470,7 +9479,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 287;
@@ -9479,7 +9488,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 288;
@@ -9488,7 +9497,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|ALUCOMB|inst7[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 289;
@@ -9497,7 +9506,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 290;
@@ -9506,7 +9515,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 291;
@@ -9515,7 +9524,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 292;
@@ -9524,7 +9533,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 293;
@@ -9533,7 +9542,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 294;
@@ -9542,7 +9551,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 295;
@@ -9551,7 +9560,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 296;
@@ -9560,7 +9569,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|SEL2_B|inst1[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 297;
@@ -9569,7 +9578,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 298;
@@ -9578,7 +9587,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 299;
@@ -9587,7 +9596,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 300;
@@ -9596,7 +9605,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 301;
@@ -9605,7 +9614,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 302;
@@ -9614,7 +9623,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 303;
@@ -9623,7 +9632,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 304;
@@ -9632,7 +9641,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[17]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|ALU|inst7|inst|dffs[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 305;
@@ -9641,7 +9650,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[16]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 306;
@@ -9650,7 +9659,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[15]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 307;
@@ -9659,7 +9668,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[14]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 308;
@@ -9668,7 +9677,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[13]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 309;
@@ -9677,7 +9686,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[12]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 310;
@@ -9686,7 +9695,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[11]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 311;
@@ -9695,7 +9704,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[10]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 312;
@@ -9704,7 +9713,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[9]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 313;
@@ -9713,7 +9722,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[8]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 314;
@@ -9722,7 +9731,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[7]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 315;
@@ -9731,7 +9740,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[6]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 316;
@@ -9740,7 +9749,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 317;
@@ -9749,7 +9758,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 318;
@@ -9758,7 +9767,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 319;
@@ -9767,7 +9776,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 320;
@@ -9776,7 +9785,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 321;
@@ -9785,7 +9794,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 322;
@@ -9794,7 +9803,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a6_PORTADATAOUT_bus[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 323;
@@ -9803,7 +9812,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 324;
@@ -9812,7 +9821,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 325;
@@ -9821,7 +9830,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 326;
@@ -9830,7 +9839,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 327;
@@ -9839,10 +9848,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]";
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 328;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "alu_ROM_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 329;
 	TREE_LEVEL = 0;
 }
 ;
