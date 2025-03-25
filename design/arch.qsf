@@ -68,7 +68,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY alu_ROM
+set_global_assignment -name TOP_LEVEL_ENTITY ramsub
 
 # Fitter Assignments
 # ==================
@@ -141,15 +141,10 @@ set_global_assignment -name BDF_FILE alusys.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/alusys_example.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/alusys_random.vwf
 set_global_assignment -name BDF_FILE alu_ROM.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name MIF_FILE MIF/alu.mif
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/alu_ROM.vwf
 set_location_assignment PIN_81 -to CLK
 set_location_assignment PIN_82 -to CLRN
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/Code/Quartus/computer_arch/design/VWF/alu_ROM.vwf"
 set_location_assignment PIN_12 -to Q0[7]
 set_location_assignment PIN_11 -to Q0[6]
 set_location_assignment PIN_10 -to Q0[5]
@@ -174,3 +169,14 @@ set_location_assignment PIN_147 -to Q2[3]
 set_location_assignment PIN_146 -to Q2[2]
 set_location_assignment PIN_145 -to Q2[1]
 set_location_assignment PIN_144 -to Q2[0]
+set_global_assignment -name BDF_FILE ram_dq.bdf
+set_global_assignment -name BDF_FILE ramsub.bdf
+set_global_assignment -name VHDL_FILE vhdl/ram_rw_dq.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/ramsub.vwf
+set_global_assignment -name MIF_FILE MIF/ramsub.mif
+set_global_assignment -name MIF_FILE MIF/ramsub_rom.mif
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/ramsub.vwf"

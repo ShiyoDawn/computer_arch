@@ -1,5 +1,5 @@
 Flow report for arch
-Mon Mar 24 22:49:54 2025
+Tue Mar 25 20:20:19 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 24 22:49:54 2025           ;
+; Flow Status                        ; Successful - Tue Mar 25 20:20:19 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; arch                                            ;
-; Top-level Entity Name              ; alu_ROM                                         ;
+; Top-level Entity Name              ; ramsub                                          ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C8Q208C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 157 / 8,256 ( 2 % )                             ;
-;     Total combinational functions  ; 139 / 8,256 ( 2 % )                             ;
-;     Dedicated logic registers      ; 40 / 8,256 ( < 1 % )                            ;
-; Total registers                    ; 40                                              ;
-; Total pins                         ; 58 / 138 ( 42 % )                               ;
+; Total logic elements               ; 39 / 8,256 ( < 1 % )                            ;
+;     Total combinational functions  ; 29 / 8,256 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 32 / 8,256 ( < 1 % )                            ;
+; Total registers                    ; 32                                              ;
+; Total pins                         ; 42 / 138 ( 30 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 6,144 / 165,888 ( 4 % )                         ;
+; Total memory bits                  ; 4,096 / 165,888 ( 2 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/24/2025 22:49:33 ;
+; Start date & time ; 03/25/2025 20:13:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arch                ;
 +-------------------+---------------------+
@@ -75,21 +75,21 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198208556895887.174282777304884          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110289793185656.174290483114880          ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                       ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                              ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                     ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                       ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                        ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                 ; --            ; alu_ROM     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                    ; --            ; alu_ROM     ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                   ; --            ; alu_ROM     ; Top            ;
+; PARTITION_COLOR                     ; 16764057                                 ; --            ; ramsub      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                    ; --            ; ramsub      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                   ; --            ; ramsub      ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                      ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW    ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                             ; --            ; --          ; --             ;
 ; SEARCH_PATH                         ; d:\code\quartus\computer_arch\design\bsf ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; alu_ROM                                  ; arch          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; ramsub                                   ; arch          ; --          ; --             ;
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
 
 
@@ -98,14 +98,18 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4618 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4820 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:02     ; 1.0                     ; 4821 MB             ; 00:00:02                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 4566 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4543 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4520 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4528 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4528 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4522 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,13 +118,17 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Alienware-Du     ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; terminal-shiyo   ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -132,7 +140,11 @@ quartus_fit --read_settings_files=off --write_settings_files=off arch -c arch
 quartus_asm --read_settings_files=off --write_settings_files=off arch -c arch
 quartus_sta arch -c arch
 quartus_eda --read_settings_files=off --write_settings_files=off arch -c arch
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog arch -c arch --vector_source=D:/Code/Quartus/computer_arch/design/VWF/alu_ROM.vwf --testbench_file=./simulation/qsim/arch.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog arch -c arch --vector_source=E:/Project/FPGA/design/VWF/ramsub.vwf --testbench_file=./simulation/qsim/arch.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog arch -c arch
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog arch -c arch --vector_source=E:/Project/FPGA/design/VWF/ramsub.vwf --testbench_file=./simulation/qsim/arch.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog arch -c arch
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog arch -c arch --vector_source=E:/Project/FPGA/design/VWF/ramsub.vwf --testbench_file=./simulation/qsim/arch.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog arch -c arch
 
 

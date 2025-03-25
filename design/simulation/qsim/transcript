@@ -2,20 +2,20 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module alu_ROM
+# -- Compiling module ramsub
 # 
 # Top level modules:
-# 	alu_ROM
+# 	ramsub
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module alu_ROM_vlg_sample_tst
-# -- Compiling module alu_ROM_vlg_check_tst
-# -- Compiling module alu_ROM_vlg_vec_tst
+# -- Compiling module ramsub_vlg_sample_tst
+# -- Compiling module ramsub_vlg_check_tst
+# -- Compiling module ramsub_vlg_vec_tst
 # 
 # Top level modules:
-# 	alu_ROM_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.alu_ROM_vlg_vec_tst 
-# Loading work.alu_ROM_vlg_vec_tst
-# Loading work.alu_ROM
+# 	ramsub_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ramsub_vlg_vec_tst 
+# Loading work.ramsub_vlg_vec_tst
+# Loading work.ramsub
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
@@ -25,9 +25,9 @@
 # Loading cycloneii_ver.cycloneii_ram_block
 # Loading cycloneii_ver.cycloneii_ram_register
 # Loading cycloneii_ver.cycloneii_ram_pulse_generator
-# Loading work.alu_ROM_vlg_sample_tst
-# Loading work.alu_ROM_vlg_check_tst
+# Loading work.ramsub_vlg_sample_tst
+# Loading work.ramsub_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : arch.vt(1171)
-#    Time: 100 ns  Iteration: 0  Instance: /alu_ROM_vlg_vec_tst/tb_out
+# ** Note: $finish    : arch.vt(883)
+#    Time: 1 us  Iteration: 0  Instance: /ramsub_vlg_vec_tst/tb_out

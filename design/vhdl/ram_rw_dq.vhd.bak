@@ -1,0 +1,14 @@
+library ieee;
+ use ieee.std_logic_1164.all;
+ use ieee.numeric_std.all;
+ entity ram_rw_dq is-- 定义接口
+	generic (Waddr: integer := 8;-- 地址位宽
+			Wdat: integer := 8;-- 数据位宽
+			INIT: string := "ram.mif");-- 初始化文件
+	port (A : in std_logic_vector(Waddr-1 downto 0);-- 地址端口
+				D : in std_logic_vector(Wdat-1 downto 0);-- 数据输入端口
+				Q : out std_logic_vector(Wdat-1 downto 0);-- 数据输出端口
+				CLK : in std_logic;-- 时钟
+				RE : in std_logic;-- 读使能
+				WE : in std_logic);-- 写使能
+end entity ram_rw_dq;
