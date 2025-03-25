@@ -1,4 +1,4 @@
-|ramsub
+|ramsub_ks
 MAR[0] <= regg:inst2.Q[0]
 MAR[1] <= regg:inst2.Q[1]
 MAR[2] <= regg:inst2.Q[2]
@@ -7,8 +7,13 @@ MAR[4] <= regg:inst2.Q[4]
 MAR[5] <= regg:inst2.Q[5]
 MAR[6] <= regg:inst2.Q[6]
 MAR[7] <= regg:inst2.Q[7]
-CLK => inst7.IN0
+CLK => ks:inst11.CLKi
 CLK => LPM_ROM:inst1.inclock
+CLRN => ks:inst11.CLRN
+CLRN => cnt8:inst.CLRN
+CLRN => regg:inst2.CLRN
+CLRN => cnt8:inst4.CLRN
+CLRN => regg:inst3.CLRN
 uIR[0] <= LPM_ROM:inst1.q[0]
 uIR[1] <= LPM_ROM:inst1.q[1]
 uIR[2] <= LPM_ROM:inst1.q[2]
@@ -17,10 +22,7 @@ uIR[4] <= LPM_ROM:inst1.q[4]
 uIR[5] <= LPM_ROM:inst1.q[5]
 uIR[6] <= LPM_ROM:inst1.q[6]
 uIR[7] <= LPM_ROM:inst1.q[7]
-CLRN => cnt8:inst.CLRN
-CLRN => regg:inst2.CLRN
-CLRN => cnt8:inst4.CLRN
-CLRN => regg:inst3.CLRN
+SPULSE => ks:inst11.START
 MBR[0] <= regg:inst3.Q[0]
 MBR[1] <= regg:inst3.Q[1]
 MBR[2] <= regg:inst3.Q[2]
@@ -47,7 +49,7 @@ Q[6] <= ram_rw_dq:inst6.Q[6]
 Q[7] <= ram_rw_dq:inst6.Q[7]
 
 
-|ramsub|regg:inst2
+|ramsub_ks|regg:inst2
 Q[0] <= LPM_FF:inst.q[0]
 Q[1] <= LPM_FF:inst.q[1]
 Q[2] <= LPM_FF:inst.q[2]
@@ -69,7 +71,7 @@ D[6] => LPM_FF:inst.data[6]
 D[7] => LPM_FF:inst.data[7]
 
 
-|ramsub|regg:inst2|LPM_FF:inst
+|ramsub_ks|regg:inst2|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -94,7 +96,7 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => dffs[7].IN0
+aclr => dffs[7]~0.IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
@@ -110,7 +112,15 @@ q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|LPM_ROM:inst1
+|ramsub_ks|ks:inst11
+CLKo <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLKi => inst.IN0
+START => inst1.ACLR
+HALT => inst1.DATAIN
+CLRN => inst1.PRESET
+
+
+|ramsub_ks|LPM_ROM:inst1
 address[0] => altrom:srom.address[0]
 address[1] => altrom:srom.address[1]
 address[2] => altrom:srom.address[2]
@@ -139,7 +149,7 @@ q[6] <= otri[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= otri[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|LPM_ROM:inst1|altrom:srom
+|ramsub_ks|LPM_ROM:inst1|altrom:srom
 address[0] => altsyncram:rom_block.address_a[0]
 address[1] => altsyncram:rom_block.address_a[1]
 address[2] => altsyncram:rom_block.address_a[2]
@@ -160,7 +170,7 @@ q[6] <= altsyncram:rom_block.q_a[6]
 q[7] <= altsyncram:rom_block.q_a[7]
 
 
-|ramsub|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block
+|ramsub_ks|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -174,18 +184,18 @@ data_a[5] => ~NO_FANOUT~
 data_a[6] => ~NO_FANOUT~
 data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_0t01:auto_generated.address_a[0]
-address_a[1] => altsyncram_0t01:auto_generated.address_a[1]
-address_a[2] => altsyncram_0t01:auto_generated.address_a[2]
-address_a[3] => altsyncram_0t01:auto_generated.address_a[3]
-address_a[4] => altsyncram_0t01:auto_generated.address_a[4]
-address_a[5] => altsyncram_0t01:auto_generated.address_a[5]
-address_a[6] => altsyncram_0t01:auto_generated.address_a[6]
-address_a[7] => altsyncram_0t01:auto_generated.address_a[7]
+address_a[0] => altsyncram_t611:auto_generated.address_a[0]
+address_a[1] => altsyncram_t611:auto_generated.address_a[1]
+address_a[2] => altsyncram_t611:auto_generated.address_a[2]
+address_a[3] => altsyncram_t611:auto_generated.address_a[3]
+address_a[4] => altsyncram_t611:auto_generated.address_a[4]
+address_a[5] => altsyncram_t611:auto_generated.address_a[5]
+address_a[6] => altsyncram_t611:auto_generated.address_a[6]
+address_a[7] => altsyncram_t611:auto_generated.address_a[7]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_0t01:auto_generated.clock0
+clock0 => altsyncram_t611:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -195,21 +205,21 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_0t01:auto_generated.q_a[0]
-q_a[1] <= altsyncram_0t01:auto_generated.q_a[1]
-q_a[2] <= altsyncram_0t01:auto_generated.q_a[2]
-q_a[3] <= altsyncram_0t01:auto_generated.q_a[3]
-q_a[4] <= altsyncram_0t01:auto_generated.q_a[4]
-q_a[5] <= altsyncram_0t01:auto_generated.q_a[5]
-q_a[6] <= altsyncram_0t01:auto_generated.q_a[6]
-q_a[7] <= altsyncram_0t01:auto_generated.q_a[7]
+q_a[0] <= altsyncram_t611:auto_generated.q_a[0]
+q_a[1] <= altsyncram_t611:auto_generated.q_a[1]
+q_a[2] <= altsyncram_t611:auto_generated.q_a[2]
+q_a[3] <= altsyncram_t611:auto_generated.q_a[3]
+q_a[4] <= altsyncram_t611:auto_generated.q_a[4]
+q_a[5] <= altsyncram_t611:auto_generated.q_a[5]
+q_a[6] <= altsyncram_t611:auto_generated.q_a[6]
+q_a[7] <= altsyncram_t611:auto_generated.q_a[7]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|ramsub|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_0t01:auto_generated
+|ramsub_ks|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -292,7 +302,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|ramsub|cnt8:inst
+|ramsub_ks|cnt8:inst
 OVF <= hadd8:inst2.OVF
 CNT => hadd8:inst2.B0
 CLK => reg:inst1.CLK
@@ -316,7 +326,7 @@ Q[6] <= reg:inst1.Q[6]
 Q[7] <= reg:inst1.Q[7]
 
 
-|ramsub|cnt8:inst|hadd8:inst2
+|ramsub_ks|cnt8:inst|hadd8:inst2
 OVF <= hadd:inst7.Co
 A[0] => hadd:inst.A
 A[1] => hadd:inst1.A
@@ -337,7 +347,7 @@ S[6] <= hadd:inst6.S
 S[7] <= hadd:inst7.S
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst7
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst7
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -346,7 +356,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst6
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst6
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -355,7 +365,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst5
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst5
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -364,7 +374,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst4
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst4
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -373,7 +383,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst3
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst3
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -382,7 +392,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst2
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst2
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -391,7 +401,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst1
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst1
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -400,7 +410,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|hadd8:inst2|hadd:inst
+|ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -409,7 +419,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|reg:inst1
+|ramsub_ks|cnt8:inst|reg:inst1
 Q[0] <= LPM_FF:inst.q[0]
 Q[1] <= LPM_FF:inst.q[1]
 Q[2] <= LPM_FF:inst.q[2]
@@ -431,7 +441,7 @@ D[6] => LPM_FF:inst.data[6]
 D[7] => LPM_FF:inst.data[7]
 
 
-|ramsub|cnt8:inst|reg:inst1|LPM_FF:inst
+|ramsub_ks|cnt8:inst|reg:inst1|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -456,8 +466,8 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => dffs[7].IN0
-aset => dffs[7].IN0
+aclr => dffs[7]~0.IN0
+aset => dffs[7]~1.IN0
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
 sset => ~NO_FANOUT~
@@ -472,7 +482,7 @@ q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst|sel2g:inst
+|ramsub_ks|cnt8:inst|sel2g:inst
 Q[0] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -508,7 +518,7 @@ A[6] => inst[6].IN0
 A[7] => inst[7].IN0
 
 
-|ramsub|ram_rw_dq:inst6
+|ramsub_ks|ram_rw_dq:inst6
 A[0] => content~7.DATAIN
 A[0] => content.WADDR
 A[0] => content.RADDR
@@ -595,7 +605,7 @@ WE => content~16.DATAIN
 WE => content.WE
 
 
-|ramsub|sel2g:inst5
+|ramsub_ks|sel2g:inst5
 Q[0] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -631,7 +641,7 @@ A[6] => inst[6].IN0
 A[7] => inst[7].IN0
 
 
-|ramsub|cnt8:inst4
+|ramsub_ks|cnt8:inst4
 OVF <= hadd8:inst2.OVF
 CNT => hadd8:inst2.B0
 CLK => reg:inst1.CLK
@@ -655,7 +665,7 @@ Q[6] <= reg:inst1.Q[6]
 Q[7] <= reg:inst1.Q[7]
 
 
-|ramsub|cnt8:inst4|hadd8:inst2
+|ramsub_ks|cnt8:inst4|hadd8:inst2
 OVF <= hadd:inst7.Co
 A[0] => hadd:inst.A
 A[1] => hadd:inst1.A
@@ -676,7 +686,7 @@ S[6] <= hadd:inst6.S
 S[7] <= hadd:inst7.S
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst7
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst7
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -685,7 +695,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst6
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst6
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -694,7 +704,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst5
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst5
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -703,7 +713,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst4
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst4
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -712,7 +722,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst3
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst3
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -721,7 +731,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst2
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst2
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -730,7 +740,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst1
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst1
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -739,7 +749,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|hadd8:inst2|hadd:inst
+|ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst
 Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN0
@@ -748,7 +758,7 @@ B => inst2.IN1
 S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|reg:inst1
+|ramsub_ks|cnt8:inst4|reg:inst1
 Q[0] <= LPM_FF:inst.q[0]
 Q[1] <= LPM_FF:inst.q[1]
 Q[2] <= LPM_FF:inst.q[2]
@@ -770,7 +780,7 @@ D[6] => LPM_FF:inst.data[6]
 D[7] => LPM_FF:inst.data[7]
 
 
-|ramsub|cnt8:inst4|reg:inst1|LPM_FF:inst
+|ramsub_ks|cnt8:inst4|reg:inst1|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -795,8 +805,8 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => dffs[7].IN0
-aset => dffs[7].IN0
+aclr => dffs[7]~0.IN0
+aset => dffs[7]~1.IN0
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
 sset => ~NO_FANOUT~
@@ -811,7 +821,7 @@ q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ramsub|cnt8:inst4|sel2g:inst
+|ramsub_ks|cnt8:inst4|sel2g:inst
 Q[0] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -847,7 +857,7 @@ A[6] => inst[6].IN0
 A[7] => inst[7].IN0
 
 
-|ramsub|regg:inst3
+|ramsub_ks|regg:inst3
 Q[0] <= LPM_FF:inst.q[0]
 Q[1] <= LPM_FF:inst.q[1]
 Q[2] <= LPM_FF:inst.q[2]
@@ -869,7 +879,7 @@ D[6] => LPM_FF:inst.data[6]
 D[7] => LPM_FF:inst.data[7]
 
 
-|ramsub|regg:inst3|LPM_FF:inst
+|ramsub_ks|regg:inst3|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -894,7 +904,7 @@ enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
 enable => dffs[0].ENA
-aclr => dffs[7].IN0
+aclr => dffs[7]~0.IN0
 aset => ~NO_FANOUT~
 aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~

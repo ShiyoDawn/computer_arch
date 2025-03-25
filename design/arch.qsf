@@ -68,7 +68,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY ramsub
+set_global_assignment -name TOP_LEVEL_ENTITY ramsub_ks
 
 # Fitter Assignments
 # ==================
@@ -172,11 +172,20 @@ set_location_assignment PIN_144 -to Q2[0]
 set_global_assignment -name BDF_FILE ram_dq.bdf
 set_global_assignment -name BDF_FILE ramsub.bdf
 set_global_assignment -name VHDL_FILE vhdl/ram_rw_dq.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/ramsub.vwf
 set_global_assignment -name MIF_FILE MIF/ramsub.mif
 set_global_assignment -name MIF_FILE MIF/ramsub_rom.mif
+set_global_assignment -name BDF_FILE ks_simp.bdf
+set_global_assignment -name BDF_FILE ks.bdf
+set_global_assignment -name BDF_FILE ks_test.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/ks_test.vwf
+set_global_assignment -name BDF_FILE ramsub_ks.bdf
+set_global_assignment -name MIF_FILE MIF/ramsub_ks_rom.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/ramsub_ks.vwf
+set_global_assignment -name BDF_FILE VWF/ramsub_debug.bdf
+set_global_assignment -name QIP_FILE sandp.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/ramsub.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/ramsub_ks.vwf"

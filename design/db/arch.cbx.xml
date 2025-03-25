@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="arch">
-		<CBX_INST_ENTRY INSTANCE_NAME="|ramsub|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_0t01.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ramsub|ram_rw_dq:inst6|altsyncram:content_rtl_0" CBX_FILE_NAME="altsyncram_13g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ramsub_ks|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_t611.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ramsub_ks|ram_rw_dq:inst6|altsyncram:content_rtl_0" CBX_FILE_NAME="altsyncram_13g1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

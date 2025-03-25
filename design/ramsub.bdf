@@ -103,7 +103,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1048 488 1224 504)
+	(rect 1200 480 1376 496)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "uIR[7..0]" (rect 90 0 133 12)(font "Arial" ))
 	(pt 0 8)
@@ -119,7 +119,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 864 -72 1040 -56)
+	(rect 1208 -72 1384 -56)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "MBR[7..0]" (rect 90 0 139 12)(font "Arial" ))
 	(pt 0 8)
@@ -191,7 +191,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 336 232 496 360)
+	(rect 344 232 504 360)
 	(text "regg" (rect 5 0 30 14)(font "Arial" (font_size 8)))
 	(text "inst2" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -237,10 +237,10 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 144 112))
 	)
-	(annotation_block (parameter)(rect 496 200 624 232))
+	(annotation_block (parameter)(rect 504 200 632 232))
 )
 (symbol
-	(rect 344 -96 504 32)
+	(rect 336 -96 496 32)
 	(text "regg" (rect 5 0 30 14)(font "Arial" (font_size 8)))
 	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -286,7 +286,7 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 144 112))
 	)
-	(annotation_block (parameter)(rect 504 -128 632 -96))
+	(annotation_block (parameter)(rect 496 -128 624 -96))
 )
 (symbol
 	(rect 368 48 496 176)
@@ -388,7 +388,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 944 64 1072 96))
 )
 (symbol
-	(rect 64 480 112 512)
+	(rect 48 480 96 512)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -609,144 +609,10 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 528 520 829 618))
 )
 (connector
-	(pt 112 496)
-	(pt 224 496)
-)
-(connector
-	(pt 48 496)
-	(pt 48 568)
-)
-(connector
-	(pt 32 496)
-	(pt 48 496)
-)
-(connector
-	(pt 48 496)
-	(pt 64 496)
-)
-(connector
-	(pt 48 568)
-	(pt 424 568)
-)
-(connector
-	(pt 224 464)
-	(pt 136 464)
-)
-(connector
-	(pt 136 464)
-	(pt 136 472)
-)
-(connector
-	(pt 224 480)
-	(pt 152 480)
-)
-(connector
-	(pt 152 480)
-	(pt 152 456)
-)
-(connector
-	(pt 128 512)
-	(pt 128 312)
-)
-(connector
-	(pt 32 512)
-	(pt 128 512)
-)
-(connector
-	(pt 128 512)
-	(pt 224 512)
-)
-(connector
-	(pt 424 464)
-	(pt 432 464)
-)
-(connector
-	(pt 424 568)
-	(pt 424 464)
-)
-(connector
-	(pt 352 448)
-	(pt 432 448)
-	(bus)
-)
-(connector
 	(text "uIR[7..0]" (rect 561 456 604 468)(font "Arial" ))
 	(pt 544 472)
 	(pt 568 472)
 	(bus)
-)
-(connector
-	(pt 344 -16)
-	(pt 224 -16)
-)
-(connector
-	(pt 128 312)
-	(pt 224 312)
-)
-(connector
-	(pt 224 312)
-	(pt 336 312)
-)
-(connector
-	(pt 344 -48)
-	(pt 288 -48)
-)
-(connector
-	(pt 112 280)
-	(pt 288 280)
-)
-(connector
-	(pt 288 280)
-	(pt 336 280)
-)
-(connector
-	(text "uIR[2]" (rect 328 -48 358 -36)(font "Arial" ))
-	(pt 344 -32)
-	(pt 320 -32)
-)
-(connector
-	(text "uIR[0]" (rect 304 280 334 292)(font "Arial" ))
-	(pt 336 296)
-	(pt 296 296)
-)
-(connector
-	(pt 344 -64)
-	(pt 312 -64)
-	(bus)
-)
-(connector
-	(pt 312 264)
-	(pt 336 264)
-	(bus)
-)
-(connector
-	(pt 288 128)
-	(pt 368 128)
-)
-(connector
-	(pt 224 144)
-	(pt 368 144)
-)
-(connector
-	(text "uIR[1]" (rect 336 96 366 108)(font "Arial" ))
-	(pt 368 112)
-	(pt 328 112)
-)
-(connector
-	(pt 288 -48)
-	(pt 288 128)
-)
-(connector
-	(pt 288 128)
-	(pt 288 280)
-)
-(connector
-	(pt 224 -16)
-	(pt 224 144)
-)
-(connector
-	(pt 224 144)
-	(pt 224 312)
 )
 (connector
 	(pt 736 80)
@@ -774,26 +640,6 @@ applicable agreement for further details.
 	(pt 760 160)
 )
 (connector
-	(pt 496 80)
-	(pt 736 80)
-	(bus)
-)
-(connector
-	(pt 736 80)
-	(pt 768 80)
-	(bus)
-)
-(connector
-	(pt 496 264)
-	(pt 736 264)
-	(bus)
-)
-(connector
-	(pt 736 264)
-	(pt 776 264)
-	(bus)
-)
-(connector
 	(pt 944 128)
 	(pt 1120 128)
 	(bus)
@@ -814,51 +660,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1136 96)
-	(pt 1136 0)
-	(bus)
-)
-(connector
-	(pt 1136 0)
-	(pt 704 0)
-	(bus)
-)
-(connector
-	(pt 704 0)
-	(pt 704 -64)
-	(bus)
-)
-(connector
-	(pt 504 -64)
-	(pt 704 -64)
-	(bus)
-)
-(connector
-	(pt 704 -64)
-	(pt 864 -64)
-	(bus)
-)
-(connector
-	(pt 1128 112)
-	(pt 1128 408)
-)
-(connector
-	(pt 1128 112)
-	(pt 1192 112)
-)
-(connector
-	(pt 1128 408)
-	(pt 112 408)
-)
-(connector
-	(pt 112 496)
-	(pt 112 408)
-)
-(connector
-	(pt 112 408)
-	(pt 112 280)
-)
-(connector
 	(text "uIR[4]" (rect 1163 128 1193 140)(font "Arial" ))
 	(pt 1192 144)
 	(pt 1144 144)
@@ -866,16 +667,6 @@ applicable agreement for further details.
 (connector
 	(pt 312 -128)
 	(pt 1424 -128)
-	(bus)
-)
-(connector
-	(pt 312 -128)
-	(pt 312 -64)
-	(bus)
-)
-(connector
-	(pt 312 -64)
-	(pt 312 264)
 	(bus)
 )
 (connector
@@ -894,29 +685,170 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 144 96)
-	(pt 368 96)
-)
-(connector
-	(pt 144 96)
-	(pt 144 104)
-)
-(connector
 	(text "uIR[5]" (rect 1172 112 1202 124)(font "Arial" ))
 	(pt 1144 128)
 	(pt 1192 128)
 )
-(junction (pt 48 496))
-(junction (pt 112 496))
-(junction (pt 128 512))
-(junction (pt 224 312))
-(junction (pt 224 144))
-(junction (pt 288 280))
-(junction (pt 288 128))
+(connector
+	(pt 1136 -64)
+	(pt 1136 96)
+	(bus)
+)
+(connector
+	(text "nCLK" (rect 100 480 127 492)(font "Arial" ))
+	(pt 96 496)
+	(pt 112 496)
+)
+(connector
+	(pt 136 472)
+	(pt 136 464)
+)
+(connector
+	(pt 152 456)
+	(pt 152 480)
+)
+(connector
+	(text "nCLK" (rect 216 480 243 492)(font "Arial" ))
+	(pt 224 496)
+	(pt 208 496)
+)
+(connector
+	(text "CLRN" (rect 178 496 208 508)(font "Arial" ))
+	(pt 208 512)
+	(pt 224 512)
+)
+(connector
+	(pt 136 464)
+	(pt 224 464)
+)
+(connector
+	(pt 152 480)
+	(pt 224 480)
+)
+(connector
+	(pt 352 448)
+	(pt 432 448)
+	(bus)
+)
+(connector
+	(pt 312 264)
+	(pt 344 264)
+	(bus)
+)
+(connector
+	(text "nCLK" (rect 308 264 335 276)(font "Arial" ))
+	(pt 296 280)
+	(pt 344 280)
+)
+(connector
+	(pt 736 264)
+	(pt 776 264)
+	(bus)
+)
+(connector
+	(pt 504 264)
+	(pt 736 264)
+	(bus)
+)
+(connector
+	(text "CLRN" (rect 264 296 294 308)(font "Arial" ))
+	(pt 296 312)
+	(pt 344 312)
+)
+(connector
+	(text "uIR[0]" (rect 312 280 342 292)(font "Arial" ))
+	(pt 296 296)
+	(pt 344 296)
+)
+(connector
+	(pt 144 104)
+	(pt 144 96)
+)
+(connector
+	(pt 144 96)
+	(pt 368 96)
+)
+(connector
+	(text "uIR[1]" (rect 336 96 366 108)(font "Arial" ))
+	(pt 288 112)
+	(pt 368 112)
+)
+(connector
+	(text "nCLK" (rect 329 112 356 124)(font "Arial" ))
+	(pt 288 128)
+	(pt 368 128)
+)
+(connector
+	(text "CLRN" (rect 266 128 296 140)(font "Arial" ))
+	(pt 288 144)
+	(pt 368 144)
+)
+(connector
+	(pt 736 80)
+	(pt 768 80)
+	(bus)
+)
+(connector
+	(pt 496 80)
+	(pt 736 80)
+	(bus)
+)
+(connector
+	(pt 312 -64)
+	(pt 336 -64)
+	(bus)
+)
+(connector
+	(text "nCLK" (rect 290 -64 317 -52)(font "Arial" ))
+	(pt 280 -48)
+	(pt 336 -48)
+)
+(connector
+	(text "uIR[2]" (rect 320 -48 350 -36)(font "Arial" ))
+	(pt 280 -32)
+	(pt 336 -32)
+)
+(connector
+	(text "CLRN" (rect 289 -32 319 -20)(font "Arial" ))
+	(pt 280 -16)
+	(pt 336 -16)
+)
+(connector
+	(pt 1136 -64)
+	(pt 1208 -64)
+	(bus)
+)
+(connector
+	(pt 312 -128)
+	(pt 312 -64)
+	(bus)
+)
+(connector
+	(pt 312 -64)
+	(pt 312 264)
+	(bus)
+)
+(connector
+	(pt 496 -64)
+	(pt 1136 -64)
+	(bus)
+)
+(connector
+	(text "nCLK" (rect 1155 96 1182 108)(font "Arial" ))
+	(pt 1144 112)
+	(pt 1192 112)
+)
+(connector
+	(pt 32 496)
+	(pt 48 496)
+)
+(connector
+	(text "CLK" (rect 416 448 437 460)(font "Arial" ))
+	(pt 408 464)
+	(pt 432 464)
+)
 (junction (pt 736 80))
 (junction (pt 736 264))
-(junction (pt 704 -64))
-(junction (pt 112 408))
 (junction (pt 312 -64))
 (junction (pt 1424 80))
-(text "CLK need to be invert in actual experience" (rect -192 456 48 470)(font "Arial" (font_size 8)))
+(junction (pt 1136 -64))

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for arch
-Tue Mar 25 20:13:52 2025
+Tue Mar 25 22:43:53 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,7 +17,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Analysis & Synthesis RAM Summary
  10. General Register Statistics
  11. Registers Packed Into Inferred Megafunctions
- 12. Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_0t01:auto_generated
+ 12. Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated
  13. Source assignments for ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated
  14. Source assignments for ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1
  15. Parameter Settings for User Entity Instance: regg:inst2
@@ -62,16 +62,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 25 20:13:52 2025           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 25 22:43:53 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; arch                                            ;
-; Top-level Entity Name              ; ramsub                                          ;
+; Top-level Entity Name              ; ramsub_ks                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 45                                              ;
-;     Total combinational functions  ; 29                                              ;
-;     Dedicated logic registers      ; 32                                              ;
-; Total registers                    ; 32                                              ;
-; Total pins                         ; 42                                              ;
+; Total logic elements               ; 50                                              ;
+;     Total combinational functions  ; 34                                              ;
+;     Dedicated logic registers      ; 33                                              ;
+; Total registers                    ; 33                                              ;
+; Total pins                         ; 43                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 4,096                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -85,7 +85,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C8Q208C8        ;                    ;
-; Top-level entity name                                                      ; ramsub             ; arch               ;
+; Top-level entity name                                                      ; ramsub_ks          ; arch               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -195,10 +195,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; hadd8.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/hadd8.bdf                                ;         ;
 ; cnt8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/cnt8.bdf                                 ;         ;
 ; regg.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/regg.bdf                                 ;         ;
-; ramsub.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/ramsub.bdf                               ;         ;
 ; vhdl/ram_rw_dq.vhd               ; yes             ; User VHDL File                     ; E:/Project/FPGA/design/vhdl/ram_rw_dq.vhd                       ;         ;
 ; MIF/ramsub.mif                   ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/ramsub.mif                           ;         ;
-; MIF/ramsub_rom.mif               ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/ramsub_rom.mif                       ;         ;
+; ks.bdf                           ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/ks.bdf                                   ;         ;
+; ramsub_ks.bdf                    ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/ramsub_ks.bdf                            ;         ;
+; MIF/ramsub_ks_rom.mif            ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/ramsub_ks_rom.mif                    ;         ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_ff.tdf            ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
@@ -214,97 +215,98 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; a_rdenreg.inc                    ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
 ; altram.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_0t01.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_0t01.tdf                   ;         ;
+; db/altsyncram_t611.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_t611.tdf                   ;         ;
 ; db/altsyncram_13g1.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_13g1.tdf                   ;         ;
 ; db/altsyncram_3mj1.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_3mj1.tdf                   ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 45    ;
-;                                             ;       ;
-; Total combinational functions               ; 29    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 9     ;
-;     -- 3 input functions                    ; 13    ;
-;     -- <=2 input functions                  ; 7     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 29    ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 32    ;
-;     -- Dedicated logic registers            ; 32    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 42    ;
-; Total memory bits                           ; 4096  ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 48    ;
-; Total fan-out                               ; 408   ;
-; Average fan-out                             ; 3.43  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 50             ;
+;                                             ;                ;
+; Total combinational functions               ; 34             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 10             ;
+;     -- 3 input functions                    ; 14             ;
+;     -- <=2 input functions                  ; 10             ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 34             ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 33             ;
+;     -- Dedicated logic registers            ; 33             ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 43             ;
+; Total memory bits                           ; 4096           ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; ks:inst11|inst ;
+; Maximum fan-out                             ; 41             ;
+; Total fan-out                               ; 424            ;
+; Average fan-out                             ; 3.37           ;
++---------------------------------------------+----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
-; |ramsub                                      ; 29 (0)            ; 32 (0)       ; 4096        ; 0            ; 0       ; 0         ; 42   ; 0            ; |ramsub                                                                                                     ; work         ;
-;    |cnt8:inst4|                              ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4                                                                                          ; work         ;
-;       |hadd8:inst2|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2                                                                              ; work         ;
-;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst1                                                                   ; work         ;
-;          |hadd:inst2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst2                                                                   ; work         ;
-;          |hadd:inst3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst3                                                                   ; work         ;
-;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst4                                                                   ; work         ;
-;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst5                                                                   ; work         ;
-;          |hadd:inst6|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst6                                                                   ; work         ;
-;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst7                                                                   ; work         ;
-;          |hadd:inst|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|hadd8:inst2|hadd:inst                                                                    ; work         ;
-;       |reg:inst1|                            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|reg:inst1                                                                                ; work         ;
-;          |lpm_ff:inst|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst4|reg:inst1|lpm_ff:inst                                                                    ; work         ;
-;    |cnt8:inst|                               ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst                                                                                           ; work         ;
-;       |hadd8:inst2|                          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2                                                                               ; work         ;
-;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst1                                                                    ; work         ;
-;          |hadd:inst2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst2                                                                    ; work         ;
-;          |hadd:inst3|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst3                                                                    ; work         ;
-;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst4                                                                    ; work         ;
-;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst5                                                                    ; work         ;
-;          |hadd:inst6|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst6                                                                    ; work         ;
-;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|hadd8:inst2|hadd:inst7                                                                    ; work         ;
-;       |reg:inst1|                            ; 1 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|reg:inst1                                                                                 ; work         ;
-;          |lpm_ff:inst|                       ; 1 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|cnt8:inst|reg:inst1|lpm_ff:inst                                                                     ; work         ;
-;    |lpm_rom:inst1|                           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|lpm_rom:inst1                                                                                       ; work         ;
-;       |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|lpm_rom:inst1|altrom:srom                                                                           ; work         ;
-;          |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|lpm_rom:inst1|altrom:srom|altsyncram:rom_block                                                      ; work         ;
-;             |altsyncram_0t01:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_0t01:auto_generated                       ; work         ;
-;    |ram_rw_dq:inst6|                         ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|ram_rw_dq:inst6                                                                                     ; work         ;
-;       |altsyncram:content_rtl_0|             ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|ram_rw_dq:inst6|altsyncram:content_rtl_0                                                            ; work         ;
-;          |altsyncram_13g1:auto_generated|    ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated                             ; work         ;
-;             |altsyncram_3mj1:altsyncram1|    ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1 ; work         ;
-;    |regg:inst2|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|regg:inst2                                                                                          ; work         ;
-;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|regg:inst2|lpm_ff:inst                                                                              ; work         ;
-;    |regg:inst3|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|regg:inst3                                                                                          ; work         ;
-;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|regg:inst3|lpm_ff:inst                                                                              ; work         ;
-;    |sel2g:inst5|                             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub|sel2g:inst5                                                                                         ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; |ramsub_ks                                   ; 34 (0)            ; 33 (0)       ; 4096        ; 0            ; 0       ; 0         ; 43   ; 0            ; |ramsub_ks                                                                                                     ; work         ;
+;    |cnt8:inst4|                              ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4                                                                                          ; work         ;
+;       |hadd8:inst2|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2                                                                              ; work         ;
+;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst1                                                                   ; work         ;
+;          |hadd:inst2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst2                                                                   ; work         ;
+;          |hadd:inst3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst3                                                                   ; work         ;
+;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst4                                                                   ; work         ;
+;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst5                                                                   ; work         ;
+;          |hadd:inst6|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst6                                                                   ; work         ;
+;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst7                                                                   ; work         ;
+;          |hadd:inst|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|hadd8:inst2|hadd:inst                                                                    ; work         ;
+;       |reg:inst1|                            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|reg:inst1                                                                                ; work         ;
+;          |lpm_ff:inst|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst4|reg:inst1|lpm_ff:inst                                                                    ; work         ;
+;    |cnt8:inst|                               ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst                                                                                           ; work         ;
+;       |hadd8:inst2|                          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2                                                                               ; work         ;
+;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst1                                                                    ; work         ;
+;          |hadd:inst2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst2                                                                    ; work         ;
+;          |hadd:inst3|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst3                                                                    ; work         ;
+;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst4                                                                    ; work         ;
+;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst5                                                                    ; work         ;
+;          |hadd:inst6|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst6                                                                    ; work         ;
+;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|hadd8:inst2|hadd:inst7                                                                    ; work         ;
+;       |reg:inst1|                            ; 1 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|reg:inst1                                                                                 ; work         ;
+;          |lpm_ff:inst|                       ; 1 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|cnt8:inst|reg:inst1|lpm_ff:inst                                                                     ; work         ;
+;    |ks:inst11|                               ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|ks:inst11                                                                                           ; work         ;
+;    |lpm_rom:inst1|                           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|lpm_rom:inst1                                                                                       ; work         ;
+;       |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|lpm_rom:inst1|altrom:srom                                                                           ; work         ;
+;          |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|lpm_rom:inst1|altrom:srom|altsyncram:rom_block                                                      ; work         ;
+;             |altsyncram_t611:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated                       ; work         ;
+;    |ram_rw_dq:inst6|                         ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|ram_rw_dq:inst6                                                                                     ; work         ;
+;       |altsyncram:content_rtl_0|             ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|ram_rw_dq:inst6|altsyncram:content_rtl_0                                                            ; work         ;
+;          |altsyncram_13g1:auto_generated|    ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated                             ; work         ;
+;             |altsyncram_3mj1:altsyncram1|    ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1 ; work         ;
+;    |regg:inst2|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|regg:inst2                                                                                          ; work         ;
+;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|regg:inst2|lpm_ff:inst                                                                              ; work         ;
+;    |regg:inst3|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|regg:inst3                                                                                          ; work         ;
+;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|regg:inst3|lpm_ff:inst                                                                              ; work         ;
+;    |sel2g:inst5|                             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ramsub_ks|sel2g:inst5                                                                                         ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                               ;
-+----------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+--------------------+
-; Name                                                                                                           ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                ;
-+----------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+--------------------+
-; lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_0t01:auto_generated|ALTSYNCRAM                       ; AUTO ; ROM            ; 256          ; 8            ; --           ; --           ; 2048 ; MIF/ramsub_rom.mif ;
-; ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; MIF/ramsub.mif     ;
-+----------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                  ;
++----------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+-----------------------+
+; Name                                                                                                           ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                   ;
++----------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+-----------------------+
+; lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated|ALTSYNCRAM                       ; AUTO ; ROM            ; 256          ; 8            ; --           ; --           ; 2048 ; MIF/ramsub_ks_rom.mif ;
+; ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; MIF/ramsub.mif        ;
++----------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+-----------------------+
 
 
 +------------------------------------------------------+
@@ -312,10 +314,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
@@ -332,7 +334,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------+
-; Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_0t01:auto_generated ;
+; Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                     ;
 +---------------------------------+--------------------+------+----------------------------------------+
@@ -387,23 +389,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_ROM:inst1   ;
-+------------------------+--------------------+----------------+
-; Parameter Name         ; Value              ; Type           ;
-+------------------------+--------------------+----------------+
-; LPM_WIDTH              ; 8                  ; Untyped        ;
-; LPM_WIDTHAD            ; 8                  ; Untyped        ;
-; LPM_NUMWORDS           ; 256                ; Untyped        ;
-; LPM_ADDRESS_CONTROL    ; REGISTERED         ; Untyped        ;
-; LPM_OUTDATA            ; UNREGISTERED       ; Untyped        ;
-; LPM_FILE               ; MIF/ramsub_rom.mif ; Untyped        ;
-; DEVICE_FAMILY          ; Cyclone II         ; Untyped        ;
-; AUTO_CARRY_CHAINS      ; ON                 ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS   ; OFF                ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS    ; ON                 ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS ; OFF                ; IGNORE_CASCADE ;
-+------------------------+--------------------+----------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_ROM:inst1      ;
++------------------------+-----------------------+----------------+
+; Parameter Name         ; Value                 ; Type           ;
++------------------------+-----------------------+----------------+
+; LPM_WIDTH              ; 8                     ; Untyped        ;
+; LPM_WIDTHAD            ; 8                     ; Untyped        ;
+; LPM_NUMWORDS           ; 256                   ; Untyped        ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED            ; Untyped        ;
+; LPM_OUTDATA            ; UNREGISTERED          ; Untyped        ;
+; LPM_FILE               ; MIF/ramsub_ks_rom.mif ; Untyped        ;
+; DEVICE_FAMILY          ; Cyclone II            ; Untyped        ;
+; AUTO_CARRY_CHAINS      ; ON                    ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS   ; OFF                   ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS    ; ON                    ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS ; OFF                   ; IGNORE_CASCADE ;
++------------------------+-----------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -632,7 +634,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 25 20:13:51 2025
+    Info: Processing started: Tue Mar 25 22:43:51 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arch -c arch
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file hadd.bdf
@@ -682,18 +684,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file ramsub.
 Info (12021): Found 2 design units, including 1 entities, in source file vhdl/ram_rw_dq.vhd
     Info (12022): Found design unit 1: ram_rw_dq-behavior
     Info (12023): Found entity 1: ram_rw_dq
-Info (12127): Elaborating entity "ramsub" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file ks_simp.bdf
+    Info (12023): Found entity 1: ks_simp
+Info (12021): Found 1 design units, including 1 entities, in source file ks.bdf
+    Info (12023): Found entity 1: ks
+Info (12021): Found 1 design units, including 1 entities, in source file ks_test.bdf
+    Info (12023): Found entity 1: ks_test
+Info (12021): Found 1 design units, including 1 entities, in source file ramsub_ks.bdf
+    Info (12023): Found entity 1: ramsub_ks
+Info (12021): Found 1 design units, including 1 entities, in source file vwf/ramsub_debug.bdf
+    Info (12023): Found entity 1: ramsub_debug
+Info (12021): Found 2 design units, including 1 entities, in source file sandp.vhd
+    Info (12022): Found design unit 1: sandp-SYN
+    Info (12023): Found entity 1: sandp
+Info (12127): Elaborating entity "ramsub_ks" for the top level hierarchy
 Info (12128): Elaborating entity "regg" for hierarchy "regg:inst2"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "regg:inst2|LPM_FF:inst"
 Info (12130): Elaborated megafunction instantiation "regg:inst2|LPM_FF:inst"
 Info (12133): Instantiated megafunction "regg:inst2|LPM_FF:inst" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "8"
+Info (12128): Elaborating entity "ks" for hierarchy "ks:inst11"
 Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:inst1"
 Info (12130): Elaborated megafunction instantiation "LPM_ROM:inst1"
 Info (12133): Instantiated megafunction "LPM_ROM:inst1" with the following parameter:
     Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
-    Info (12134): Parameter "LPM_FILE" = "MIF/ramsub_rom.mif"
+    Info (12134): Parameter "LPM_FILE" = "MIF/ramsub_ks_rom.mif"
     Info (12134): Parameter "LPM_NUMWORDS" = "256"
     Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
     Info (12134): Parameter "LPM_WIDTH" = "8"
@@ -702,9 +718,9 @@ Info (12128): Elaborating entity "altrom" for hierarchy "LPM_ROM:inst1|altrom:sr
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst1|altrom:srom", which is child of megafunction instantiation "LPM_ROM:inst1"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block"
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:inst1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0t01.tdf
-    Info (12023): Found entity 1: altsyncram_0t01
-Info (12128): Elaborating entity "altsyncram_0t01" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_0t01:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t611.tdf
+    Info (12023): Found entity 1: altsyncram_t611
+Info (12128): Elaborating entity "altsyncram_t611" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated"
 Info (12128): Elaborating entity "cnt8" for hierarchy "cnt8:inst"
 Info (12128): Elaborating entity "hadd8" for hierarchy "cnt8:inst|hadd8:inst2"
 Info (12128): Elaborating entity "hadd" for hierarchy "cnt8:inst|hadd8:inst2|hadd:inst7"
@@ -764,6 +780,7 @@ Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[2]" to the node "uIR[2]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[1]" to the node "uIR[1]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[0]" to the node "uIR[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[6]" to the node "ks:inst11|inst1" into a wire
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[5]" to the node "ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1|ram_block2a0" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[4]" to the node "ram_rw_dq:inst6|altsyncram:content_rtl_0|altsyncram_13g1:auto_generated|altsyncram_3mj1:altsyncram1|ram_block2a0" into an OR gate
@@ -771,17 +788,19 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[2]" to the node "regg:inst3|lpm_ff:inst|dffs[7]" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[1]" to the node "cnt8:inst4|hadd8:inst2|hadd:inst|inst" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[0]" to the node "regg:inst2|lpm_ff:inst|dffs[7]" into an OR gate
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "ks:inst11|inst1" is converted into an equivalent circuit using register "ks:inst11|inst1~_emulated" and latch "ks:inst11|inst1~1"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 40 output pins
-    Info (21061): Implemented 45 logic cells
+    Info (21061): Implemented 50 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4665 megabytes
-    Info: Processing ended: Tue Mar 25 20:13:52 2025
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Tue Mar 25 22:43:53 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
