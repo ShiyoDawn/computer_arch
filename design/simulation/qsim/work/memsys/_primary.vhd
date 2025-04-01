@@ -8,6 +8,7 @@ entity memsys is
         mD              : out    vl_logic_vector(7 downto 0);
         D               : in     vl_logic_vector(7 downto 0);
         W               : in     vl_logic;
-        R               : in     vl_logic
+        R               : in     vl_logic;
+        Q               : out    vl_logic_vector(7 downto 0)
     );
 end memsys;

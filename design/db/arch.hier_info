@@ -1,4 +1,42 @@
-|memsys
+|memtest
+Q[0] <= memctrl:inst.Q[0]
+Q[1] <= memctrl:inst.Q[1]
+Q[2] <= memctrl:inst.Q[2]
+Q[3] <= memctrl:inst.Q[3]
+Q[4] <= memctrl:inst.Q[4]
+Q[5] <= memctrl:inst.Q[5]
+Q[6] <= memctrl:inst.Q[6]
+Q[7] <= memctrl:inst.Q[7]
+CLK => memctrl:inst.CLK
+R => memctrl:inst.R
+W => memctrl:inst.W
+A[0] => memctrl:inst.A[0]
+A[1] => memctrl:inst.A[1]
+A[2] => memctrl:inst.A[2]
+A[3] => memctrl:inst.A[3]
+A[4] => memctrl:inst.A[4]
+A[5] => memctrl:inst.A[5]
+A[6] => memctrl:inst.A[6]
+A[7] => memctrl:inst.A[7]
+D[0] => memctrl:inst.D[0]
+D[1] => memctrl:inst.D[1]
+D[2] => memctrl:inst.D[2]
+D[3] => memctrl:inst.D[3]
+D[4] => memctrl:inst.D[4]
+D[5] => memctrl:inst.D[5]
+D[6] => memctrl:inst.D[6]
+D[7] => memctrl:inst.D[7]
+
+
+|memtest|memctrl:inst
+nW <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst7.IN0
+CLK => inst5.IN0
+CLK => inst8.IN0
+CLK => inst9.IN0
+W => inst7.IN1
+nR <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+R => inst5.IN1
 mA[0] <= inst10[0].DB_MAX_OUTPUT_PORT_TYPE
 mA[1] <= inst10[1].DB_MAX_OUTPUT_PORT_TYPE
 mA[2] <= inst10[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -15,18 +53,14 @@ A[4] => inst10[4].DATAIN
 A[5] => inst10[5].DATAIN
 A[6] => inst10[6].DATAIN
 A[7] => inst10[7].DATAIN
-CLK => inst8.IN0
-CLK => inst9.IN0
-CLK => inst7.IN0
-CLK => inst5.IN0
-mD[0] <= gdfx_temp0[0].DB_MAX_OUTPUT_PORT_TYPE
-mD[1] <= gdfx_temp0[1].DB_MAX_OUTPUT_PORT_TYPE
-mD[2] <= gdfx_temp0[2].DB_MAX_OUTPUT_PORT_TYPE
-mD[3] <= gdfx_temp0[3].DB_MAX_OUTPUT_PORT_TYPE
-mD[4] <= gdfx_temp0[4].DB_MAX_OUTPUT_PORT_TYPE
-mD[5] <= gdfx_temp0[5].DB_MAX_OUTPUT_PORT_TYPE
-mD[6] <= gdfx_temp0[6].DB_MAX_OUTPUT_PORT_TYPE
-mD[7] <= gdfx_temp0[7].DB_MAX_OUTPUT_PORT_TYPE
+mD[0] <> inst3[0]
+mD[1] <> inst3[1]
+mD[2] <> inst3[2]
+mD[3] <> inst3[3]
+mD[4] <> inst3[4]
+mD[5] <> inst3[5]
+mD[6] <> inst3[6]
+mD[7] <> inst3[7]
 D[0] => inst11[0].DATAIN
 D[1] => inst11[1].DATAIN
 D[2] => inst11[2].DATAIN
@@ -35,11 +69,17 @@ D[4] => inst11[4].DATAIN
 D[5] => inst11[5].DATAIN
 D[6] => inst11[6].DATAIN
 D[7] => inst11[7].DATAIN
-W => inst7.IN1
-R => inst5.IN1
+Q[0] <= inst1[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst1[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst1[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst1[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst1[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst1[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memsys|asyncram:inst
+|memtest|asyncram:inst1
 A[0] => mem.WADDR
 A[0] => mem.RADDR
 A[1] => mem.WADDR1

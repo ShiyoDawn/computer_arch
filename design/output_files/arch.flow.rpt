@@ -1,5 +1,5 @@
 Flow report for arch
-Tue Apr 01 19:58:05 2025
+Tue Apr 01 20:17:12 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 01 19:58:05 2025           ;
+; Flow Status                        ; Successful - Tue Apr 01 20:17:12 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; arch                                            ;
-; Top-level Entity Name              ; memsys                                          ;
+; Top-level Entity Name              ; memtest                                         ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C8Q208C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 267 / 8,256 ( 3 % )                             ;
-;     Total combinational functions  ; 267 / 8,256 ( 3 % )                             ;
+; Total logic elements               ; 278 / 8,256 ( 3 % )                             ;
+;     Total combinational functions  ; 278 / 8,256 ( 3 % )                             ;
 ;     Dedicated logic registers      ; 0 / 8,256 ( 0 % )                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 35 / 138 ( 25 % )                               ;
+; Total pins                         ; 27 / 138 ( 20 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 165,888 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/01/2025 19:57:46 ;
+; Start date & time ; 04/01/2025 20:17:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arch                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110289793185656.174350866617220          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110289793185656.174350982014648          ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                       ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                              ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                ; <None>        ; --          ; --             ;
@@ -85,14 +85,14 @@ applicable agreement for further details.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                       ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                        ; --            ; --          ; --             ;
 ; MISC_FILE                           ; sandp.cmp                                ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                 ; --            ; memsys      ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                    ; --            ; memsys      ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                   ; --            ; memsys      ; Top            ;
+; PARTITION_COLOR                     ; 16764057                                 ; --            ; memtest     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                    ; --            ; memtest     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                   ; --            ; memtest     ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                      ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW    ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                             ; --            ; --          ; --             ;
 ; SEARCH_PATH                         ; d:\code\quartus\computer_arch\design\bsf ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; memsys                                   ; arch          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; memtest                                  ; arch          ; --          ; --             ;
 +-------------------------------------+------------------------------------------+---------------+-------------+----------------+
 
 
@@ -101,14 +101,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4643 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4645 MB             ; 00:00:01                           ;
 ; Fitter                    ; 00:00:03     ; 1.0                     ; 4822 MB             ; 00:00:03                           ;
 ; Assembler                 ; 00:00:00     ; 1.0                     ; 4568 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4556 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4545 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4522 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4525 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:04     ; --                      ; --                  ; 00:00:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
