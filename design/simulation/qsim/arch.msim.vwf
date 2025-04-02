@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("mempin_vlg_vec_tst|CLK")
+SIGNAL("memtest_vlg_vec_tst|aSEL")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -42,7 +42,7 @@ SIGNAL("mempin_vlg_vec_tst|CLK")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|CLRN")
+SIGNAL("memtest_vlg_vec_tst|CLK")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -52,629 +52,9 @@ SIGNAL("mempin_vlg_vec_tst|CLRN")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|treg_mD")
+SIGNAL("memtest_vlg_vec_tst|CNT")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|treg_mD[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "mempin_vlg_vec_tst|treg_mD";
-}
-
-SIGNAL("mempin_vlg_vec_tst|SPULSE")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mA[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MAR[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|MBR[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|mD[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|nR")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|nW")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|PC[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|Q[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|uIR[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|uIR[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("mempin_vlg_vec_tst|uIR[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
@@ -682,7 +62,7 @@ SIGNAL("mempin_vlg_vec_tst|uIR[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|uIR[4]")
+SIGNAL("memtest_vlg_vec_tst|R")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -692,7 +72,7 @@ SIGNAL("mempin_vlg_vec_tst|uIR[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|uIR[3]")
+SIGNAL("memtest_vlg_vec_tst|RST")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -702,7 +82,7 @@ SIGNAL("mempin_vlg_vec_tst|uIR[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|uIR[2]")
+SIGNAL("memtest_vlg_vec_tst|W")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -712,7 +92,7 @@ SIGNAL("mempin_vlg_vec_tst|uIR[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|uIR[1]")
+SIGNAL("memtest_vlg_vec_tst|wMAR")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -722,7 +102,7 @@ SIGNAL("mempin_vlg_vec_tst|uIR[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|uIR[0]")
+SIGNAL("memtest_vlg_vec_tst|wMBR")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -732,7 +112,7 @@ SIGNAL("mempin_vlg_vec_tst|uIR[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|sampler")
+SIGNAL("memtest_vlg_vec_tst|mA[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -742,7 +122,7 @@ SIGNAL("mempin_vlg_vec_tst|sampler")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|gnd")
+SIGNAL("memtest_vlg_vec_tst|mA[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -752,7 +132,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|gnd")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|vcc")
+SIGNAL("memtest_vlg_vec_tst|mA[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -762,7 +142,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|vcc")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|unknown")
+SIGNAL("memtest_vlg_vec_tst|mA[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -772,7 +152,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|unknown")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|devclrn")
+SIGNAL("memtest_vlg_vec_tst|mA[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -782,7 +162,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|devclrn")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|devpor")
+SIGNAL("memtest_vlg_vec_tst|mA[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -792,7 +172,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|devpor")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|devoe")
+SIGNAL("memtest_vlg_vec_tst|mA[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -802,7 +182,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~0_combout")
+SIGNAL("memtest_vlg_vec_tst|mA[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -812,7 +192,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~0_combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -822,7 +202,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~1_combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -832,7 +212,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|CLK~combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -842,7 +222,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|CLK~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]~0_combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -852,7 +232,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|CLRN~combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -862,7 +242,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|CLRN~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -872,7 +252,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -882,7 +262,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MAR[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -892,7 +272,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -902,7 +282,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -912,7 +292,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -922,7 +302,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -932,7 +312,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -942,7 +322,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -952,7 +332,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[7]~8_combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -962,7 +342,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[7]~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|SPULSE~combout")
+SIGNAL("memtest_vlg_vec_tst|MBR[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -972,7 +352,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|SPULSE~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~3_combout")
+SIGNAL("memtest_vlg_vec_tst|PC[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -982,7 +362,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~3_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~0_combout")
+SIGNAL("memtest_vlg_vec_tst|PC[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -992,7 +372,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~_emulated_regout")
+SIGNAL("memtest_vlg_vec_tst|PC[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1002,7 +382,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~_emulated_regout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~2_combout")
+SIGNAL("memtest_vlg_vec_tst|PC[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1012,7 +392,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst1~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst~combout")
+SIGNAL("memtest_vlg_vec_tst|PC[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1022,7 +402,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst5~combout")
+SIGNAL("memtest_vlg_vec_tst|PC[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1032,7 +412,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst5~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst5~clkctrl_outclk")
+SIGNAL("memtest_vlg_vec_tst|PC[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1042,7 +422,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst5~clkctrl_outclk")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst~clkctrl_outclk")
+SIGNAL("memtest_vlg_vec_tst|PC[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1052,7 +432,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst11|inst~clkctrl_outclk")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst7~combout")
+SIGNAL("memtest_vlg_vec_tst|Q[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1062,7 +442,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst7~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[6]~9_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1072,7 +452,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[6]~9_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[5]~10_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1082,7 +462,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[5]~10_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[4]~11_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1092,7 +472,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[4]~11_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[3]~12_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1102,7 +482,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[3]~12_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[2]~13_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1112,7 +492,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[2]~13_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[1]~14_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1122,7 +502,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[1]~14_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[0]~15_combout")
+SIGNAL("memtest_vlg_vec_tst|Q[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1132,7 +512,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst3[0]~15_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[7]~0_combout")
+SIGNAL("memtest_vlg_vec_tst|sampler")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1142,7 +522,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[7]~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst1|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|gnd")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1152,7 +532,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst1|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|vcc")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1162,7 +542,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|unknown")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1172,7 +552,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst4|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|devclrn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1182,7 +562,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst4|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst5|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|devpor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1192,7 +572,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst5|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|devoe")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1202,7 +582,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[6]~1_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst7|inst2~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1212,7 +592,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[6]~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[5]~2_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|inst5~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1222,7 +602,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[5]~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[4]~3_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|inst4~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1232,7 +612,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[4]~3_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst3|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|wMAR~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1242,7 +622,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst3|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[3]~4_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|W~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1252,7 +632,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[3]~4_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[2]~5_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|wMBR~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1262,7 +642,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[2]~5_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[1]~6_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|inst5~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1272,7 +652,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[1]~6_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|inst4~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1282,7 +662,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[0]~7_combout")
+SIGNAL("memtest_vlg_vec_tst|i1|aSEL~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1292,7 +672,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst5|inst2[0]~7_combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~combout")
+SIGNAL("memtest_vlg_vec_tst|i1|CLK~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1302,7 +682,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~combout")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|R~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1312,7 +692,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst1~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1322,7 +702,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst1~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1332,7 +712,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|CNT~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1342,7 +722,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1352,7 +732,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|RST~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1362,7 +742,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|RST~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1372,7 +752,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[0]~7_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1382,7 +762,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst11[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1392,7 +772,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1402,7 +782,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1412,7 +792,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1422,7 +802,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[6]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1432,7 +812,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[5]~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1442,7 +822,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[4]~3_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1452,7 +832,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[3]~4_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1462,7 +842,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[2]~5_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1472,7 +852,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[1]~6_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1482,7 +862,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1492,7 +872,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst6|inst2~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1502,7 +882,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1512,7 +892,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1522,7 +902,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst7|inst2[7]~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1532,7 +912,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1542,7 +922,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1552,7 +932,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1562,7 +942,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1572,7 +952,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1582,7 +962,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1592,7 +972,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1602,7 +982,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1612,7 +992,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1622,7 +1002,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst3|inst|dffs[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1632,7 +1012,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1642,7 +1022,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1652,7 +1032,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1662,7 +1042,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1672,7 +1052,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1682,7 +1062,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1692,7 +1072,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1702,7 +1082,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst1[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1712,7 +1092,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1722,7 +1102,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1732,7 +1112,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1742,7 +1122,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1752,7 +1132,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1762,7 +1142,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1772,7 +1152,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst3[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1782,7 +1162,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst2|inst|dffs[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1792,7 +1172,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1802,7 +1182,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1812,7 +1192,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1822,7 +1202,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1832,7 +1212,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1842,7 +1222,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1852,7 +1232,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst2[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1862,7 +1242,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst9|inst10[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1872,7 +1252,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[7]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1882,7 +1262,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[6]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1892,7 +1272,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[5]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1902,7 +1282,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[4]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1912,7 +1292,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[3]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1922,7 +1302,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[2]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1932,7 +1312,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[1]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst3[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1942,7 +1322,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[0]")
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1952,7 +1332,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1962,7 +1342,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1972,7 +1352,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1982,7 +1362,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1992,7 +1372,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2002,7 +1382,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2012,7 +1392,7 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]")
+SIGNAL("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -2022,215 +1402,256 @@ SIGNAL("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_P
 	PARENT = "";
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|CLK")
+TRANSITION_LIST("memtest_vlg_vec_tst|aSEL")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 900.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|CLRN")
+TRANSITION_LIST("memtest_vlg_vec_tst|CLK")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|CNT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 940.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|R")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|RST")
 {
 	NODE
 	{
@@ -2240,717 +1661,427 @@ TRANSITION_LIST("mempin_vlg_vec_tst|CLRN")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[7]")
+TRANSITION_LIST("memtest_vlg_vec_tst|W")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 910.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[6]")
+TRANSITION_LIST("memtest_vlg_vec_tst|wMAR")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|treg_mD[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|SPULSE")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 960.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mA[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL Z FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MAR[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|MBR[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|mD[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|nR")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 45.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.001;
-		LEVEL 0 FOR 809.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|nW")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 115.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 175.0;
-		LEVEL 1 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 135.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 85.0;
-		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|PC[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|Q[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 180.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 809.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 40.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 809.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 110.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
+		LEVEL 0 FOR 920.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[2]")
+TRANSITION_LIST("memtest_vlg_vec_tst|wMBR")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 919.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.001;
-		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 950.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 819.999;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 900.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|uIR[0]")
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 889.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|sampler")
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|mA[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 975.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 925.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MAR[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|MBR[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|PC[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 945.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 1 FOR 20.001;
+		LEVEL 0 FOR 29.999;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 905.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 50.001;
+		LEVEL 1 FOR 29.999;
+		LEVEL 0 FOR 905.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|Q[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|sampler")
 {
 	NODE
 	{
@@ -3158,7 +2289,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|sampler")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|gnd")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|gnd")
 {
 	NODE
 	{
@@ -3167,7 +2298,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|gnd")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|vcc")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|vcc")
 {
 	NODE
 	{
@@ -3176,7 +2307,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|vcc")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|unknown")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|unknown")
 {
 	NODE
 	{
@@ -3185,7 +2316,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|unknown")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|devclrn")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|devclrn")
 {
 	NODE
 	{
@@ -3194,7 +2325,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|devclrn")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|devpor")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|devpor")
 {
 	NODE
 	{
@@ -3203,7 +2334,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|devpor")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|devoe")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|devoe")
 {
 	NODE
 	{
@@ -3212,7 +2343,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~0_combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst7|inst2~0_combout")
 {
 	NODE
 	{
@@ -3221,259 +2352,385 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~0_combout")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~0_combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst5~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 920.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst1~1_combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst4~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 970.0;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 950.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|CLK~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|wMAR~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 920.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]~0_combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|W~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 35.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 910.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|CLRN~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|wMBR~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 950.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst5~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst4~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 950.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|aSEL~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|CLK~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|R~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst1~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst1~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 900.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|CNT~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 940.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst|inst2~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 940.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|RST~combout")
 {
 	NODE
 	{
@@ -3483,432 +2740,98 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|CLRN~combout")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|RST~clkctrl_outclk")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 825.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 990.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[0]~7_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 95.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 175.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 815.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 175.0;
-		LEVEL 1 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[7]~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|SPULSE~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 960.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst1~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 150.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 809.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst1~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 25.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 960.0;
+		LEVEL 1 FOR 900.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst1~_emulated_regout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 185.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 940.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst1~2_combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 155.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst5~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.001;
-		LEVEL 1 FOR 809.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst5~clkctrl_outclk")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[6]~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.001;
-		LEVEL 1 FOR 809.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst11|inst~clkctrl_outclk")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[5]~2_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 815.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst7~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[4]~3_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 115.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[6]~9_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[5]~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[4]~11_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[3]~12_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[2]~13_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[1]~14_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst3[0]~15_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[7]~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst1|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 44.999;
-		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 835.0;
+		LEVEL 0 FOR 900.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 835.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 165.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst4|inst2~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[3]~4_combout")
 {
 	NODE
 	{
@@ -3917,7 +2840,7 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst4|inst2~combout")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst5|inst2~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[2]~5_combout")
 {
 	NODE
 	{
@@ -3926,902 +2849,186 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst5|inst2~combout")
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[1]~6_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[6]~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[5]~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[4]~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst3|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 165.0;
-		LEVEL 1 FOR 835.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[3]~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 54.999;
-		LEVEL 1 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[2]~5_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 14.999;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[1]~6_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 14.999;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 20.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 825.0;
+		LEVEL 0 FOR 900.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst|inst2~combout")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.001;
-		LEVEL 1 FOR 24.999;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst6|inst2~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst7|inst2[7]~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 945.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
 		LEVEL 0 FOR 5.001;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 4.999;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 4.999;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.001;
-		LEVEL 0 FOR 819.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst5|inst2[0]~7_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 25.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 4.999;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst11[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 920.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 185.0;
-		LEVEL 1 FOR 815.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 105.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 815.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 65.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 815.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 45.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 815.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 815.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 175.0;
-		LEVEL 1 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 135.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 85.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 825.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst3|inst|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 925.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst1[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 45.0;
-		LEVEL 1 FOR 955.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst2|inst|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 55.0;
-		LEVEL 1 FOR 945.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 59.999;
-		LEVEL 1 FOR 820.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 19.999;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 820.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 30.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 19.999;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 820.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst9|inst10[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 30.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 20.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 9.999;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 820.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 180.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 809.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 40.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 809.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 110.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 70.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 919.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.001;
 		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 819.999;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 894.999;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 50.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 889.999;
-	}
-}
-
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[3]")
 {
 	NODE
 	{
@@ -4830,101 +3037,350 @@ TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_b
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 180.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 809.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 65.001;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 809.999;
+		LEVEL 1 FOR 894.999;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 110.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 879.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 919.999;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.001;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst3[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 975.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 925.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst2[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 1 FOR 20.001;
+		LEVEL 0 FOR 29.999;
 		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 819.999;
+		LEVEL 0 FOR 905.0;
 	}
 }
 
-TRANSITION_LIST("mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]")
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
 		LEVEL 0 FOR 50.001;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 889.999;
+		LEVEL 1 FOR 29.999;
+		LEVEL 0 FOR 905.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst3[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15.0;
+		LEVEL 0 FOR 985.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.001;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 894.999;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 65.001;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 894.999;
+	}
+}
+
+TRANSITION_LIST("memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|CLK";
+	CHANNEL = "memtest_vlg_vec_tst|aSEL";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -4933,7 +3389,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|CLRN";
+	CHANNEL = "memtest_vlg_vec_tst|CLK";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -4942,97 +3398,88 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD";
+	CHANNEL = "memtest_vlg_vec_tst|CNT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
-	CHILDREN = 3, 4, 5, 6, 7, 8, 9, 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[7]";
+	CHANNEL = "memtest_vlg_vec_tst|R";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[6]";
+	CHANNEL = "memtest_vlg_vec_tst|RST";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[5]";
+	CHANNEL = "memtest_vlg_vec_tst|W";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[4]";
+	CHANNEL = "memtest_vlg_vec_tst|wMAR";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[3]";
+	CHANNEL = "memtest_vlg_vec_tst|wMBR";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[2]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[1]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|treg_mD[0]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
-	TREE_LEVEL = 1;
-	PARENT = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|SPULSE";
+	CHANNEL = "memtest_vlg_vec_tst|mA[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -5041,7 +3488,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[7]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -5050,7 +3497,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[6]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -5059,7 +3506,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[5]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -5068,7 +3515,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[4]";
+	CHANNEL = "memtest_vlg_vec_tst|mA[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -5077,7 +3524,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[3]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -5086,7 +3533,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[2]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -5095,7 +3542,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[1]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -5104,7 +3551,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mA[0]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -5113,7 +3560,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[7]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -5122,7 +3569,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[6]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -5131,7 +3578,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[5]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -5140,7 +3587,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[4]";
+	CHANNEL = "memtest_vlg_vec_tst|MAR[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -5149,7 +3596,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[3]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -5158,7 +3605,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[2]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -5167,7 +3614,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[1]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -5176,7 +3623,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MAR[0]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -5185,7 +3632,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[7]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -5194,7 +3641,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[6]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -5203,7 +3650,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[5]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -5212,7 +3659,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[4]";
+	CHANNEL = "memtest_vlg_vec_tst|MBR[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -5221,7 +3668,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[3]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -5230,7 +3677,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[2]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -5239,7 +3686,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[1]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -5248,7 +3695,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|MBR[0]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -5257,7 +3704,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[7]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -5266,7 +3713,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[6]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -5275,7 +3722,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[5]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -5284,7 +3731,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[4]";
+	CHANNEL = "memtest_vlg_vec_tst|PC[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -5293,7 +3740,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[3]";
+	CHANNEL = "memtest_vlg_vec_tst|Q[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -5302,7 +3749,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[2]";
+	CHANNEL = "memtest_vlg_vec_tst|Q[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -5311,7 +3758,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[1]";
+	CHANNEL = "memtest_vlg_vec_tst|Q[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -5320,7 +3767,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|mD[0]";
+	CHANNEL = "memtest_vlg_vec_tst|Q[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -5329,7 +3776,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|nR";
+	CHANNEL = "memtest_vlg_vec_tst|Q[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -5338,7 +3785,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|nW";
+	CHANNEL = "memtest_vlg_vec_tst|Q[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -5347,7 +3794,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[7]";
+	CHANNEL = "memtest_vlg_vec_tst|Q[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -5356,7 +3803,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[6]";
+	CHANNEL = "memtest_vlg_vec_tst|Q[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -5365,7 +3812,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[5]";
+	CHANNEL = "memtest_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -5374,7 +3821,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[4]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -5383,7 +3830,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[3]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -5392,7 +3839,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[2]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -5401,7 +3848,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[1]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -5410,7 +3857,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|PC[0]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -5419,7 +3866,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[7]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -5428,7 +3875,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[6]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst7|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -5437,7 +3884,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[5]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst5~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -5446,7 +3893,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[4]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst4~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -5455,7 +3902,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[3]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|wMAR~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -5464,7 +3911,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[2]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|W~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -5473,7 +3920,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[1]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|wMBR~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -5482,7 +3929,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|Q[0]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst5~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -5491,7 +3938,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[7]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst4~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -5500,7 +3947,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[6]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|aSEL~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -5509,7 +3956,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[5]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|CLK~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -5518,7 +3965,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[4]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|R~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -5527,7 +3974,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[3]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst1~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -5536,7 +3983,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[2]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst1~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -5545,7 +3992,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[1]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|CNT~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -5554,7 +4001,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|uIR[0]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -5563,7 +4010,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|sampler";
+	CHANNEL = "memtest_vlg_vec_tst|i1|RST~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -5572,7 +4019,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|gnd";
+	CHANNEL = "memtest_vlg_vec_tst|i1|RST~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -5581,7 +4028,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|vcc";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[0]~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -5590,7 +4037,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|unknown";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -5599,7 +4046,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -5608,7 +4055,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|devpor";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst2|inst~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -5617,7 +4064,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|devoe";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -5626,7 +4073,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~0_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[6]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -5635,7 +4082,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~0_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[5]~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -5644,7 +4091,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst1~1_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[4]~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -5653,7 +4100,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|CLK~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[3]~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -5662,7 +4109,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]~0_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[2]~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -5671,7 +4118,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|CLRN~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[1]~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -5680,7 +4127,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst1|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -5689,7 +4136,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst2|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst6|inst2~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -5698,7 +4145,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -5707,7 +4154,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst3|inst~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -5716,7 +4163,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst4|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst7|inst2[7]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
@@ -5725,7 +4172,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst2|inst5|inst2~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
@@ -5734,7 +4181,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
@@ -5743,7 +4190,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst6|inst~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
@@ -5752,7 +4199,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst2|inst7|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
@@ -5761,7 +4208,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[7]~8_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
@@ -5770,7 +4217,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|SPULSE~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 93;
@@ -5779,7 +4226,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst1~3_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 94;
@@ -5788,7 +4235,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst1~0_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 95;
@@ -5797,7 +4244,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst1~_emulated_regout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 96;
@@ -5806,7 +4253,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst1~2_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 97;
@@ -5815,7 +4262,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 98;
@@ -5824,7 +4271,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst5~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 99;
@@ -5833,7 +4280,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst5~clkctrl_outclk";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 100;
@@ -5842,7 +4289,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst11|inst~clkctrl_outclk";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 101;
@@ -5851,7 +4298,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst7~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -5860,7 +4307,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[6]~9_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 103;
@@ -5869,7 +4316,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[5]~10_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|q_a[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 104;
@@ -5878,7 +4325,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[4]~11_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 105;
@@ -5887,7 +4334,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[3]~12_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 106;
@@ -5896,7 +4343,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[2]~13_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 107;
@@ -5905,7 +4352,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[1]~14_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 108;
@@ -5914,7 +4361,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst3[0]~15_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 109;
@@ -5923,7 +4370,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[7]~0_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 110;
@@ -5932,7 +4379,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst1|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 111;
@@ -5941,7 +4388,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst3[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 112;
@@ -5950,7 +4397,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst2|inst~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 113;
@@ -5959,7 +4406,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst4|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 114;
@@ -5968,7 +4415,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst5|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 115;
@@ -5977,7 +4424,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst6|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 116;
@@ -5986,7 +4433,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[6]~1_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 117;
@@ -5995,7 +4442,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[5]~2_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 118;
@@ -6004,7 +4451,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[4]~3_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 119;
@@ -6013,7 +4460,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst3|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst2[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 120;
@@ -6022,7 +4469,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[3]~4_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 121;
@@ -6031,7 +4478,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[2]~5_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 122;
@@ -6040,7 +4487,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[1]~6_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 123;
@@ -6049,7 +4496,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 124;
@@ -6058,7 +4505,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst5|inst2[0]~7_combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 125;
@@ -6067,7 +4514,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst2|inst7|inst2~combout";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 126;
@@ -6076,7 +4523,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[7]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 127;
@@ -6085,7 +4532,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[6]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst3[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 128;
@@ -6094,7 +4541,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[5]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 129;
@@ -6103,7 +4550,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[4]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 130;
@@ -6112,7 +4559,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[3]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 131;
@@ -6121,7 +4568,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[2]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 132;
@@ -6130,7 +4577,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[1]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 133;
@@ -6139,7 +4586,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst11[0]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 134;
@@ -6148,7 +4595,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[7]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 135;
@@ -6157,568 +4604,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[6]";
+	CHANNEL = "memtest_vlg_vec_tst|i1|inst8|inst|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 136;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 137;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 138;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 139;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 140;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 141;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst|inst1|inst|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 142;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 143;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 144;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 145;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 146;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 147;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 148;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 149;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst4|inst1|inst|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 150;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 151;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 152;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 153;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 154;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 155;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 156;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 157;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst3|inst|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 158;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 159;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 160;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 161;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 162;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 163;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 164;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 165;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst1[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 166;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 167;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 168;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 169;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 170;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 171;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 172;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 173;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst2|inst|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 174;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 175;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 176;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 177;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 178;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 179;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 180;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 181;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst9|inst10[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 182;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 183;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 184;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 185;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 186;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 187;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 188;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 189;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|q_a[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 190;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 191;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 192;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 193;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 194;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 195;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 196;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 197;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "mempin_vlg_vec_tst|i1|inst1|srom|rom_block|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 198;
 	TREE_LEVEL = 0;
 }
 ;

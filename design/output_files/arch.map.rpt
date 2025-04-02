@@ -1,5 +1,5 @@
 Analysis & Synthesis report for arch
-Tue Apr 01 21:27:20 2025
+Wed Apr 02 19:44:45 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,23 +17,15 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Analysis & Synthesis RAM Summary
  10. User-Specified and Inferred Latches
  11. General Register Statistics
- 12. Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated
- 13. Parameter Settings for User Entity Instance: LPM_ROM:inst1
+ 12. Source assignments for memsim:inst8|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block|altsyncram_v2a1:auto_generated
+ 13. Parameter Settings for User Entity Instance: sel2g:inst7
  14. Parameter Settings for User Entity Instance: cnt8:inst|reg:inst1
  15. Parameter Settings for User Entity Instance: cnt8:inst|reg:inst1|LPM_FF:inst
  16. Parameter Settings for User Entity Instance: cnt8:inst|sel2g:inst
- 17. Parameter Settings for User Entity Instance: sel2g:inst5
- 18. Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1
- 19. Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1|LPM_FF:inst
- 20. Parameter Settings for User Entity Instance: cnt8:inst4|sel2g:inst
- 21. Parameter Settings for User Entity Instance: regg:inst2
- 22. Parameter Settings for User Entity Instance: regg:inst2|LPM_FF:inst
- 23. Parameter Settings for User Entity Instance: regg:inst3
- 24. Parameter Settings for User Entity Instance: regg:inst3|LPM_FF:inst
- 25. Parameter Settings for User Entity Instance: ram_rw_dq:inst6
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+ 17. Parameter Settings for User Entity Instance: memsim:inst8|LPM_RAM_DQ:inst
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -59,16 +51,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 01 21:27:20 2025           ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 02 19:44:45 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; arch                                            ;
-; Top-level Entity Name              ; mempin                                          ;
+; Top-level Entity Name              ; memtest                                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 76                                              ;
-;     Total combinational functions  ; 68                                              ;
-;     Dedicated logic registers      ; 33                                              ;
-; Total registers                    ; 33                                              ;
-; Total pins                         ; 61                                              ;
+; Total logic elements               ; 38                                              ;
+;     Total combinational functions  ; 30                                              ;
+;     Dedicated logic registers      ; 24                                              ;
+; Total registers                    ; 24                                              ;
+; Total pins                         ; 48                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 2,048                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -82,7 +74,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C8Q208C8        ;                    ;
-; Top-level entity name                                                      ; mempin             ; arch               ;
+; Top-level entity name                                                      ; memtest            ; arch               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -191,146 +183,111 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; reg.bdf                          ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/reg.bdf                                  ;         ;
 ; hadd8.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/hadd8.bdf                                ;         ;
 ; cnt8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/cnt8.bdf                                 ;         ;
-; regg.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/regg.bdf                                 ;         ;
-; vhdl/ram_rw_dq.vhd               ; yes             ; User VHDL File                     ; E:/Project/FPGA/design/vhdl/ram_rw_dq.vhd                       ;         ;
-; ks.bdf                           ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/ks.bdf                                   ;         ;
-; MIF/ramsub_ks_rom.mif            ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/ramsub_ks_rom.mif                    ;         ;
-; memctrl.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/memctrl.bdf                              ;         ;
-; mempin.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/mempin.bdf                               ;         ;
-; lpm_rom.tdf                      ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_rom.tdf           ;         ;
-; altrom.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; memtest.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/memtest.bdf                              ;         ;
+; memsim.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/memsim.bdf                               ;         ;
+; MIF/memsys.mif                   ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/memsys.mif                           ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_ff.tdf            ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; altrom.tdf                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altrom.tdf            ;         ;
-; memmodes.inc                     ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/others/maxplus2/memmodes.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; lpm_ram_dq.tdf                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_ram_dq.tdf        ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; altram.tdf                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altram.tdf            ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/others/maxplus2/memmodes.inc        ;         ;
 ; altsyncram.inc                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altsyncram.inc        ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; a_rdenreg.inc                    ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altram.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_t611.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_t611.tdf                   ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_ff.tdf            ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
+; db/altsyncram_v2a1.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_v2a1.tdf                   ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 76             ;
-;                                             ;                ;
-; Total combinational functions               ; 68             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 10             ;
-;     -- 3 input functions                    ; 46             ;
-;     -- <=2 input functions                  ; 12             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 68             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 33             ;
-;     -- Dedicated logic registers            ; 33             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 61             ;
-; Total memory bits                           ; 2048           ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; ks:inst11|inst ;
-; Maximum fan-out                             ; 59             ;
-; Total fan-out                               ; 454            ;
-; Average fan-out                             ; 2.67           ;
-+---------------------------------------------+----------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 38    ;
+;                                             ;       ;
+; Total combinational functions               ; 30    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 5     ;
+;     -- 3 input functions                    ; 19    ;
+;     -- <=2 input functions                  ; 6     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 30    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 24    ;
+;     -- Dedicated logic registers            ; 24    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 48    ;
+; Total memory bits                           ; 2048  ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 19    ;
+; Total fan-out                               ; 273   ;
+; Average fan-out                             ; 2.48  ;
++---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
-; |mempin                                      ; 68 (0)            ; 33 (0)       ; 2048        ; 0            ; 0       ; 0         ; 61   ; 0            ; |mempin                                                                               ; work         ;
-;    |cnt8:inst4|                              ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4                                                                    ; work         ;
-;       |hadd8:inst2|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2                                                        ; work         ;
-;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst1                                             ; work         ;
-;          |hadd:inst2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst2                                             ; work         ;
-;          |hadd:inst3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst3                                             ; work         ;
-;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst4                                             ; work         ;
-;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst5                                             ; work         ;
-;          |hadd:inst6|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst6                                             ; work         ;
-;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst7                                             ; work         ;
-;          |hadd:inst|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst                                              ; work         ;
-;       |reg:inst1|                            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|reg:inst1                                                          ; work         ;
-;          |lpm_ff:inst|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|reg:inst1|lpm_ff:inst                                              ; work         ;
-;    |cnt8:inst|                               ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst                                                                     ; work         ;
-;       |hadd8:inst2|                          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2                                                         ; work         ;
-;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst1                                              ; work         ;
-;          |hadd:inst2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst2                                              ; work         ;
-;          |hadd:inst3|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst3                                              ; work         ;
-;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst4                                              ; work         ;
-;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst5                                              ; work         ;
-;          |hadd:inst6|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst6                                              ; work         ;
-;          |hadd:inst7|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst7                                              ; work         ;
-;       |reg:inst1|                            ; 1 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|reg:inst1                                                           ; work         ;
-;          |lpm_ff:inst|                       ; 1 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|reg:inst1|lpm_ff:inst                                               ; work         ;
-;    |ks:inst11|                               ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|ks:inst11                                                                     ; work         ;
-;    |lpm_rom:inst1|                           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1                                                                 ; work         ;
-;       |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1|altrom:srom                                                     ; work         ;
-;          |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1|altrom:srom|altsyncram:rom_block                                ; work         ;
-;             |altsyncram_t611:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated ; work         ;
-;    |memctrl:inst9|                           ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|memctrl:inst9                                                                 ; work         ;
-;    |regg:inst2|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst2                                                                    ; work         ;
-;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst2|lpm_ff:inst                                                        ; work         ;
-;    |regg:inst3|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst3                                                                    ; work         ;
-;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst3|lpm_ff:inst                                                        ; work         ;
-;    |sel2g:inst5|                             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|sel2g:inst5                                                                   ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
+; |memtest                                        ; 30 (2)            ; 24 (16)      ; 2048        ; 0            ; 0       ; 0         ; 48   ; 0            ; |memtest                                                                                              ; work         ;
+;    |cnt8:inst|                                  ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst                                                                                    ; work         ;
+;       |hadd8:inst2|                             ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2                                                                        ; work         ;
+;          |hadd:inst1|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst1                                                             ; work         ;
+;          |hadd:inst2|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst2                                                             ; work         ;
+;          |hadd:inst3|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst3                                                             ; work         ;
+;          |hadd:inst4|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst4                                                             ; work         ;
+;          |hadd:inst5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst5                                                             ; work         ;
+;          |hadd:inst6|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst6                                                             ; work         ;
+;          |hadd:inst7|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst7                                                             ; work         ;
+;          |hadd:inst|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|hadd8:inst2|hadd:inst                                                              ; work         ;
+;       |reg:inst1|                               ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|reg:inst1                                                                          ; work         ;
+;          |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|cnt8:inst|reg:inst1|lpm_ff:inst                                                              ; work         ;
+;    |memsim:inst8|                               ; 9 (9)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|memsim:inst8                                                                                 ; work         ;
+;       |lpm_ram_dq:inst|                         ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|memsim:inst8|lpm_ram_dq:inst                                                                 ; work         ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|memsim:inst8|lpm_ram_dq:inst|altram:sram                                                     ; work         ;
+;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|memsim:inst8|lpm_ram_dq:inst|altram:sram|altsyncram:ram_block                                ; work         ;
+;                |altsyncram_v2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|memsim:inst8|lpm_ram_dq:inst|altram:sram|altsyncram:ram_block|altsyncram_v2a1:auto_generated ; work         ;
+;    |sel2g:inst7|                                ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memtest|sel2g:inst7                                                                                  ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                  ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; Name                                                                                     ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                   ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; MIF/ramsub_ks_rom.mif ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------------+
+; Name                                                                                                    ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF            ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------------+
+; memsim:inst8|lpm_ram_dq:inst|altram:sram|altsyncram:ram_block|altsyncram_v2a1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; MIF/memsys.mif ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; memctrl:inst9|inst1[7]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[6]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[5]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[4]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[3]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[2]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[1]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[0]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst11[7]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[6]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[5]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[4]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[3]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[2]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[1]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[0]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[7]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[6]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[5]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[4]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[3]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[2]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[1]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[0]                             ; ks:inst11|inst      ; yes                    ;
-; Number of user-specified and inferred latches = 24  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; memsim:inst8|inst3[7]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[6]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[5]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[4]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[3]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[2]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[1]                              ; memsim:inst8|inst1  ; yes                    ;
+; memsim:inst8|inst3[0]                              ; memsim:inst8|inst1  ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -339,42 +296,32 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------+
-; Assignment                      ; Value              ; From ; To                                     ;
-+---------------------------------+--------------------+------+----------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
-+---------------------------------+--------------------+------+----------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Source assignments for memsim:inst8|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block|altsyncram_v2a1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                    ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                     ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_ROM:inst1      ;
-+------------------------+-----------------------+----------------+
-; Parameter Name         ; Value                 ; Type           ;
-+------------------------+-----------------------+----------------+
-; LPM_WIDTH              ; 8                     ; Untyped        ;
-; LPM_WIDTHAD            ; 8                     ; Untyped        ;
-; LPM_NUMWORDS           ; 256                   ; Untyped        ;
-; LPM_ADDRESS_CONTROL    ; REGISTERED            ; Untyped        ;
-; LPM_OUTDATA            ; UNREGISTERED          ; Untyped        ;
-; LPM_FILE               ; MIF/ramsub_ks_rom.mif ; Untyped        ;
-; DEVICE_FAMILY          ; Cyclone II            ; Untyped        ;
-; AUTO_CARRY_CHAINS      ; ON                    ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS   ; OFF                   ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS    ; ON                    ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS ; OFF                   ; IGNORE_CASCADE ;
-+------------------------+-----------------------+----------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel2g:inst7 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; W              ; 8     ; Untyped                         ;
++----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -417,122 +364,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sel2g:inst5 ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; W              ; 8     ; Untyped                         ;
-+----------------+-------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; W              ; 8     ; Untyped                                  ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1|LPM_FF:inst ;
-+------------------------+------------+-----------------------------------------+
-; Parameter Name         ; Value      ; Type                                    ;
-+------------------------+------------+-----------------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                                 ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                                 ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                                 ;
-; LPM_FFTYPE             ; DFF        ; Untyped                                 ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                 ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                                 ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                            ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                          ;
-+------------------------+------------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst4|sel2g:inst ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; W              ; 8     ; Untyped                                   ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst2 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; W              ; 8     ; Untyped                        ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst2|LPM_FF:inst ;
-+------------------------+------------+-------------------------------+
-; Parameter Name         ; Value      ; Type                          ;
-+------------------------+------------+-------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                       ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                       ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                       ;
-; LPM_FFTYPE             ; DFF        ; Untyped                       ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                       ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                       ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                    ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                  ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                  ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                ;
-+------------------------+------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst3 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; W              ; 8     ; Untyped                        ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst3|LPM_FF:inst ;
-+------------------------+------------+-------------------------------+
-; Parameter Name         ; Value      ; Type                          ;
-+------------------------+------------+-------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                       ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                       ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                       ;
-; LPM_FFTYPE             ; DFF        ; Untyped                       ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                       ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                       ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                    ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                  ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                  ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                ;
-+------------------------+------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram_rw_dq:inst6 ;
-+----------------+----------------+----------------------------+
-; Parameter Name ; Value          ; Type                       ;
-+----------------+----------------+----------------------------+
-; waddr          ; 8              ; Signed Integer             ;
-; wdat           ; 8              ; Signed Integer             ;
-; init           ; MIF/ramsub.mif ; String                     ;
-+----------------+----------------+----------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memsim:inst8|LPM_RAM_DQ:inst ;
++------------------------+----------------+---------------------------------+
+; Parameter Name         ; Value          ; Type                            ;
++------------------------+----------------+---------------------------------+
+; LPM_WIDTH              ; 8              ; Untyped                         ;
+; LPM_WIDTHAD            ; 8              ; Untyped                         ;
+; LPM_NUMWORDS           ; 256            ; Untyped                         ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                         ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                         ;
+; LPM_OUTDATA            ; UNREGISTERED   ; Untyped                         ;
+; LPM_FILE               ; MIF/memsys.mif ; Untyped                         ;
+; USE_EAB                ; ON             ; Untyped                         ;
+; DEVICE_FAMILY          ; Cyclone II     ; Untyped                         ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                         ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                  ;
++------------------------+----------------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -551,7 +402,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Apr 01 21:27:19 2025
+    Info: Processing started: Wed Apr 02 19:44:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arch -c arch
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file hadd.bdf
@@ -630,28 +481,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file memtemp
     Info (12023): Found entity 1: memtemp
 Info (12021): Found 1 design units, including 1 entities, in source file mempin.bdf
     Info (12023): Found entity 1: mempin
-Info (12127): Elaborating entity "mempin" for the top level hierarchy
-Warning (275013): Port "CLK" of type ram_rw_dq and instance "inst6" is missing source signal
-Info (12128): Elaborating entity "memctrl" for hierarchy "memctrl:inst9"
-Warning (275011): Block or symbol "TRI" of instance "inst3" overlaps another block or symbol
-Warning (275011): Block or symbol "AND2" of instance "inst5" overlaps another block or symbol
-Info (12128): Elaborating entity "ks" for hierarchy "ks:inst11"
-Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:inst1"
-Info (12130): Elaborated megafunction instantiation "LPM_ROM:inst1"
-Info (12133): Instantiated megafunction "LPM_ROM:inst1" with the following parameter:
-    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
-    Info (12134): Parameter "LPM_FILE" = "MIF/ramsub_ks_rom.mif"
-    Info (12134): Parameter "LPM_NUMWORDS" = "256"
-    Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
-    Info (12134): Parameter "LPM_WIDTH" = "8"
-    Info (12134): Parameter "LPM_WIDTHAD" = "8"
-Info (12128): Elaborating entity "altrom" for hierarchy "LPM_ROM:inst1|altrom:srom"
-Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst1|altrom:srom", which is child of megafunction instantiation "LPM_ROM:inst1"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block"
-Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:inst1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t611.tdf
-    Info (12023): Found entity 1: altsyncram_t611
-Info (12128): Elaborating entity "altsyncram_t611" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated"
+Info (12127): Elaborating entity "memtest" for the top level hierarchy
+Info (12128): Elaborating entity "sel2g" for hierarchy "sel2g:inst7"
 Info (12128): Elaborating entity "cnt8" for hierarchy "cnt8:inst"
 Info (12128): Elaborating entity "hadd8" for hierarchy "cnt8:inst|hadd8:inst2"
 Info (12128): Elaborating entity "hadd" for hierarchy "cnt8:inst|hadd8:inst2|hadd:inst7"
@@ -661,87 +492,37 @@ Info (12130): Elaborated megafunction instantiation "cnt8:inst|reg:inst1|LPM_FF:
 Info (12133): Instantiated megafunction "cnt8:inst|reg:inst1|LPM_FF:inst" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "8"
-Info (12128): Elaborating entity "sel2g" for hierarchy "cnt8:inst|sel2g:inst"
-Info (12128): Elaborating entity "regg" for hierarchy "regg:inst2"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "regg:inst2|LPM_FF:inst"
-Info (12130): Elaborated megafunction instantiation "regg:inst2|LPM_FF:inst"
-Info (12133): Instantiated megafunction "regg:inst2|LPM_FF:inst" with the following parameter:
-    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
+Info (12128): Elaborating entity "memsim" for hierarchy "memsim:inst8"
+Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming MIF/memsys.mif was intended to be a quoted string
+Info (12128): Elaborating entity "LPM_RAM_DQ" for hierarchy "memsim:inst8|LPM_RAM_DQ:inst"
+Info (12130): Elaborated megafunction instantiation "memsim:inst8|LPM_RAM_DQ:inst"
+Info (12133): Instantiated megafunction "memsim:inst8|LPM_RAM_DQ:inst" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info (12134): Parameter "LPM_FILE" = "MIF/memsys.mif"
+    Info (12134): Parameter "LPM_INDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_NUMWORDS" = "256"
+    Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
     Info (12134): Parameter "LPM_WIDTH" = "8"
-Info (12128): Elaborating entity "ram_rw_dq" for hierarchy "ram_rw_dq:inst6"
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[7]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[6]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[5]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[4]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[3]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[2]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[1]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "mD[0]" and its non-tri-state driver.
-Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[7]" to the node "uIR[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[4]" to the node "uIR[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[6]" to the node "uIR[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[5]" to the node "uIR[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[3]" to the node "uIR[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[2]" to the node "uIR[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[1]" to the node "uIR[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[0]" to the node "uIR[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[4]" to the node "memctrl:inst9|inst7" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[6]" to the node "ks:inst11|inst1" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[5]" to the node "memctrl:inst9|inst5" into a wire
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[3]" to the node "sel2g:inst5|inst2[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[2]" to the node "regg:inst3|lpm_ff:inst|dffs[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[1]" to the node "cnt8:inst4|hadd8:inst2|hadd:inst|inst" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[0]" to the node "regg:inst2|lpm_ff:inst|dffs[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[7]" to the node "memctrl:inst9|inst1[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[6]" to the node "memctrl:inst9|inst1[6]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[5]" to the node "memctrl:inst9|inst1[5]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[4]" to the node "memctrl:inst9|inst1[4]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[3]" to the node "memctrl:inst9|inst1[3]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[2]" to the node "memctrl:inst9|inst1[2]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[1]" to the node "memctrl:inst9|inst1[1]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "memctrl:inst9|inst3[0]" to the node "memctrl:inst9|inst1[0]" into an OR gate
-Warning (13012): Latch memctrl:inst9|inst1[7] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[6] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[5] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[4] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13012): Latch memctrl:inst9|inst1[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ks:inst11|inst
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "ks:inst11|inst1" is converted into an equivalent circuit using register "ks:inst11|inst1~_emulated" and latch "ks:inst11|inst1~1"
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
-    Warning (13010): Node "mD~synth"
+    Info (12134): Parameter "LPM_WIDTHAD" = "8"
+Info (12128): Elaborating entity "altram" for hierarchy "memsim:inst8|LPM_RAM_DQ:inst|altram:sram"
+Warning (287001): Assertion warning: altram does not support Cyclone II device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone II devices
+Info (12131): Elaborated megafunction instantiation "memsim:inst8|LPM_RAM_DQ:inst|altram:sram", which is child of megafunction instantiation "memsim:inst8|LPM_RAM_DQ:inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "memsim:inst8|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block"
+Info (12131): Elaborated megafunction instantiation "memsim:inst8|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "memsim:inst8|LPM_RAM_DQ:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_v2a1.tdf
+    Info (12023): Found entity 1: altsyncram_v2a1
+Info (12128): Elaborating entity "altsyncram_v2a1" for hierarchy "memsim:inst8|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block|altsyncram_v2a1:auto_generated"
 Info (144001): Generated suppressed messages file E:/Project/FPGA/design/output_files/arch.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 153 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 50 output pins
-    Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 84 logic cells
+Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 46 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 65 warnings
-    Info: Peak virtual memory: 4658 megabytes
-    Info: Processing ended: Tue Apr 01 21:27:20 2025
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4659 megabytes
+    Info: Processing ended: Wed Apr 02 19:44:45 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
