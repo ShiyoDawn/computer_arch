@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Apr 02 19:44:45 2025
+Analysis & Synthesis Status : Successful - Wed Apr 02 20:33:42 2025
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : arch
-Top-level Entity Name : memtest
+Top-level Entity Name : ramsub_ks
 Family : Cyclone II
-Total logic elements : 38
-    Total combinational functions : 30
-    Dedicated logic registers : 24
-Total registers : 24
-Total pins : 48
+Total logic elements : 50
+    Total combinational functions : 34
+    Dedicated logic registers : 33
+Total registers : 33
+Total pins : 43
 Total virtual pins : 0
-Total memory bits : 2,048
+Total memory bits : 4,096
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

@@ -90,7 +90,7 @@ GND+                         : 23        :        :                   :         
 GND+                         : 24        :        :                   :         : 1         :                
 GND                          : 25        : gnd    :                   :         :           :                
 nCONFIG                      : 26        :        :                   :         : 1         :                
-RST                          : 27        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND+                         : 27        :        :                   :         : 1         :                
 GND+                         : 28        :        :                   :         : 1         :                
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
 GND*                         : 30        :        :                   :         : 1         :                
@@ -131,57 +131,57 @@ GND*                         : 64        :        :                   :         
 GND                          : 65        : gnd    :                   :         :           :                
 VCCINT                       : 66        : power  :                   : 1.2V    :           :                
 GND*                         : 67        :        :                   :         : 4         :                
-CNT                          : 68        : input  : 3.3-V LVTTL       :         : 4         : N              
-PC[1]                        : 69        : output : 3.3-V LVTTL       :         : 4         : N              
-PC[5]                        : 70        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 68        :        :                   :         : 4         :                
+MBR[4]                       : 69        : output : 3.3-V LVTTL       :         : 4         : N              
+MBR[1]                       : 70        : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 71        : power  :                   : 3.3V    : 4         :                
-W                            : 72        : input  : 3.3-V LVTTL       :         : 4         : N              
+MBR[2]                       : 72        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 73        : gnd    :                   :         :           :                
-PC[6]                        : 74        : output : 3.3-V LVTTL       :         : 4         : N              
-PC[0]                        : 75        : output : 3.3-V LVTTL       :         : 4         : N              
-PC[2]                        : 76        : output : 3.3-V LVTTL       :         : 4         : N              
-PC[7]                        : 77        : output : 3.3-V LVTTL       :         : 4         : N              
+MBR[5]                       : 74        : output : 3.3-V LVTTL       :         : 4         : N              
+MBR[3]                       : 75        : output : 3.3-V LVTTL       :         : 4         : N              
+uIR[7]                       : 76        : output : 3.3-V LVTTL       :         : 4         : N              
+MBR[0]                       : 77        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 78        : gnd    :                   :         :           :                
 VCCINT                       : 79        : power  :                   : 1.2V    :           :                
-mA[1]                        : 80        : output : 3.3-V LVTTL       :         : 4         : N              
+uIR[4]                       : 80        : output : 3.3-V LVTTL       :         : 4         : N              
 CLK                          : 81        : input  : 3.3-V LVTTL       :         : 4         : Y              
-PC[3]                        : 82        : output : 3.3-V LVTTL       :         : 4         : N              
+CLRN                         : 82        : input  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 83        : power  :                   : 3.3V    : 4         :                
-PC[4]                        : 84        : output : 3.3-V LVTTL       :         : 4         : N              
+uIR[1]                       : 84        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 85        : gnd    :                   :         :           :                
-MBR[6]                       : 86        : output : 3.3-V LVTTL       :         : 4         : N              
-Q[1]                         : 87        : output : 3.3-V LVTTL       :         : 4         : N              
-MBR[1]                       : 88        : output : 3.3-V LVTTL       :         : 4         : N              
-MBR[4]                       : 89        : output : 3.3-V LVTTL       :         : 4         : N              
-MAR[2]                       : 90        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[1]                        : 86        : output : 3.3-V LVTTL       :         : 4         : N              
+uIR[5]                       : 87        : output : 3.3-V LVTTL       :         : 4         : N              
+uIR[6]                       : 88        : output : 3.3-V LVTTL       :         : 4         : N              
+uIR[0]                       : 89        : output : 3.3-V LVTTL       :         : 4         : N              
+Q[4]                         : 90        : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 91        : power  :                   : 3.3V    : 4         :                
-Q[7]                         : 92        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[5]                        : 92        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 93        : gnd    :                   :         :           :                
-Q[3]                         : 94        : output : 3.3-V LVTTL       :         : 4         : N              
-aSEL                         : 95        : input  : 3.3-V LVTTL       :         : 4         : N              
-mA[6]                        : 96        : output : 3.3-V LVTTL       :         : 4         : N              
-MAR[0]                       : 97        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[4]                        : 94        : output : 3.3-V LVTTL       :         : 4         : N              
+Q[1]                         : 95        : output : 3.3-V LVTTL       :         : 4         : N              
+Q[5]                         : 96        : output : 3.3-V LVTTL       :         : 4         : N              
+SPULSE                       : 97        : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 98        : power  :                   : 3.3V    : 4         :                
-MAR[7]                       : 99        : output : 3.3-V LVTTL       :         : 4         : N              
+MBR[7]                       : 99        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 100       : gnd    :                   :         :           :                
-MAR[4]                       : 101       : output : 3.3-V LVTTL       :         : 4         : N              
-Q[5]                         : 102       : output : 3.3-V LVTTL       :         : 4         : N              
-MAR[5]                       : 103       : output : 3.3-V LVTTL       :         : 4         : N              
-MAR[3]                       : 104       : output : 3.3-V LVTTL       :         : 4         : N              
-mA[0]                        : 105       : output : 3.3-V LVTTL       :         : 3         : N              
-mA[4]                        : 106       : output : 3.3-V LVTTL       :         : 3         : N              
-MBR[0]                       : 107       : output : 3.3-V LVTTL       :         : 3         : N              
+MAR[1]                       : 101       : output : 3.3-V LVTTL       :         : 4         : N              
+MAR[5]                       : 102       : output : 3.3-V LVTTL       :         : 4         : N              
+PC[7]                        : 103       : output : 3.3-V LVTTL       :         : 4         : N              
+PC[3]                        : 104       : output : 3.3-V LVTTL       :         : 4         : N              
+MBR[6]                       : 105       : output : 3.3-V LVTTL       :         : 3         : N              
+uIR[3]                       : 106       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[0]                        : 107       : output : 3.3-V LVTTL       :         : 3         : N              
 ~LVDS54p/nCEO~               : 108       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 109       : power  :                   : 3.3V    : 3         :                
-MBR[7]                       : 110       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[6]                        : 110       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : 111       : gnd    :                   :         :           :                
-MBR[2]                       : 112       : output : 3.3-V LVTTL       :         : 3         : N              
-MBR[5]                       : 113       : output : 3.3-V LVTTL       :         : 3         : N              
-mA[2]                        : 114       : output : 3.3-V LVTTL       :         : 3         : N              
-mA[7]                        : 115       : output : 3.3-V LVTTL       :         : 3         : N              
-MBR[3]                       : 116       : output : 3.3-V LVTTL       :         : 3         : N              
-mA[5]                        : 117       : output : 3.3-V LVTTL       :         : 3         : N              
-Q[0]                         : 118       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[2]                        : 112       : output : 3.3-V LVTTL       :         : 3         : N              
+uIR[2]                       : 113       : output : 3.3-V LVTTL       :         : 3         : N              
+MAR[3]                       : 114       : output : 3.3-V LVTTL       :         : 3         : N              
+MAR[4]                       : 115       : output : 3.3-V LVTTL       :         : 3         : N              
+Q[0]                         : 116       : output : 3.3-V LVTTL       :         : 3         : N              
+Q[3]                         : 117       : output : 3.3-V LVTTL       :         : 3         : N              
+Q[6]                         : 118       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : 119       : gnd    :                   :         :           :                
 VCCINT                       : 120       : power  :                   : 1.2V    :           :                
 nSTATUS                      : 121       :        :                   :         : 3         :                
@@ -190,22 +190,22 @@ CONF_DONE                    : 123       :        :                   :         
 GND                          : 124       : gnd    :                   :         :           :                
 MSEL1                        : 125       :        :                   :         : 3         :                
 MSEL0                        : 126       :        :                   :         : 3         :                
-mA[3]                        : 127       : output : 3.3-V LVTTL       :         : 3         : N              
-Q[4]                         : 128       : output : 3.3-V LVTTL       :         : 3         : N              
+Q[7]                         : 127       : output : 3.3-V LVTTL       :         : 3         : N              
+Q[2]                         : 128       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : 129       :        :                   :         : 3         :                
 GND+                         : 130       :        :                   :         : 3         :                
 GND+                         : 131       :        :                   :         : 3         :                
 GND+                         : 132       :        :                   :         : 3         :                
-Q[6]                         : 133       : output : 3.3-V LVTTL       :         : 3         : N              
-MAR[1]                       : 134       : output : 3.3-V LVTTL       :         : 3         : N              
-Q[2]                         : 135       : output : 3.3-V LVTTL       :         : 3         : N              
+MAR[7]                       : 133       : output : 3.3-V LVTTL       :         : 3         : N              
+MAR[6]                       : 134       : output : 3.3-V LVTTL       :         : 3         : N              
+MAR[0]                       : 135       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 136       : power  :                   : 3.3V    : 3         :                
-MAR[6]                       : 137       : output : 3.3-V LVTTL       :         : 3         : N              
-wMAR                         : 138       : input  : 3.3-V LVTTL       :         : 3         : N              
-wMBR                         : 139       : input  : 3.3-V LVTTL       :         : 3         : N              
+MAR[2]                       : 137       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 138       :        :                   :         : 3         :                
+GND*                         : 139       :        :                   :         : 3         :                
 GND                          : 140       : gnd    :                   :         :           :                
 GND*                         : 141       :        :                   :         : 3         :                
-R                            : 142       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 142       :        :                   :         : 3         :                
 GND*                         : 143       :        :                   :         : 3         :                
 GND*                         : 144       :        :                   :         : 3         :                
 GND*                         : 145       :        :                   :         : 3         :                

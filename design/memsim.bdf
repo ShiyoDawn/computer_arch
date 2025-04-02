@@ -234,7 +234,7 @@ applicable agreement for further details.
 	)
 	(parameter
 		"LPM_FILE"
-		"MIF/memsys.mif"
+		"MIF/ramsub.mif"
 		"File containing initial contents of memory array"
 	)
 	(parameter
@@ -272,7 +272,7 @@ applicable agreement for further details.
 		(line (pt 104 96)(pt 104 16))
 		(line (pt 16 96)(pt 16 16))
 	)
-	(annotation_block (parameter)(rect 664 216 932 328))
+	(annotation_block (parameter)(rect 664 216 928 328))
 )
 (connector
 	(pt 528 352)
