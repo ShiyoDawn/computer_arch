@@ -68,7 +68,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name TOP_LEVEL_ENTITY ramsub_ks
+set_global_assignment -name TOP_LEVEL_ENTITY mempin
 
 # Fitter Assignments
 # ==================
@@ -143,32 +143,8 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/alusys_random.vwf
 set_global_assignment -name BDF_FILE alu_ROM.bdf
 set_global_assignment -name MIF_FILE MIF/alu.mif
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWF/alu_ROM.vwf
-set_location_assignment PIN_81 -to CLK
-set_location_assignment PIN_82 -to CLRN
-set_location_assignment PIN_12 -to Q0[7]
-set_location_assignment PIN_11 -to Q0[6]
-set_location_assignment PIN_10 -to Q0[5]
-set_location_assignment PIN_8 -to Q0[4]
-set_location_assignment PIN_6 -to Q0[3]
-set_location_assignment PIN_5 -to Q0[2]
-set_location_assignment PIN_4 -to Q0[1]
-set_location_assignment PIN_3 -to Q0[0]
-set_location_assignment PIN_133 -to Q1[7]
-set_location_assignment PIN_128 -to Q1[6]
-set_location_assignment PIN_44 -to Q1[5]
-set_location_assignment PIN_43 -to Q1[4]
-set_location_assignment PIN_41 -to Q1[3]
-set_location_assignment PIN_40 -to Q1[2]
-set_location_assignment PIN_39 -to Q1[1]
-set_location_assignment PIN_37 -to Q1[0]
-set_location_assignment PIN_152 -to Q2[7]
-set_location_assignment PIN_151 -to Q2[6]
-set_location_assignment PIN_150 -to Q2[5]
-set_location_assignment PIN_149 -to Q2[4]
-set_location_assignment PIN_147 -to Q2[3]
-set_location_assignment PIN_146 -to Q2[2]
-set_location_assignment PIN_145 -to Q2[1]
-set_location_assignment PIN_144 -to Q2[0]
+set_location_assignment PIN_132 -to CLK
+set_location_assignment PIN_72 -to CLRN
 set_global_assignment -name BDF_FILE ram_dq.bdf
 set_global_assignment -name BDF_FILE ramsub.bdf
 set_global_assignment -name VHDL_FILE vhdl/ram_rw_dq.vhd
@@ -196,8 +172,67 @@ set_global_assignment -name MIF_FILE MIF/memsys.mif
 set_global_assignment -name BDF_FILE memtemp.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mctest.vwf
 set_global_assignment -name BDF_FILE mempin.bdf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/ramsub_ks.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_34 -to Q[0]
+set_location_assignment PIN_35 -to Q[1]
+set_location_assignment PIN_37 -to Q[2]
+set_location_assignment PIN_39 -to Q[3]
+set_location_assignment PIN_44 -to Q[7]
+set_location_assignment PIN_43 -to Q[6]
+set_location_assignment PIN_41 -to Q[5]
+set_location_assignment PIN_40 -to Q[4]
+set_location_assignment PIN_74 -to SPULSE
+set_location_assignment PIN_141 -to uIR[7]
+set_location_assignment PIN_139 -to uIR[6]
+set_location_assignment PIN_138 -to uIR[5]
+set_location_assignment PIN_137 -to uIR[4]
+set_location_assignment PIN_135 -to uIR[3]
+set_location_assignment PIN_134 -to uIR[2]
+set_location_assignment PIN_133 -to uIR[1]
+set_location_assignment PIN_128 -to uIR[0]
+set_location_assignment PIN_165 -to MAR[7]
+set_location_assignment PIN_164 -to MAR[6]
+set_location_assignment PIN_163 -to MAR[5]
+set_location_assignment PIN_162 -to MAR[4]
+set_location_assignment PIN_161 -to MAR[3]
+set_location_assignment PIN_160 -to MAR[2]
+set_location_assignment PIN_152 -to MAR[1]
+set_location_assignment PIN_151 -to MAR[0]
+set_location_assignment PIN_150 -to MBR[7]
+set_location_assignment PIN_149 -to MBR[6]
+set_location_assignment PIN_147 -to MBR[5]
+set_location_assignment PIN_146 -to MBR[4]
+set_location_assignment PIN_145 -to MBR[3]
+set_location_assignment PIN_144 -to MBR[2]
+set_location_assignment PIN_143 -to MBR[1]
+set_location_assignment PIN_142 -to MBR[0]
+set_location_assignment PIN_33 -to PC[7]
+set_location_assignment PIN_31 -to PC[6]
+set_location_assignment PIN_30 -to PC[5]
+set_location_assignment PIN_15 -to PC[4]
+set_location_assignment PIN_14 -to PC[3]
+set_location_assignment PIN_13 -to PC[2]
+set_location_assignment PIN_12 -to PC[1]
+set_location_assignment PIN_11 -to PC[0]
+set_location_assignment PIN_179 -to mA[7]
+set_location_assignment PIN_176 -to mA[6]
+set_location_assignment PIN_175 -to mA[5]
+set_location_assignment PIN_173 -to mA[4]
+set_location_assignment PIN_171 -to mA[3]
+set_location_assignment PIN_170 -to mA[2]
+set_location_assignment PIN_169 -to mA[1]
+set_location_assignment PIN_168 -to mA[0]
+set_location_assignment PIN_201 -to mD[7]
+set_location_assignment PIN_200 -to mD[6]
+set_location_assignment PIN_199 -to mD[5]
+set_location_assignment PIN_198 -to mD[4]
+set_location_assignment PIN_197 -to mD[3]
+set_location_assignment PIN_195 -to mD[2]
+set_location_assignment PIN_193 -to mD[1]
+set_location_assignment PIN_192 -to mD[0]
+set_location_assignment PIN_63 -to nR
+set_location_assignment PIN_64 -to nW
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Project/FPGA/design/VWF/ramsub_ks.vwf"
