@@ -1,5 +1,5 @@
 Analysis & Synthesis report for arch
-Tue Apr 08 14:50:20 2025
+Sat Apr 26 15:23:35 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,23 +17,77 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Analysis & Synthesis RAM Summary
  10. User-Specified and Inferred Latches
  11. General Register Statistics
- 12. Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated
- 13. Parameter Settings for User Entity Instance: LPM_ROM:inst1
- 14. Parameter Settings for User Entity Instance: cnt8:inst|reg:inst1
- 15. Parameter Settings for User Entity Instance: cnt8:inst|reg:inst1|LPM_FF:inst
- 16. Parameter Settings for User Entity Instance: cnt8:inst|sel2g:inst
- 17. Parameter Settings for User Entity Instance: sel2g:inst5
- 18. Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1
- 19. Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1|LPM_FF:inst
- 20. Parameter Settings for User Entity Instance: cnt8:inst4|sel2g:inst
- 21. Parameter Settings for User Entity Instance: regg:inst2
- 22. Parameter Settings for User Entity Instance: regg:inst2|LPM_FF:inst
- 23. Parameter Settings for User Entity Instance: regg:inst3
- 24. Parameter Settings for User Entity Instance: regg:inst3|LPM_FF:inst
- 25. Parameter Settings for User Entity Instance: ram_rw_dq:inst6
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for cu:inst9|LPM_ROM:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated
+ 15. Parameter Settings for User Entity Instance: cu:inst9|sel2g:inst9
+ 16. Parameter Settings for User Entity Instance: cu:inst9|LPM_ROM:inst10
+ 17. Parameter Settings for User Entity Instance: cu:inst9|reg:inst8
+ 18. Parameter Settings for User Entity Instance: cu:inst9|reg:inst8|LPM_FF:inst
+ 19. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7
+ 20. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel2g:inst2
+ 21. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst
+ 22. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst4
+ 23. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst
+ 24. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst3
+ 25. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1
+ 26. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst4
+ 27. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst
+ 28. Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst3
+ 29. Parameter Settings for User Entity Instance: cu:inst9|sel2g:inst1
+ 30. Parameter Settings for User Entity Instance: regg:rFLAG
+ 31. Parameter Settings for User Entity Instance: regg:rFLAG|LPM_FF:inst
+ 32. Parameter Settings for User Entity Instance: sel2g:aSelect
+ 33. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5
+ 34. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5|sel2g:inst4
+ 35. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5|sel2g:inst
+ 36. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5|sel2g:inst3
+ 37. Parameter Settings for User Entity Instance: regset:inst4|regg:inst
+ 38. Parameter Settings for User Entity Instance: regset:inst4|regg:inst|LPM_FF:inst
+ 39. Parameter Settings for User Entity Instance: regset:inst4|regg:inst8
+ 40. Parameter Settings for User Entity Instance: regset:inst4|regg:inst8|LPM_FF:inst
+ 41. Parameter Settings for User Entity Instance: regset:inst4|regg:inst9
+ 42. Parameter Settings for User Entity Instance: regset:inst4|regg:inst9|LPM_FF:inst
+ 43. Parameter Settings for User Entity Instance: regset:inst4|regg:inst10
+ 44. Parameter Settings for User Entity Instance: regset:inst4|regg:inst10|LPM_FF:inst
+ 45. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6
+ 46. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6|sel2g:inst4
+ 47. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6|sel2g:inst
+ 48. Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6|sel2g:inst3
+ 49. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5
+ 50. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5|sel2g:inst4
+ 51. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5|sel2g:inst
+ 52. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5|sel2g:inst3
+ 53. Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst
+ 54. Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst4
+ 55. Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst
+ 56. Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst3
+ 57. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4
+ 58. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4|sel2g:inst4
+ 59. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4|sel2g:inst
+ 60. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4|sel2g:inst3
+ 61. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3
+ 62. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3|sel2g:inst4
+ 63. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3|sel2g:inst
+ 64. Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3|sel2g:inst3
+ 65. Parameter Settings for User Entity Instance: alu_diy:inst2|sel2g:inst11
+ 66. Parameter Settings for User Entity Instance: alu_diy:inst2|sel2g:inst10
+ 67. Parameter Settings for User Entity Instance: sel4g:inst
+ 68. Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst4
+ 69. Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst
+ 70. Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst3
+ 71. Parameter Settings for User Entity Instance: regg:inst20
+ 72. Parameter Settings for User Entity Instance: regg:inst20|LPM_FF:inst
+ 73. Parameter Settings for User Entity Instance: sel2g:inst21
+ 74. Parameter Settings for User Entity Instance: regg:inst199
+ 75. Parameter Settings for User Entity Instance: regg:inst199|LPM_FF:inst
+ 76. Parameter Settings for User Entity Instance: regg:inst7
+ 77. Parameter Settings for User Entity Instance: regg:inst7|LPM_FF:inst
+ 78. Parameter Settings for User Entity Instance: regg:rPC
+ 79. Parameter Settings for User Entity Instance: regg:rPC|LPM_FF:inst
+ 80. Elapsed Time Per Partition
+ 81. Analysis & Synthesis Messages
+ 82. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -59,18 +113,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 08 14:50:20 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 26 15:23:35 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; arch                                            ;
-; Top-level Entity Name              ; mempin                                          ;
+; Top-level Entity Name              ; model                                           ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 68                                              ;
-;     Total combinational functions  ; 60                                              ;
-;     Dedicated logic registers      ; 33                                              ;
-; Total registers                    ; 33                                              ;
-; Total pins                         ; 62                                              ;
+; Total logic elements               ; 3,971                                           ;
+;     Total combinational functions  ; 1,927                                           ;
+;     Dedicated logic registers      ; 2,122                                           ;
+; Total registers                    ; 2122                                            ;
+; Total pins                         ; 102                                             ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 2,048                                           ;
+; Total memory bits                  ; 6,144                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -82,7 +136,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C8Q208C8        ;                    ;
-; Top-level entity name                                                      ; mempin             ; arch               ;
+; Top-level entity name                                                      ; model              ; arch               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -187,16 +241,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
 ; hadd.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/hadd.bdf                                 ;         ;
+; fadd.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/fadd.bdf                                 ;         ;
+; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/adder.bdf                                ;         ;
+; dec2_4.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/dec2_4.bdf                               ;         ;
 ; sel2g.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/sel2g.bdf                                ;         ;
+; sel4g.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/sel4g.bdf                                ;         ;
+; dec3_8.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/dec3_8.bdf                               ;         ;
 ; reg.bdf                          ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/reg.bdf                                  ;         ;
-; hadd8.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/hadd8.bdf                                ;         ;
-; cnt8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/cnt8.bdf                                 ;         ;
+; sh1c.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/sh1c.bdf                                 ;         ;
+; add8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/add8.bdf                                 ;         ;
+; addsub8.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/addsub8.bdf                              ;         ;
 ; regg.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/regg.bdf                                 ;         ;
-; vhdl/ram_rw_dq.vhd               ; yes             ; User VHDL File                     ; E:/Project/FPGA/design/vhdl/ram_rw_dq.vhd                       ;         ;
 ; ks.bdf                           ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/ks.bdf                                   ;         ;
-; MIF/ramsub_ks_rom.mif            ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/ramsub_ks_rom.mif                    ;         ;
-; memctrl.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/memctrl.bdf                              ;         ;
-; mempin.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/mempin.bdf                               ;         ;
+; asyncram.v                       ; yes             ; User Verilog HDL File              ; E:/Project/FPGA/design/asyncram.v                               ;         ;
+; alu_diy.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/alu_diy.bdf                              ;         ;
+; model.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/model.bdf                                ;         ;
+; cu.bdf                           ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/cu.bdf                                   ;         ;
+; MIF/cu.mif                       ; yes             ; User Memory Initialization File    ; E:/Project/FPGA/design/MIF/cu.mif                               ;         ;
+; sel8g.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/sel8g.bdf                                ;         ;
+; regset.bdf                       ; yes             ; User Block Diagram/Schematic File  ; E:/Project/FPGA/design/regset.bdf                               ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_rom.tdf           ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
@@ -210,127 +273,158 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; a_rdenreg.inc                    ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
 ; altram.inc                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_t611.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_t611.tdf                   ;         ;
+; db/altsyncram_f301.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Project/FPGA/design/db/altsyncram_f301.tdf                   ;         ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_ff.tdf            ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 68             ;
-;                                             ;                ;
-; Total combinational functions               ; 60             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 10             ;
-;     -- 3 input functions                    ; 38             ;
-;     -- <=2 input functions                  ; 12             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 60             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 33             ;
-;     -- Dedicated logic registers            ; 33             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 62             ;
-; Total memory bits                           ; 2048           ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; ks:inst11|inst ;
-; Maximum fan-out                             ; 52             ;
-; Total fan-out                               ; 431            ;
-; Average fan-out                             ; 2.64           ;
-+---------------------------------------------+----------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 3,971  ;
+;                                             ;        ;
+; Total combinational functions               ; 1927   ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 1548   ;
+;     -- 3 input functions                    ; 282    ;
+;     -- <=2 input functions                  ; 97     ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 1927   ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 2122   ;
+;     -- Dedicated logic registers            ; 2122   ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 102    ;
+; Total memory bits                           ; 6144   ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; inst28 ;
+; Maximum fan-out                             ; 2052   ;
+; Total fan-out                               ; 14109  ;
+; Average fan-out                             ; 3.38   ;
++---------------------------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
-; |mempin                                      ; 60 (0)            ; 33 (0)       ; 2048        ; 0            ; 0       ; 0         ; 62   ; 0            ; |mempin                                                                               ; work         ;
-;    |cnt8:inst4|                              ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4                                                                    ; work         ;
-;       |hadd8:inst2|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2                                                        ; work         ;
-;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst1                                             ; work         ;
-;          |hadd:inst2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst2                                             ; work         ;
-;          |hadd:inst3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst3                                             ; work         ;
-;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst4                                             ; work         ;
-;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst5                                             ; work         ;
-;          |hadd:inst6|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst6                                             ; work         ;
-;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst7                                             ; work         ;
-;          |hadd:inst|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|hadd8:inst2|hadd:inst                                              ; work         ;
-;       |reg:inst1|                            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|reg:inst1                                                          ; work         ;
-;          |lpm_ff:inst|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst4|reg:inst1|lpm_ff:inst                                              ; work         ;
-;    |cnt8:inst|                               ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst                                                                     ; work         ;
-;       |hadd8:inst2|                          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2                                                         ; work         ;
-;          |hadd:inst1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst1                                              ; work         ;
-;          |hadd:inst2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst2                                              ; work         ;
-;          |hadd:inst3|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst3                                              ; work         ;
-;          |hadd:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst4                                              ; work         ;
-;          |hadd:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst5                                              ; work         ;
-;          |hadd:inst6|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst6                                              ; work         ;
-;          |hadd:inst7|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|hadd8:inst2|hadd:inst7                                              ; work         ;
-;       |reg:inst1|                            ; 1 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|reg:inst1                                                           ; work         ;
-;          |lpm_ff:inst|                       ; 1 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|cnt8:inst|reg:inst1|lpm_ff:inst                                               ; work         ;
-;    |ks:inst11|                               ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|ks:inst11                                                                     ; work         ;
-;    |lpm_rom:inst1|                           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1                                                                 ; work         ;
-;       |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1|altrom:srom                                                     ; work         ;
-;          |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1|altrom:srom|altsyncram:rom_block                                ; work         ;
-;             |altsyncram_t611:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated ; work         ;
-;    |memctrl:inst9|                           ; 26 (26)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|memctrl:inst9                                                                 ; work         ;
-;    |regg:inst2|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst2                                                                    ; work         ;
-;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst2|lpm_ff:inst                                                        ; work         ;
-;    |regg:inst3|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst3                                                                    ; work         ;
-;       |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|regg:inst3|lpm_ff:inst                                                        ; work         ;
-;    |sel2g:inst5|                             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mempin|sel2g:inst5                                                                   ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
+; |model                                          ; 1927 (12)         ; 2122 (0)     ; 6144        ; 0            ; 0       ; 0         ; 102  ; 0            ; |model                                                                                         ; work         ;
+;    |alu_diy:inst2|                              ; 63 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2                                                                           ; work         ;
+;       |addsub8:inst|                            ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst                                                              ; work         ;
+;          |add8:inst2|                           ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2                                                   ; work         ;
+;             |adder:inst1|                       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst1                                       ; work         ;
+;                |fadd:inst1|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst1|fadd:inst1                            ; work         ;
+;                |fadd:inst3|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst1|fadd:inst3                            ; work         ;
+;                   |hadd:inst1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst1|fadd:inst3|hadd:inst1                 ; work         ;
+;                |fadd:inst|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst1|fadd:inst                             ; work         ;
+;             |adder:inst|                        ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst                                        ; work         ;
+;                |fadd:inst1|                     ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst|fadd:inst1                             ; work         ;
+;                   |hadd:inst1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst|fadd:inst1|hadd:inst1                  ; work         ;
+;                |fadd:inst2|                     ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst|fadd:inst2                             ; work         ;
+;                   |hadd:inst1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst|fadd:inst2|hadd:inst1                  ; work         ;
+;                |fadd:inst3|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst|fadd:inst3                             ; work         ;
+;                |fadd:inst|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|addsub8:inst|add8:inst2|adder:inst|fadd:inst                              ; work         ;
+;       |sel4g:inst3|                             ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sel4g:inst3                                                               ; work         ;
+;          |sel2g:inst|                           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sel4g:inst3|sel2g:inst                                                    ; work         ;
+;       |sel4g:inst4|                             ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sel4g:inst4                                                               ; work         ;
+;          |sel2g:inst4|                          ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sel4g:inst4|sel2g:inst4                                                   ; work         ;
+;       |sh1c:inst2|                              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sh1c:inst2                                                                ; work         ;
+;          |sel4g:inst|                           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sh1c:inst2|sel4g:inst                                                     ; work         ;
+;             |sel2g:inst3|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst3                                         ; work         ;
+;    |asyncram:inst26|                            ; 1709 (1709)       ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|asyncram:inst26                                                                         ; work         ;
+;    |cu:inst9|                                   ; 44 (0)            ; 8 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9                                                                                ; work         ;
+;       |add8:inst|                               ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst                                                                      ; work         ;
+;          |adder:inst1|                          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1                                                          ; work         ;
+;             |fadd:inst1|                        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1|fadd:inst1                                               ; work         ;
+;                |hadd:inst1|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1|fadd:inst1|hadd:inst1                                    ; work         ;
+;             |fadd:inst2|                        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1|fadd:inst2                                               ; work         ;
+;                |hadd:inst1|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1|fadd:inst2|hadd:inst1                                    ; work         ;
+;             |fadd:inst|                         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1|fadd:inst                                                ; work         ;
+;                |hadd:inst1|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst1|fadd:inst|hadd:inst1                                     ; work         ;
+;          |adder:inst|                           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst                                                           ; work         ;
+;             |fadd:inst2|                        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst|fadd:inst2                                                ; work         ;
+;                |hadd:inst1|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst|fadd:inst2|hadd:inst1                                     ; work         ;
+;             |fadd:inst3|                        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst|fadd:inst3                                                ; work         ;
+;                |hadd:inst1|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|add8:inst|adder:inst|fadd:inst3|hadd:inst1                                     ; work         ;
+;       |lpm_rom:inst10|                          ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|lpm_rom:inst10                                                                 ; work         ;
+;          |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|lpm_rom:inst10|altrom:srom                                                     ; work         ;
+;             |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block                                ; work         ;
+;                |altsyncram_f301:auto_generated| ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated ; work         ;
+;       |reg:inst8|                               ; 4 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|reg:inst8                                                                      ; work         ;
+;          |lpm_ff:inst|                          ; 4 (4)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|reg:inst8|lpm_ff:inst                                                          ; work         ;
+;       |sel2g:inst9|                             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel2g:inst9                                                                    ; work         ;
+;       |sel8g:inst7|                             ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel8g:inst7                                                                    ; work         ;
+;          |sel2g:inst2|                          ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel8g:inst7|sel2g:inst2                                                        ; work         ;
+;          |sel4g:inst1|                          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel8g:inst7|sel4g:inst1                                                        ; work         ;
+;             |sel2g:inst4|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst4                                            ; work         ;
+;          |sel4g:inst|                           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel8g:inst7|sel4g:inst                                                         ; work         ;
+;             |sel2g:inst3|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst3                                             ; work         ;
+;    |dec3_8:inst22|                              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|dec3_8:inst22                                                                           ; work         ;
+;       |dec2_4:inst|                             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|dec3_8:inst22|dec2_4:inst                                                               ; work         ;
+;    |ks:inst1|                                   ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|ks:inst1                                                                                ; work         ;
+;    |regg:inst199|                               ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:inst199                                                                            ; work         ;
+;       |lpm_ff:inst|                             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:inst199|lpm_ff:inst                                                                ; work         ;
+;    |regg:inst20|                                ; 15 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:inst20                                                                             ; work         ;
+;       |lpm_ff:inst|                             ; 15 (15)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:inst20|lpm_ff:inst                                                                 ; work         ;
+;    |regg:inst7|                                 ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:inst7                                                                              ; work         ;
+;       |lpm_ff:inst|                             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:inst7|lpm_ff:inst                                                                  ; work         ;
+;    |regg:rFLAG|                                 ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:rFLAG                                                                              ; work         ;
+;       |lpm_ff:inst|                             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:rFLAG|lpm_ff:inst                                                                  ; work         ;
+;    |regg:rPC|                                   ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:rPC                                                                                ; work         ;
+;       |lpm_ff:inst|                             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regg:rPC|lpm_ff:inst                                                                    ; work         ;
+;    |regset:inst4|                               ; 38 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4                                                                            ; work         ;
+;       |dec2_4:inst7|                            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|dec2_4:inst7                                                               ; work         ;
+;       |regg:inst10|                             ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst10                                                                ; work         ;
+;          |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst10|lpm_ff:inst                                                    ; work         ;
+;       |regg:inst8|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst8                                                                 ; work         ;
+;          |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst8|lpm_ff:inst                                                     ; work         ;
+;       |regg:inst9|                              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst9                                                                 ; work         ;
+;          |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst9|lpm_ff:inst                                                     ; work         ;
+;       |regg:inst|                               ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst                                                                  ; work         ;
+;          |lpm_ff:inst|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|regg:inst|lpm_ff:inst                                                      ; work         ;
+;       |sel4g:inst5|                             ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|sel4g:inst5                                                                ; work         ;
+;          |sel2g:inst4|                          ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|sel4g:inst5|sel2g:inst4                                                    ; work         ;
+;       |sel4g:inst6|                             ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|sel4g:inst6                                                                ; work         ;
+;          |sel2g:inst4|                          ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|regset:inst4|sel4g:inst6|sel2g:inst4                                                    ; work         ;
+;    |sel2g:aSelect|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|sel2g:aSelect                                                                           ; work         ;
+;    |sel2g:inst21|                               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|sel2g:inst21                                                                            ; work         ;
+;    |sel4g:inst|                                 ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|sel4g:inst                                                                              ; work         ;
+;       |sel2g:inst4|                             ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model|sel4g:inst|sel2g:inst4                                                                  ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                  ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; Name                                                                                     ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                   ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; MIF/ramsub_ks_rom.mif ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                 ;
++----------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------+
+; Name                                                                                               ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF        ;
++----------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------+
+; cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 24           ; --           ; --           ; 6144 ; MIF/cu.mif ;
++----------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; memctrl:inst9|inst10[7]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[6]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[5]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[4]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[3]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[2]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[1]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst10[0]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst1[7]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[6]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[5]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[4]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[3]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[2]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[1]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst1[0]                              ; memctrl:inst9|inst5 ; yes                    ;
-; memctrl:inst9|inst11[7]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[6]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[5]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[4]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[3]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[2]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[1]                             ; ks:inst11|inst      ; yes                    ;
-; memctrl:inst9|inst11[0]                             ; ks:inst11|inst      ; yes                    ;
-; Number of user-specified and inferred latches = 24  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++----------------------------------------------------+-------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal     ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------+------------------------+
+; asyncram:inst26|data_in[7]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[6]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[5]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[4]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[3]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[2]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[1]                         ; asyncram:inst26|always0 ; yes                    ;
+; asyncram:inst26|data_in[0]                         ; asyncram:inst26|always0 ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                         ;                        ;
++----------------------------------------------------+-------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -339,76 +433,101 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 2122  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Synchronous Load   ; 7     ;
+; Number of registers using Asynchronous Clear ; 234   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 2113  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Source assignments for LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------+
-; Assignment                      ; Value              ; From ; To                                     ;
-+---------------------------------+--------------------+------+----------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
-+---------------------------------+--------------------+------+----------------------------------------+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; asyncram:inst26|mem[10][7]              ; 1       ;
+; asyncram:inst26|mem[6][7]               ; 1       ;
+; asyncram:inst26|mem[8][7]               ; 1       ;
+; asyncram:inst26|mem[12][7]              ; 1       ;
+; asyncram:inst26|mem[6][6]               ; 1       ;
+; asyncram:inst26|mem[18][6]              ; 1       ;
+; asyncram:inst26|mem[5][6]               ; 1       ;
+; asyncram:inst26|mem[12][6]              ; 1       ;
+; asyncram:inst26|mem[7][6]               ; 1       ;
+; asyncram:inst26|mem[8][5]               ; 1       ;
+; asyncram:inst26|mem[6][5]               ; 1       ;
+; asyncram:inst26|mem[7][5]               ; 1       ;
+; asyncram:inst26|mem[18][5]              ; 1       ;
+; asyncram:inst26|mem[17][5]              ; 1       ;
+; asyncram:inst26|mem[3][5]               ; 1       ;
+; asyncram:inst26|mem[21][4]              ; 1       ;
+; asyncram:inst26|mem[18][4]              ; 1       ;
+; asyncram:inst26|mem[19][4]              ; 1       ;
+; asyncram:inst26|mem[6][4]               ; 1       ;
+; asyncram:inst26|mem[10][4]              ; 1       ;
+; asyncram:inst26|mem[2][4]               ; 1       ;
+; asyncram:inst26|mem[5][4]               ; 1       ;
+; asyncram:inst26|mem[1][4]               ; 1       ;
+; asyncram:inst26|mem[13][4]              ; 1       ;
+; asyncram:inst26|mem[4][4]               ; 1       ;
+; asyncram:inst26|mem[8][4]               ; 1       ;
+; asyncram:inst26|mem[12][4]              ; 1       ;
+; asyncram:inst26|mem[11][4]              ; 1       ;
+; asyncram:inst26|mem[7][4]               ; 1       ;
+; asyncram:inst26|mem[3][4]               ; 1       ;
+; asyncram:inst26|mem[5][3]               ; 1       ;
+; asyncram:inst26|mem[6][3]               ; 1       ;
+; asyncram:inst26|mem[18][3]              ; 1       ;
+; asyncram:inst26|mem[12][3]              ; 1       ;
+; asyncram:inst26|mem[21][2]              ; 1       ;
+; asyncram:inst26|mem[17][2]              ; 1       ;
+; asyncram:inst26|mem[13][2]              ; 1       ;
+; asyncram:inst26|mem[6][2]               ; 1       ;
+; asyncram:inst26|mem[19][2]              ; 1       ;
+; asyncram:inst26|mem[3][2]               ; 1       ;
+; asyncram:inst26|mem[21][1]              ; 1       ;
+; asyncram:inst26|mem[6][1]               ; 1       ;
+; asyncram:inst26|mem[4][1]               ; 1       ;
+; asyncram:inst26|mem[9][1]               ; 1       ;
+; asyncram:inst26|mem[11][1]              ; 1       ;
+; asyncram:inst26|mem[6][0]               ; 1       ;
+; asyncram:inst26|mem[2][0]               ; 1       ;
+; asyncram:inst26|mem[9][0]               ; 1       ;
+; asyncram:inst26|mem[13][0]              ; 1       ;
+; asyncram:inst26|mem[11][0]              ; 1       ;
+; asyncram:inst26|mem[7][0]               ; 1       ;
+; Total number of inverted registers = 51 ;         ;
++-----------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_ROM:inst1      ;
-+------------------------+-----------------------+----------------+
-; Parameter Name         ; Value                 ; Type           ;
-+------------------------+-----------------------+----------------+
-; LPM_WIDTH              ; 8                     ; Untyped        ;
-; LPM_WIDTHAD            ; 8                     ; Untyped        ;
-; LPM_NUMWORDS           ; 256                   ; Untyped        ;
-; LPM_ADDRESS_CONTROL    ; REGISTERED            ; Untyped        ;
-; LPM_OUTDATA            ; UNREGISTERED          ; Untyped        ;
-; LPM_FILE               ; MIF/ramsub_ks_rom.mif ; Untyped        ;
-; DEVICE_FAMILY          ; Cyclone II            ; Untyped        ;
-; AUTO_CARRY_CHAINS      ; ON                    ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS   ; OFF                   ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS    ; ON                    ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS ; OFF                   ; IGNORE_CASCADE ;
-+------------------------+-----------------------+----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |model|cu:inst9|reg:inst8|lpm_ff:inst|dffs[1]         ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |model|cu:inst9|reg:inst8|lpm_ff:inst|dffs[6]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |model|regset:inst4|sel4g:inst5|sel2g:inst4|inst2[7]  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |model|regset:inst4|sel4g:inst6|sel2g:inst4|inst2[5]  ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; No         ; |model|alu_diy:inst2|sel4g:inst4|sel2g:inst4|inst2[1] ;
+; 256:1              ; 8 bits    ; 1360 LEs      ; 1360 LEs             ; 0 LEs                  ; No         ; |model|asyncram:inst26|Mux1                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst|reg:inst1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; W              ; 8     ; Untyped                                 ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst|reg:inst1|LPM_FF:inst ;
-+------------------------+------------+----------------------------------------+
-; Parameter Name         ; Value      ; Type                                   ;
-+------------------------+------------+----------------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                                ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                                ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                                ;
-; LPM_FFTYPE             ; DFF        ; Untyped                                ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                                ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                         ;
-+------------------------+------------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------------------------------------------------------------------+
+; Source assignments for cu:inst9|LPM_ROM:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                               ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                ;
++---------------------------------+--------------------+------+--------------------------------------------------+
 
 
 +-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst|sel2g:inst ;
+; Parameter Settings for User Entity Instance: cu:inst9|sel2g:inst9 ;
 +----------------+-------+------------------------------------------+
 ; Parameter Name ; Value ; Type                                     ;
 +----------------+-------+------------------------------------------+
@@ -417,18 +536,57 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sel2g:inst5 ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; W              ; 8     ; Untyped                         ;
-+----------------+-------+---------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|LPM_ROM:inst10 ;
++------------------------+--------------+------------------------------+
+; Parameter Name         ; Value        ; Type                         ;
++------------------------+--------------+------------------------------+
+; LPM_WIDTH              ; 24           ; Untyped                      ;
+; LPM_WIDTHAD            ; 8            ; Untyped                      ;
+; LPM_NUMWORDS           ; 256          ; Untyped                      ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED   ; Untyped                      ;
+; LPM_OUTDATA            ; UNREGISTERED ; Untyped                      ;
+; LPM_FILE               ; MIF/cu.mif   ; Untyped                      ;
+; DEVICE_FAMILY          ; Cyclone II   ; Untyped                      ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE               ;
++------------------------+--------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|reg:inst8 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; W              ; 8     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|reg:inst8|LPM_FF:inst ;
++------------------------+------------+---------------------------------------+
+; Parameter Name         ; Value      ; Type                                  ;
++------------------------+------------+---------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                               ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                               ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                               ;
+; LPM_FFTYPE             ; DFF        ; Untyped                               ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                               ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                        ;
++------------------------+------------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1 ;
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7 ;
 +----------------+-------+------------------------------------------+
 ; Parameter Name ; Value ; Type                                     ;
 +----------------+-------+------------------------------------------+
@@ -438,26 +596,542 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst4|reg:inst1|LPM_FF:inst ;
-+------------------------+------------+-----------------------------------------+
-; Parameter Name         ; Value      ; Type                                    ;
-+------------------------+------------+-----------------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                                 ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                                 ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                                 ;
-; LPM_FFTYPE             ; DFF        ; Untyped                                 ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                 ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                                 ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                            ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                          ;
-+------------------------+------------+-----------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel2g:inst2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; W              ; 8     ; Untyped                                              ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; W              ; 8     ; Untyped                                             ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst4 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; W              ; 8     ; Untyped                                                         ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; W              ; 8     ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst3 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; W              ; 8     ; Untyped                                                         ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; W              ; 8     ; Untyped                                              ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst4 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; W              ; 8     ; Untyped                                                          ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; W              ; 8     ; Untyped                                                         ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst3 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; W              ; 8     ; Untyped                                                          ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cu:inst9|sel2g:inst1 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; W              ; 8     ; Untyped                                  ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:rFLAG ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; W              ; 1     ; Untyped                        ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:rFLAG|LPM_FF:inst ;
++------------------------+------------+-------------------------------+
+; Parameter Name         ; Value      ; Type                          ;
++------------------------+------------+-------------------------------+
+; LPM_WIDTH              ; 1          ; Untyped                       ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                       ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                       ;
+; LPM_FFTYPE             ; DFF        ; Untyped                       ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                       ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                       ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                ;
++------------------------+------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel2g:aSelect ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; W              ; 8     ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; W              ; 8     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5|sel2g:inst4 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5|sel2g:inst ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; W              ; 8     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst5|sel2g:inst3 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; W              ; 8     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst|LPM_FF:inst ;
++------------------------+------------+-------------------------------------------+
+; Parameter Name         ; Value      ; Type                                      ;
++------------------------+------------+-------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                   ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                   ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                   ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                   ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                   ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                            ;
++------------------------+------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst8 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; W              ; 8     ; Untyped                                     ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst8|LPM_FF:inst ;
++------------------------+------------+--------------------------------------------+
+; Parameter Name         ; Value      ; Type                                       ;
++------------------------+------------+--------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                    ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                    ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                    ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                    ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                             ;
++------------------------+------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst9 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; W              ; 8     ; Untyped                                     ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst9|LPM_FF:inst ;
++------------------------+------------+--------------------------------------------+
+; Parameter Name         ; Value      ; Type                                       ;
++------------------------+------------+--------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                    ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                    ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                    ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                    ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                             ;
++------------------------+------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst10 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; W              ; 8     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|regg:inst10|LPM_FF:inst ;
++------------------------+------------+---------------------------------------------+
+; Parameter Name         ; Value      ; Type                                        ;
++------------------------+------------+---------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                     ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                     ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                     ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                     ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                     ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                     ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                              ;
++------------------------+------------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; W              ; 8     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6|sel2g:inst4 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6|sel2g:inst ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; W              ; 8     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regset:inst4|sel4g:inst6|sel2g:inst3 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; W              ; 1     ; Untyped                                       ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5|sel2g:inst4 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W              ; 1     ; Untyped                                                   ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5|sel2g:inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 1     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst5|sel2g:inst3 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W              ; 1     ; Untyped                                                   ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; W              ; 9     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst4 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; W              ; 9     ; Untyped                                                             ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; W              ; 9     ; Untyped                                                            ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst3 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; W              ; 9     ; Untyped                                                             ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; W              ; 8     ; Untyped                                       ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4|sel2g:inst4 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                   ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4|sel2g:inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst4|sel2g:inst3 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                   ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; W              ; 8     ; Untyped                                       ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3|sel2g:inst4 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                   ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3|sel2g:inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                  ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel4g:inst3|sel2g:inst3 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W              ; 8     ; Untyped                                                   ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel2g:inst11 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; W              ; 8     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_diy:inst2|sel2g:inst10 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; W              ; 1     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; W              ; 8     ; Untyped                        ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst4 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; W              ; 8     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt8:inst4|sel2g:inst ;
+; Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst ;
 +----------------+-------+-------------------------------------------+
 ; Parameter Name ; Value ; Type                                      ;
 +----------------+-------+-------------------------------------------+
@@ -466,8 +1140,86 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel4g:inst|sel2g:inst3 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; W              ; 8     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:inst20 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; W              ; 8     ; Untyped                         ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:inst20|LPM_FF:inst ;
++------------------------+------------+--------------------------------+
+; Parameter Name         ; Value      ; Type                           ;
++------------------------+------------+--------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                        ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                        ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                        ;
+; LPM_FFTYPE             ; DFF        ; Untyped                        ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                        ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                        ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                   ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                 ;
++------------------------+------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sel2g:inst21 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; W              ; 8     ; Untyped                          ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:inst199 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; W              ; 8     ; Untyped                          ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:inst199|LPM_FF:inst ;
++------------------------+------------+---------------------------------+
+; Parameter Name         ; Value      ; Type                            ;
++------------------------+------------+---------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                         ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                         ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                         ;
+; LPM_FFTYPE             ; DFF        ; Untyped                         ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                         ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                         ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                  ;
++------------------------+------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst2 ;
+; Parameter Settings for User Entity Instance: regg:inst7 ;
 +----------------+-------+--------------------------------+
 ; Parameter Name ; Value ; Type                           ;
 +----------------+-------+--------------------------------+
@@ -477,7 +1229,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst2|LPM_FF:inst ;
+; Parameter Settings for User Entity Instance: regg:inst7|LPM_FF:inst ;
 +------------------------+------------+-------------------------------+
 ; Parameter Name         ; Value      ; Type                          ;
 +------------------------+------------+-------------------------------+
@@ -495,44 +1247,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst3 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; W              ; 8     ; Untyped                        ;
-+----------------+-------+--------------------------------+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:rPC ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; W              ; 8     ; Untyped                      ;
++----------------+-------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regg:inst3|LPM_FF:inst ;
-+------------------------+------------+-------------------------------+
-; Parameter Name         ; Value      ; Type                          ;
-+------------------------+------------+-------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                       ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                       ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                       ;
-; LPM_FFTYPE             ; DFF        ; Untyped                       ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                       ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                       ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                    ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                  ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                  ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                ;
-+------------------------+------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram_rw_dq:inst6 ;
-+----------------+----------------+----------------------------+
-; Parameter Name ; Value          ; Type                       ;
-+----------------+----------------+----------------------------+
-; waddr          ; 8              ; Signed Integer             ;
-; wdat           ; 8              ; Signed Integer             ;
-; init           ; MIF/ramsub.mif ; String                     ;
-+----------------+----------------+----------------------------+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regg:rPC|LPM_FF:inst ;
++------------------------+------------+-----------------------------+
+; Parameter Name         ; Value      ; Type                        ;
++------------------------+------------+-----------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                     ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                     ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                     ;
+; LPM_FFTYPE             ; DFF        ; Untyped                     ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                     ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                     ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE              ;
++------------------------+------------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -541,7 +1281,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -551,7 +1291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Apr 08 14:50:17 2025
+    Info: Processing started: Sat Apr 26 15:23:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arch -c arch
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file hadd.bdf
@@ -630,78 +1370,182 @@ Info (12021): Found 1 design units, including 1 entities, in source file memtemp
     Info (12023): Found entity 1: memtemp
 Info (12021): Found 1 design units, including 1 entities, in source file mempin.bdf
     Info (12023): Found entity 1: mempin
-Info (12127): Elaborating entity "mempin" for the top level hierarchy
-Warning (275013): Port "CLK" of type ram_rw_dq and instance "inst6" is missing source signal
-Info (12128): Elaborating entity "memctrl" for hierarchy "memctrl:inst9"
-Warning (275011): Block or symbol "TRI" of instance "inst3" overlaps another block or symbol
-Warning (275011): Block or symbol "AND2" of instance "inst5" overlaps another block or symbol
-Info (12128): Elaborating entity "ks" for hierarchy "ks:inst11"
-Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:inst1"
-Info (12130): Elaborated megafunction instantiation "LPM_ROM:inst1"
-Info (12133): Instantiated megafunction "LPM_ROM:inst1" with the following parameter:
+Info (12021): Found 1 design units, including 1 entities, in source file arch.bdf
+    Info (12023): Found entity 1: arch
+Info (12021): Found 1 design units, including 1 entities, in source file alu_diy.bdf
+    Info (12023): Found entity 1: alu_diy
+Info (12021): Found 1 design units, including 1 entities, in source file model.bdf
+    Info (12023): Found entity 1: model
+Info (12021): Found 1 design units, including 1 entities, in source file cu.bdf
+    Info (12023): Found entity 1: cu
+Info (12021): Found 1 design units, including 1 entities, in source file sel8g.bdf
+    Info (12023): Found entity 1: sel8g
+Info (12021): Found 1 design units, including 1 entities, in source file regset.bdf
+    Info (12023): Found entity 1: regset
+Info (12127): Elaborating entity "model" for the top level hierarchy
+Info (12128): Elaborating entity "cu" for hierarchy "cu:inst9"
+Info (12128): Elaborating entity "sel2g" for hierarchy "cu:inst9|sel2g:inst9"
+Info (12128): Elaborating entity "LPM_ROM" for hierarchy "cu:inst9|LPM_ROM:inst10"
+Info (12130): Elaborated megafunction instantiation "cu:inst9|LPM_ROM:inst10"
+Info (12133): Instantiated megafunction "cu:inst9|LPM_ROM:inst10" with the following parameter:
     Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
-    Info (12134): Parameter "LPM_FILE" = "MIF/ramsub_ks_rom.mif"
+    Info (12134): Parameter "LPM_FILE" = "MIF/cu.mif"
     Info (12134): Parameter "LPM_NUMWORDS" = "256"
     Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
-    Info (12134): Parameter "LPM_WIDTH" = "8"
+    Info (12134): Parameter "LPM_WIDTH" = "24"
     Info (12134): Parameter "LPM_WIDTHAD" = "8"
-Info (12128): Elaborating entity "altrom" for hierarchy "LPM_ROM:inst1|altrom:srom"
-Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst1|altrom:srom", which is child of megafunction instantiation "LPM_ROM:inst1"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block"
-Info (12131): Elaborated megafunction instantiation "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:inst1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t611.tdf
-    Info (12023): Found entity 1: altsyncram_t611
-Info (12128): Elaborating entity "altsyncram_t611" for hierarchy "LPM_ROM:inst1|altrom:srom|altsyncram:rom_block|altsyncram_t611:auto_generated"
-Info (12128): Elaborating entity "cnt8" for hierarchy "cnt8:inst"
-Info (12128): Elaborating entity "hadd8" for hierarchy "cnt8:inst|hadd8:inst2"
-Info (12128): Elaborating entity "hadd" for hierarchy "cnt8:inst|hadd8:inst2|hadd:inst7"
-Info (12128): Elaborating entity "reg" for hierarchy "cnt8:inst|reg:inst1"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "cnt8:inst|reg:inst1|LPM_FF:inst"
-Info (12130): Elaborated megafunction instantiation "cnt8:inst|reg:inst1|LPM_FF:inst"
-Info (12133): Instantiated megafunction "cnt8:inst|reg:inst1|LPM_FF:inst" with the following parameter:
+Info (12128): Elaborating entity "altrom" for hierarchy "cu:inst9|LPM_ROM:inst10|altrom:srom"
+Info (12131): Elaborated megafunction instantiation "cu:inst9|LPM_ROM:inst10|altrom:srom", which is child of megafunction instantiation "cu:inst9|LPM_ROM:inst10"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "cu:inst9|LPM_ROM:inst10|altrom:srom|altsyncram:rom_block"
+Info (12131): Elaborated megafunction instantiation "cu:inst9|LPM_ROM:inst10|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "cu:inst9|LPM_ROM:inst10"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_f301.tdf
+    Info (12023): Found entity 1: altsyncram_f301
+Info (12128): Elaborating entity "altsyncram_f301" for hierarchy "cu:inst9|LPM_ROM:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated"
+Info (12128): Elaborating entity "reg" for hierarchy "cu:inst9|reg:inst8"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "cu:inst9|reg:inst8|LPM_FF:inst"
+Info (12130): Elaborated megafunction instantiation "cu:inst9|reg:inst8|LPM_FF:inst"
+Info (12133): Instantiated megafunction "cu:inst9|reg:inst8|LPM_FF:inst" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "8"
-Info (12128): Elaborating entity "sel2g" for hierarchy "cnt8:inst|sel2g:inst"
-Info (12128): Elaborating entity "regg" for hierarchy "regg:inst2"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "regg:inst2|LPM_FF:inst"
-Info (12130): Elaborated megafunction instantiation "regg:inst2|LPM_FF:inst"
-Info (12133): Instantiated megafunction "regg:inst2|LPM_FF:inst" with the following parameter:
+Info (12128): Elaborating entity "sel8g" for hierarchy "cu:inst9|sel8g:inst7"
+Info (12128): Elaborating entity "sel4g" for hierarchy "cu:inst9|sel8g:inst7|sel4g:inst"
+Info (12128): Elaborating entity "add8" for hierarchy "cu:inst9|add8:inst"
+Info (12128): Elaborating entity "adder" for hierarchy "cu:inst9|add8:inst|adder:inst1"
+Info (12128): Elaborating entity "fadd" for hierarchy "cu:inst9|add8:inst|adder:inst1|fadd:inst3"
+Info (12128): Elaborating entity "hadd" for hierarchy "cu:inst9|add8:inst|adder:inst1|fadd:inst3|hadd:inst1"
+Info (12128): Elaborating entity "regg" for hierarchy "regg:rFLAG"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "regg:rFLAG|LPM_FF:inst"
+Info (12130): Elaborated megafunction instantiation "regg:rFLAG|LPM_FF:inst"
+Info (12133): Instantiated megafunction "regg:rFLAG|LPM_FF:inst" with the following parameter:
+    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
+    Info (12134): Parameter "LPM_WIDTH" = "1"
+Info (12128): Elaborating entity "ks" for hierarchy "ks:inst1"
+Info (12128): Elaborating entity "regset" for hierarchy "regset:inst4"
+Info (12128): Elaborating entity "regg" for hierarchy "regset:inst4|regg:inst"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "regset:inst4|regg:inst|LPM_FF:inst"
+Info (12130): Elaborated megafunction instantiation "regset:inst4|regg:inst|LPM_FF:inst"
+Info (12133): Instantiated megafunction "regset:inst4|regg:inst|LPM_FF:inst" with the following parameter:
     Info (12134): Parameter "LPM_FFTYPE" = "DFF"
     Info (12134): Parameter "LPM_WIDTH" = "8"
-Info (12128): Elaborating entity "ram_rw_dq" for hierarchy "ram_rw_dq:inst6"
+Info (12128): Elaborating entity "dec2_4" for hierarchy "regset:inst4|dec2_4:inst7"
+Info (12128): Elaborating entity "dec3_8" for hierarchy "dec3_8:inst22"
+Info (12128): Elaborating entity "alu_diy" for hierarchy "alu_diy:inst2"
+Info (12128): Elaborating entity "sel4g" for hierarchy "alu_diy:inst2|sel4g:inst5"
+Info (12128): Elaborating entity "sel2g" for hierarchy "alu_diy:inst2|sel4g:inst5|sel2g:inst4"
+Info (12128): Elaborating entity "addsub8" for hierarchy "alu_diy:inst2|addsub8:inst"
+Info (12128): Elaborating entity "sh1c" for hierarchy "alu_diy:inst2|sh1c:inst2"
+Info (12128): Elaborating entity "sel4g" for hierarchy "alu_diy:inst2|sh1c:inst2|sel4g:inst"
+Info (12128): Elaborating entity "sel2g" for hierarchy "alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst4"
+Info (12128): Elaborating entity "asyncram" for hierarchy "asyncram:inst26"
+Warning (10240): Verilog HDL Always Construct warning at asyncram.v(18): inferring latch(es) for variable "data_in", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "data_in[0]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[1]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[2]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[3]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[4]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[5]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[6]" at asyncram.v(18)
+Info (10041): Inferred latch for "data_in[7]" at asyncram.v(18)
 Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[7]" to the node "uIR[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[4]" to the node "uIR[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[6]" to the node "uIR[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[5]" to the node "uIR[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[3]" to the node "uIR[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[2]" to the node "uIR[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[1]" to the node "uIR[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[0]" to the node "uIR[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[4]" to the node "memctrl:inst9|inst7" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[6]" to the node "ks:inst11|inst1" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:inst1|otri[5]" to the node "memctrl:inst9|inst5" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[14]" to the node "uIR[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[10]" to the node "uIR[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[1]" to the node "uIR[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[1]" to the node "R" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[23]" to the node "uIR[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[22]" to the node "uIR[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[21]" to the node "uIR[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[20]" to the node "uIR[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[19]" to the node "uIR[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[18]" to the node "uIR[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[17]" to the node "uIR[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[16]" to the node "uIR[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[15]" to the node "uIR[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[13]" to the node "uIR[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[12]" to the node "uIR[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[11]" to the node "uIR[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[9]" to the node "uIR[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[8]" to the node "uIR[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[7]" to the node "uIR[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[6]" to the node "uIR[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[5]" to the node "uIR[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[4]" to the node "uIR[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[3]" to the node "uIR[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[2]" to the node "uIR[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "uIR[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "W" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[13]" to the node "ks:inst1|inst1" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[8]" to the node "regg:rFLAG|lpm_ff:inst|dffs[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst28" into a wire
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[3]" to the node "sel2g:inst5|inst2[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[2]" to the node "regg:inst3|lpm_ff:inst|dffs[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[1]" to the node "cnt8:inst4|hadd8:inst2|hadd:inst|inst" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_rom:inst1|otri[0]" to the node "regg:inst2|lpm_ff:inst|dffs[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[0]" to the node "inst25[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[1]" to the node "inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[23]" to the node "cu:inst9|sel2g:inst9|inst1[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[22]" to the node "cu:inst9|sel2g:inst9|inst1[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[21]" to the node "cu:inst9|sel2g:inst9|inst1[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[20]" to the node "cu:inst9|sel2g:inst9|inst1[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[19]" to the node "cu:inst9|sel2g:inst9|inst1[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[18]" to the node "alu_diy:inst2|sel2g:inst10|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[17]" to the node "alu_diy:inst2|sh1c:inst2|sel4g:inst|sel2g:inst3|inst1[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[16]" to the node "alu_diy:inst2|sel4g:inst4|sel2g:inst4|inst2[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[15]" to the node "alu_diy:inst2|sel4g:inst4|sel2g:inst4|inst2[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[12]" to the node "sel4g:inst|sel2g:inst4|inst1[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[11]" to the node "sel4g:inst|sel2g:inst3|inst2[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[9]" to the node "sel2g:aSelect|inst2[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[7]" to the node "dec3_8:inst22|dec2_4:inst|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[6]" to the node "dec3_8:inst22|dec2_4:inst|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[5]" to the node "dec3_8:inst22|dec2_4:inst|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[4]" to the node "cu:inst9|reg:inst8|lpm_ff:inst|dffs[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[3]" to the node "cu:inst9|sel8g:inst7|sel4g:inst1|sel2g:inst4|inst2[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "cu:inst9|lpm_rom:inst10|otri[2]" to the node "cu:inst9|sel8g:inst7|sel4g:inst|sel2g:inst3|inst[3]" into an OR gate
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[7]" to the node "regg:inst20|lpm_ff:inst|dffs[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[6]" to the node "regg:inst20|lpm_ff:inst|dffs[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[5]" to the node "regg:inst20|lpm_ff:inst|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[4]" to the node "regg:inst20|lpm_ff:inst|dffs[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[3]" to the node "regg:inst20|lpm_ff:inst|dffs[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[2]" to the node "regg:inst20|lpm_ff:inst|dffs[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[1]" to the node "regg:inst20|lpm_ff:inst|dffs[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst25[0]" to the node "sel2g:inst21|inst2[0]" into an OR gate
+Warning (13012): Latch asyncram:inst26|data_in[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Warning (13012): Latch asyncram:inst26|data_in[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cu:inst9|lpm_rom:inst10|altrom:srom|altsyncram:rom_block|altsyncram_f301:auto_generated|q_a[1]
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "ks:inst11|inst1" is converted into an equivalent circuit using register "ks:inst11|inst1~_emulated" and latch "ks:inst11|inst1~1"
+    Warning (13310): Register "ks:inst1|inst1" is converted into an equivalent circuit using register "ks:inst1|inst1~_emulated" and latch "ks:inst1|inst1~1"
 Info (144001): Generated suppressed messages file E:/Project/FPGA/design/output_files/arch.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4113 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 51 output pins
-    Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 76 logic cells
-    Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4661 megabytes
-    Info: Processing ended: Tue Apr 08 14:50:20 2025
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21059): Implemented 99 output pins
+    Info (21061): Implemented 3987 logic cells
+    Info (21064): Implemented 24 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 87 warnings
+    Info: Peak virtual memory: 4674 megabytes
+    Info: Processing ended: Sat Apr 26 15:23:35 2025
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +------------------------------------------+

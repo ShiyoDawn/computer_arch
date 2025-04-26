@@ -1,0 +1,122 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=24;
+DEPTH=256;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0    :   101240;
+	1    :   058280;
+	2    :   000002;
+	3    :   101240;
+	4    :   078860;
+	5    :   00000C;
+	[6..15]  :   000000;
+	16   :   058280;
+	17   :   000002;
+	18   :   078820;
+	19   :   078880;
+	20   :   000002;
+	21   :   101240;
+	22   :   078820;
+	23   :   280004;
+	[24..31]  :   000000;
+	32   :   058280;
+	33   :   000002;
+	34   :   101240;
+	35   :   078860;
+	36   :   00000C;
+	[37..47]  :   000000;
+	48   :   058280;
+	49   :   000002;
+	50   :   078820;
+	51   :   078880;
+	52   :   000002;
+	53   :   101240;
+	54   :   078820;
+	55   :   480004;
+	[56..63]  :   000000;
+	64   :   058280;
+	65   :   000002;
+	66   :   101240;
+	67   :   078860;
+	68   :   00000C;
+	[69..79]  :   000000;
+	80   :   058280;
+	81   :   000002;
+	82   :   101240;
+	83   :   078820;
+	84   :   680004;
+	[85..95]  :   000000;
+	96   :   058280;
+	97   :   000002;
+	98   :   101240;
+	99   :   078860;
+	100  :   00000C;
+	[101..111]  :   000000;
+	112  :   000120;
+	113  :   A80008;
+	[114..115]  :   101240;
+	116  :   880004;
+	[117..127]  :   000000;
+	128  :   058280;
+	129  :   000002;
+	130  :   101240;
+	131  :   078860;
+	132  :   00000C;
+	[133..143]  :   000000;
+	144  :   058280;
+	145  :   000002;
+	146  :   078880;
+	147  :   000002;
+	148  :   078880;
+	149  :   000002;
+	150  :   101240;
+	151  :   0580A0;
+	152  :   000001;
+	153  :   000000;
+	154  :   002000;
+	[155..159]  :   000000;
+	160  :   058280;
+	161  :   000002;
+	162  :   101240;
+	163  :   078860;
+	164  :   00000C;
+	[165..175]  :   000000;
+	176  :   058280;
+	177  :   000002;
+	178  :   000A40;
+	179  :   C80004;
+	[180..191]  :   000000;
+	192  :   058280;
+	193  :   000002;
+	194  :   101240;
+	195  :   078860;
+	196  :   00000C;
+	[197..207]  :   000000;
+	208  :   058280;
+	209  :   000002;
+	210  :   101240;
+	211  :   078880;
+	212  :   0580A0;
+	213  :   000001;
+	214  :   000000;
+	215  :   002000;
+	[216..255]  :   000000;
+END;
